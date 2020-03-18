@@ -2,7 +2,7 @@
 title: Introduzione
 description: 'Conversione più rapida dei moduli per la stampa in moduli adattivi '
 translation-type: tm+mt
-source-git-commit: ef5789dabccc65dcf988b9424b435aa036017691
+source-git-commit: ceff5cb56aa9896a28004628c5e26c262b7918bd
 
 ---
 
@@ -17,17 +17,17 @@ Il servizio di conversione automatizzata dei moduli consente di accelerare la di
 * Raggruppare i campi più comuni in frammenti di modulo riutilizzabili
 * Abilita Adobe Analytics durante la conversione
 
-![È semplice. Basta fornirci i moduli di origine e lasciare tutto a noi. Vi forniremo bellissimi moduli adattivi. Naturalmente, si lavorerà con l&#39;output alla vostra soddisfazione. ](assets/pdf-to-adaptive-form-gitx50.gif)
+![È semplice. Basta fornirci i moduli di origine e lasciare tutto a noi. Vi forniremo bellissimi moduli adattivi. Naturalmente, si lavorerà con l&#39;output con la vostra soddisfazione. ](assets/pdf-to-adaptive-form-gitx50.gif)
 
 ## Onboarding {#onboarding}
 
-Il servizio è disponibile gratuitamente per i clienti a tempo indeterminato di AEM 6.5 Forms e per i clienti enterprise di Adobe Managed Service. Per richiedere l&#39;accesso al servizio, contattate il team vendite Adobe o il rappresentante Adobe.
+Il servizio è disponibile gratuitamente per i clienti a tempo indeterminato di AEM 6.4 Forms e AEM 6.5 Forms e per i clienti enterprise di Adobe Managed Service. Per richiedere l&#39;accesso al servizio, contattate il team vendite Adobe o il rappresentante Adobe.
 
 Adobe consente l’accesso alla vostra organizzazione e fornisce i privilegi richiesti alla persona designata come amministratore nella vostra organizzazione. L&#39;amministratore può concedere l&#39;accesso agli sviluppatori AEM Forms (utenti) dell&#39;organizzazione per connettersi al servizio. Per ulteriori informazioni, vedere [Configurare il servizio](configure-service.md) di conversione moduli automatizzati.
 
 ## Moduli e lingue PDF supportati {#supported-languages-and-pdf-forms}
 
-Il servizio supporta i moduli PDF non interattivi, i moduli creati con Adobe Acrobat noti come AcroForms e i moduli basati su XFA creati utilizzando AEM Forms o Adobe LiveCycle.
+Il servizio supporta i moduli PDF non interattivi, i moduli creati con Adobe Acrobat, denominati AcroForms, e i moduli basati su XFA creati utilizzando AEM Forms o Adobe LiveCycle.
 
 Il servizio può convertire solo moduli in lingua inglese in moduli adattivi. È possibile tradurre i moduli adattivi generati in un&#39;altra lingua utilizzando il flusso di lavoro [di traduzione di](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)AEM.
 
@@ -37,7 +37,7 @@ Il servizio di conversione automatica dei moduli è eseguito su Adobe Cloud. Col
 
 ![Flusso di lavoro](assets/conversion-workflow.png)
 
-### 1.Configurare l&#39;ambiente {#set-up-the-environment}
+### 1. Configurare l&#39;ambiente {#set-up-the-environment}
 
 Il servizio di conversione automatica dei moduli è eseguito su Adobe Cloud. [Configura l’account di I/O Adobe dell’organizzazione e collega l’istanza](configure-service.md) locale di AEM al servizio di conversione in esecuzione su Adobe Cloud.
 
