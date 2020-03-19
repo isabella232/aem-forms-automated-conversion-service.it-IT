@@ -2,7 +2,7 @@
 title: Configurare il servizio di conversione dei moduli automatizzati
 description: Preparazione dell'istanza di AEM per l'utilizzo del servizio di conversione di moduli automatizzati
 translation-type: tm+mt
-source-git-commit: ef5789dabccc65dcf988b9424b435aa036017691
+source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
 
 ---
 
@@ -23,7 +23,7 @@ Questa guida descrive come un amministratore AEM può configurare il servizio di
 
 ## Onboarding{#onboarding}
 
-Il servizio è disponibile gratuitamente per i clienti a tempo indeterminato di AEM 6.5 Forms e AEM 6.4 Forms e per i clienti enterprise di Adobe Managed Service. Per richiedere l&#39;accesso al servizio, contattate il team vendite Adobe o il rappresentante Adobe.
+Il servizio è disponibile gratuitamente per i clienti a tempo indeterminato di AEM 6.4 Forms e AEM 6.5 Forms e per i clienti enterprise di Adobe Managed Service. Per richiedere l&#39;accesso al servizio, contattate il team vendite Adobe o il rappresentante Adobe.
 
 Adobe consente l’accesso alla vostra organizzazione e fornisce i privilegi richiesti alla persona designata come amministratore nella vostra organizzazione. L&#39;amministratore può concedere l&#39;accesso agli sviluppatori AEM Forms (utenti) dell&#39;organizzazione per connettersi al servizio.
 
@@ -33,32 +33,32 @@ Per utilizzare il servizio di conversione moduli automatizzati è necessario dis
 
 * Il servizio di conversione automatizzata dei moduli è abilitato per la propria azienda
 * Un account Adobe ID con privilegi di amministratore per il servizio di conversione
-* Un’istanza di creazione AEM 6.5 o AEM 6.4 con AEM Service Pack più recente
+* Un’istanza di creazione di AEM 6.4 o AEM 6.5 con AEM Service Pack più recente
 * Un utente AEM (nell’istanza di AEM) membro di un gruppo di utenti modulo
 
 ## Configurare l&#39;ambiente {#setuptheservice}
 
 Prima di usare il servizio, preparate l’istanza di creazione di AEM per collegarvi al servizio in esecuzione su Adobe Cloud. Per preparare l’istanza per il servizio, eseguite i seguenti passaggi nella sequenza elencata:
 
-1. [Scaricare e installare AEM 6.5 o AEM 6.4](#aemquickstart)
+1. [Scaricare e installare AEM 6.4 o AEM 6.5](#aemquickstart)
 1. [Scarica e installa la versione più recente di AEM Service Pack](#servicepack)
-1. [Download e installazione del pacchetto del componente aggiuntivo AEM Forms più recente](#downloadaemformsaddon)
+1. [Scaricare e installare il pacchetto del componente aggiuntivo AEM Forms più recente](#downloadaemformsaddon)
 1. [Creare temi e modelli personalizzati](#referencepackage)
 
-### Scaricare e installare AEM 6.5 o AEM 6.4 {#aemquickstart}
+### Scaricare e installare AEM 6.4 o AEM 6.5 {#aemquickstart}
 
 
-Il servizio di conversione automatica dei moduli viene eseguito sull’istanza di creazione di AEM. AEM 6.5 o AEM 6.4 per impostare un’istanza di creazione AEM. Se AEM non è già operativo, scaricatelo dai seguenti percorsi:
+Il servizio di conversione automatica dei moduli viene eseguito sull’istanza di creazione di AEM. AEM 6.4 o AEM 6.5 è necessario per impostare un’istanza di creazione AEM. Se AEM non è già operativo, scaricatelo dai seguenti percorsi:
 
-* Se siete già clienti AEM, scaricate AEM 6.5 o AEM 6.4 dal sito Web [delle licenze](http://licensing.adobe.com)Adobe.
+* Se siete già clienti AEM, scaricate AEM 6.4 o AEM 6.5 dal sito Web [delle licenze](http://licensing.adobe.com)Adobe.
 
-* Se sei un partner Adobe, utilizza [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) per richiedere AEM 6.5 o AEM 6.4.
+* Se sei un partner Adobe, utilizza [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) per richiedere AEM 6.4 o AEM 6.5.
 
 Dopo aver scaricato AEM, per istruzioni su come impostare un’istanza di creazione AEM, consultate [Implementazione e manutenzione](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall).
 
 ### Download e installazione dell&#39;ultimo Service Pack di AEM {#servicepack}
 
-Scarica e installa la versione più recente di AEM Service Pack. Per istruzioni dettagliate, consultate le note [sulla versione di](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html) AEM 6.5 Service Pack o [AEM 6.4 Service Pack](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html).
+Scarica e installa la versione più recente di AEM Service Pack. Per istruzioni dettagliate, consultate le note [sulla versione di](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) AEM 6.4 Service Pack o [AEM 6.5 Service Pack](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html).
 
 ### Download e installazione del pacchetto del componente aggiuntivo AEM Forms {#downloadaemformsaddon}
 
@@ -81,7 +81,7 @@ Prima di configurare il servizio e collegare l’istanza locale al servizio in e
 
 ![email di concessione di accesso amministratore](assets/admin-console-adobe-io-access-grantedx75.png)
 
-* **Sviluppatori**: Uno sviluppatore collega un’istanza di creazione locale di AEM Forms al servizio di conversione automatica dei moduli in esecuzione su Adobe Cloud. Quando un amministratore concede a uno sviluppatore i diritti per la connessione al servizio di conversione automatica dei moduli, allo sviluppatore viene inviato un messaggio e-mail con il titolo L&#39;utente dispone dell&#39;accesso dello sviluppatore per gestire le integrazioni API Adobe per la propria azienda. Se siete sviluppatori, controllate la casella di posta elettronica con il titolo sopraindicato e procedete a [collegare l’istanza locale di AEM al servizio di conversione automatica dei moduli in Adobe Cloud.](#connectafcadobeio)
+* **Sviluppatori**: Uno sviluppatore collega un’istanza di creazione locale di AEM Forms al servizio di conversione automatizzata di moduli in esecuzione su Adobe Cloud. Quando un amministratore concede a uno sviluppatore i diritti per la connessione al servizio di conversione automatica dei moduli, allo sviluppatore viene inviato un messaggio e-mail con il titolo L&#39;utente dispone dell&#39;accesso dello sviluppatore per gestire le integrazioni API Adobe per la propria azienda. Se siete sviluppatori, controllate la casella di posta elettronica con il titolo sopraindicato e procedete a [collegare l’istanza locale di AEM al servizio di conversione automatica dei moduli in Adobe Cloud.](#connectafcadobeio)
 
 ![email di concessione accesso sviluppatore](assets/email-developer-accessx94.png)
 
@@ -94,7 +94,7 @@ Gli sviluppatori sono membri dell&#39;organizzazione designata per eseguire il s
 1. Accedi ad [Admin Console](https://adminconsole.adobe.com/). Per utilizzare il servizio di conversione moduli automatizzata per effettuare l&#39;accesso, utilizzare l&#39;ID **** Adobe dell&#39;amministratore fornito. Non utilizzare altri ID o Federated ID per effettuare l&#39;accesso.
 1. Fate clic sull’ **[!UICONTROL Automated Forms Conversion]** opzione.
 1. Fate clic **[!UICONTROL New Profile]** nella **[!UICONTROL Products]** scheda.
-1. Specifica **[!UICONTROL Name]**, **[!UICONTROL Display Name]** e **[!UICONTROL Description]** per il profilo. Clic **[!UICONTROL Done]**. Viene creato un profilo.
+1. Specificate **[!UICONTROL Name]**, **[!UICONTROL Display Name]** e **[!UICONTROL Description]** per il profilo. Clic **[!UICONTROL Done]**. Viene creato un profilo.
 
    ![Specificate i dettagli per il nuovo profilo.](assets/create-new-profile-details.png)
 
@@ -106,7 +106,7 @@ Gli sviluppatori sono membri dell&#39;organizzazione designata per eseguire il s
 
 Ripetete i passaggi indicati sopra per tutti gli utenti.  Per ulteriori dettagli sull&#39;aggiunta di sviluppatori, consultate [Gestire gli sviluppatori](https://helpx.adobe.com/enterprise/using/manage-developers.html).
 
-Dopo che un amministratore ha aggiunto gli sviluppatori al profilo I/O di Adobe, gli sviluppatori ricevono una notifica via e-mail. Dopo aver ricevuto l&#39;e-mail, gli sviluppatori possono procedere alla [connessione di un&#39;istanza locale di AEM Forms con il servizio di conversione automatica dei moduli in Adobe Cloud](#connectafcadobeio).
+Dopo che un amministratore ha aggiunto gli sviluppatori al profilo di I/O di Adobe, gli sviluppatori ricevono una notifica via e-mail. Dopo aver ricevuto l&#39;e-mail, gli sviluppatori possono procedere alla [connessione di un&#39;istanza locale di AEM Forms con il servizio di conversione automatica dei moduli in Adobe Cloud](#connectafcadobeio).
 
 ### (Solo per sviluppatori) Collegate l’istanza locale di AEM Forms al servizio di conversione automatica dei moduli in Adobe Cloud {#connectafcadobeio}
 
@@ -175,7 +175,7 @@ Un certificato pubblico consente di autenticare il profilo sull&#39;I/O di Adobe
 
 Per utilizzare il servizio di conversione moduli automatizzati, creare un&#39;integrazione in Adobe I/O. L&#39;integrazione genera Chiave API, Segreto cliente, Payload (JWT).
 
-1. Effettuate l&#39;accesso a [https://console.adobe.io/](https://console.adobe.io/). Usate il vostro account Adobe ID e sviluppatore di cui l’amministratore ha effettuato il provisioning per accedere alla console Adobe I/O per effettuare l’accesso.
+1. Effettuate l&#39;accesso a [https://console.adobe.io/](https://console.adobe.io/). Usate il vostro account Adobe ID e sviluppatore per il quale l’amministratore ha effettuato il provisioning per accedere alla console Adobe I/O per effettuare l’accesso.
 
 1. Toccare **[!UICONTROL View Integrations]**. Viene visualizzata una schermata con tutte le integrazioni disponibili.
 1. Seleziona la tua organizzazione dal menu a discesa in **[!UICONTROL Integrations]**. Toccate **[!UICONTROL New Integration]**, selezionate **[!UICONTROL Access an API]** e toccate **[!UICONTROL Continue]**.
@@ -185,7 +185,7 @@ Per utilizzare il servizio di conversione moduli automatizzati, creare un&#39;in
 
 1. Specificate nome e descrizione per l&#39;integrazione. Toccate **[!UICONTROL Select a File from your computer]** e caricate il file AEM-Adobe-IMS.crt scaricato nella sezione [Ottieni certificati](#obtainpubliccertificates) pubblici.
 1. Selezionate il profilo creato durante la [concessione dell&#39;accesso agli sviluppatori dell&#39;organizzazione](#adduseranddevs) e toccate **[!UICONTROL Create Integration]**. L&#39;integrazione viene creata.
-1. Toccate **[!UICONTROL Continue to integration details]** per visualizzare le informazioni sull&#39;integrazione. La pagina contiene la chiave API, il Segreto cliente e altre informazioni necessarie per collegare l’istanza locale di AEM al servizio di conversione automatica dei moduli. Le informazioni sulla pagina vengono utilizzate per creare la configurazione IMS sul computer locale.
+1. Toccate **[!UICONTROL Continue to integration details]** per visualizzare le informazioni sull&#39;integrazione. La pagina contiene la chiave API, il Segreto cliente e altre informazioni necessarie per collegare l’istanza locale di AEM al servizio di conversione automatica dei moduli. Le informazioni presenti nella pagina vengono utilizzate per creare la configurazione IMS sul computer locale.
 
    ![Informazioni su chiave API, segreto cliente e payload di un&#39;integrazione](assets/integration-details.png)
 
@@ -213,7 +213,7 @@ Per utilizzare il servizio di conversione moduli automatizzati, creare un&#39;in
 
 Crea una configurazione di servizio cloud per collegare l’istanza di AEM al servizio di conversione. Consente inoltre di specificare un modello, un tema e frammenti di modulo per una conversione. È possibile creare più configurazioni del servizio cloud distinte per ciascun set di moduli. Ad esempio, è possibile disporre di una configurazione separata per i moduli del reparto vendite e di una configurazione separata per i moduli di assistenza clienti. Per creare una configurazione di servizio cloud, effettuate le seguenti operazioni:
 
-1. Nell’istanza di AEM Forms, tocca **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]**> **[!UICONTROL Cloud Services]** > **[!UICONTROL Automate Forms Conversion Configuration]**.
+1. Nell’istanza di AEM Forms, toccate **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]**> **[!UICONTROL Cloud Services]** > **[!UICONTROL Automate Forms Conversion Configuration]**.
 1. Toccate la **[!UICONTROL Global]** cartella e toccate **[!UICONTROL Create]**. Viene visualizzata la pagina in cui si desidera creare la configurazione Conversione automatica dei moduli. La configurazione viene creata nella cartella Globale. Potete anche creare la configurazione in un&#39;altra cartella già esistente o creare una nuova cartella per le configurazioni.
 
 1. Nella **[!UICONTROL Create Automated Forms Conversion Configuration]** pagina, specifica il valore per i campi seguenti e tocca **[!UICONTROL Next]**.
@@ -265,4 +265,4 @@ Crea una configurazione di servizio cloud per collegare l’istanza di AEM al se
       }
    ```
 
-1. Toccare **[!UICONTROL Create]**.  Viene creata la configurazione cloud. L&#39;istanza AEM Forms è pronta per iniziare a convertire moduli legacy in moduli adattivi.
+1. Toccare **[!UICONTROL Create]**. Viene creata la configurazione cloud. L&#39;istanza AEM Forms è pronta per iniziare a convertire moduli legacy in moduli adattivi.
