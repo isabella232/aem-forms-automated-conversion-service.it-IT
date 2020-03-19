@@ -7,7 +7,7 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: 1e22587a832ca8d09f33141a9ba4e4b1748e0312
+source-git-commit: 022b86b77c4a524f320cbcbcd6bad4403ddf57d8
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: 1e22587a832ca8d09f33141a9ba4e4b1748e0312
 # Frequently asked questions{#frequently-asked-questions}
 
 1. **Quale versione di AEM Forms supporta il servizio di conversione automatica dei moduli?**
-   <p>Il servizio di conversione automatizzata dei moduli supporta i moduli AEM 6.5. Funziona sia con AEM Forms su OSGi che con AEM Forms su JEE. Per utilizzare il servizio è necessario disporre del pacchetto aggiuntivo AEM Forms più recente sull’istanza di creazione di AEM. Per istruzioni dettagliate, vedere <a href="configure-service.md">Configurare il servizio di conversione</a> automatica dei moduli.</p> 
+   <p>Il servizio di conversione automatizzata dei moduli supporta i moduli AEM 6.4 e AEM 6.5. Funziona sia con AEM Forms su OSGi che con AEM Forms su JEE. Per utilizzare il servizio è necessario disporre del pacchetto aggiuntivo AEM Forms più recente sull’istanza di creazione di AEM. Per istruzioni dettagliate, vedere <a href="configure-service.md">Configurare il servizio di conversione</a> automatica dei moduli.</p> 
     <br>
 
 1. **È possibile installare il servizio in sede?**
@@ -47,16 +47,16 @@ source-git-commit: 1e22587a832ca8d09f33141a9ba4e4b1748e0312
 
 
 1. **È possibile convertire moduli cartacei scansionati e moduli colorati in moduli adattivi?**
-   <p>È possibile convertire moduli PDF in moduli adattivi. Il servizio non supporta moduli digitalizzati o compilati. Per altre limitazioni, consultate l'articolo sui problemi <a href="known-issues.md"></a> noti.</p> <br>
+   <p>Il servizio consente di convertire i moduli PDF in moduli adattivi. Il servizio non supporta moduli digitalizzati o compilati. Per altre limitazioni, consultate l'articolo sui problemi <a href="known-issues.md"></a> noti.</p> <br>
 
 1. **È possibile convertire un modulo acquisito da scanner o solo l&#39;immagine di un modulo in un modulo adattivo?**
    <p>Il servizio non supporta la conversione di moduli digitalizzati o di un'immagine di un modulo in un modulo out-of-the-box adattivo. Tuttavia, è possibile utilizzare Adobe Acrobat per convertire l'immagine di un modulo in un modulo PDF. Quindi, utilizzare il servizio per convertire il modulo PDF in un modulo adattivo. Utilizzare sempre un'immagine di alta qualità del modulo per la conversione in Acrobat. Migliora la qualità della conversione.</p> <br>
 
 1. **Alcuni moduli basati su XDP utilizzano i frammenti di modulo, dove è possibile caricare tali frammenti?**
-   <p class="MsoNormal">Caricare i frammenti di modulo nella cartella di conversione e mantenere la struttura di cartelle originale. Consente di mantenere i percorsi relativi utilizzati nei moduli basati su XDP e nei frammenti di modulo.</p> <br>
+   <p class="MsoNormal">Caricate i frammenti di modulo nella cartella di conversione e mantenete la struttura di cartelle originale. Consente di mantenere i percorsi relativi utilizzati nei moduli basati su XDP e nei frammenti di modulo.</p> <br>
 
 1. **Il servizio supporta i moduli XDP associati allo schema? Se si dispone di un XDP associato a uno schema, è necessario incorporare lo schema in XDP?**
-   <p>Sì, il servizio supporta i moduli XDP associati allo schema e richiede che lo schema sia incorporato nel modulo XDP di origine. Quando si converte un modulo XDP associato a schema, il servizio genera uno schema JSON. Lo schema JSON è strutturalmente simile allo schema XSD dei moduli XDP di origine.</p> <br>
+   <p>Sì, il servizio supporta i moduli XDP associati allo schema e richiede che lo schema sia incorporato nel modulo XDP di origine. Quando si converte un modulo XDP associato a uno schema, il servizio genera uno schema JSON. Lo schema JSON è strutturalmente simile allo schema XSD dei moduli XDP di origine.</p> <br>
 
 1. **Il servizio non è riuscito a convertire i moduli. Qual è il motivo e come risolvere il problema?**
 I motivi più comuni per cui la conversione non riesce sono:</p>
@@ -86,18 +86,18 @@ I motivi più comuni per cui la conversione non riesce sono:</p>
 
    Il servizio consiste nella formazione coerente su moduli e pattern. Impara nuovi schemi su base giornaliera. Deve ancora avviare l&#39;applicazione automatica delle correzioni ripetute nei moduli. Controlla i moduli prerelease per verificare la disponibilità di tale funzionalità. <br/><br/>
 
-   È possibile utilizzare un meta-modello per mappare gli oggetti modulo al componente modulo adattivo selezionato e preconfigurare convalide, regole, pattern di dati, testo della guida e proprietà di accessibilità per i componenti. Tutte le proprietà specificate vengono applicate durante la conversione. È possibile utilizzare il meta-modello per applicare proprietà comuni ai campi. Può essere utile per ridurre alcuni problemi ripetuti nei diversi moduli.<br/><br/>
+   È possibile utilizzare un meta-modello per mappare gli oggetti modulo al componente modulo adattivo di propria scelta e preconfigurare convalide, regole, pattern di dati, testo della guida e proprietà di accessibilità per i componenti. Tutte le proprietà specificate vengono applicate durante la conversione. È possibile utilizzare il meta-modello per applicare proprietà comuni ai campi. Può essere utile per ridurre alcuni problemi ripetuti nei diversi moduli.<br/><br/>
 
 1. **Quali sono le opzioni per i moduli con dati sensibili come informazioni personali (PII)?**
 Il servizio supporta solo moduli vuoti o non compilati. Non caricare moduli compilati o moduli con informazioni personali (PII). Inoltre, rimuovere i dati precompilati e le informazioni PII con etichetta bianca, riservate e proprietarie nei moduli di origine. <br/>
 
 1. **Dove devono essere posizionati l&#39;intestazione e i piè di pagina?**
-   <p>Posizionare intestazione e piè di pagina in un modello di modulo adattivo. Se il modulo PDF di origine ha intestazione e piè di pagina, durante la conversione il servizio rileva e sostituisce l'intestazione e il piè di pagina rilevati con l'intestazione e il piè di pagina disponibili nel modello di modulo adattivo. Se nel modulo adattivo sono presenti intestazioni o piè di pagina aggiuntivi, è possibile utilizzare l’editor <a href="review-correct-ui-edited.md">Revisione e Correzione</a> per correggere o rimuovere tale intestazione o piè di pagina.</p> <br />
+   <p>Posizionare l'intestazione e il piè di pagina in un modello di modulo adattivo. Se il modulo PDF di origine ha intestazione e piè di pagina, durante la conversione il servizio rileva e sostituisce l'intestazione e il piè di pagina rilevati con l'intestazione e il piè di pagina disponibili nel modello di modulo adattivo. Se nel modulo adattivo sono presenti intestazioni o piè di pagina aggiuntivi, è possibile utilizzare l’editor <a href="review-correct-ui-edited.md">Revisione e Correzione</a> per correggere o rimuovere tale intestazione o piè di pagina.</p> <br />
 
 1. **Quanto tempo risparmierà il servizio rispetto al processo manuale di pianificazione, creazione di risorse (temi, modelli), creazione e pubblicazione di un modulo adattivo?**
    <p>Il tempo dipende dalle dimensioni e dalla complessità dei moduli di input e dal numero di richieste. Il servizio intende ridurre notevolmente il tempo necessario alla conversione dei moduli PDF in moduli adattivi con un ritmo molto più rapido rispetto al processo manuale di conversione dei moduli. </p> <br />
 
-1. **Cosa fare se si verifica un errore relativo alle librerie RSA?** Il messaggio di errore è simile a quello riportato di seguito: <br/>
+1. **Cosa fare se si verifica un errore relativo alle librerie RSA? Il messaggio di errore è simile a quello riportato di seguito:** <br/>
    `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>L&#39;errore di cui sopra si verifica quando la delega di avvio non è configurata per le librerie RSA/BouncyCastle. Per risolvere il problema, eseguite i seguenti passaggi:
    <p> </p>
 
