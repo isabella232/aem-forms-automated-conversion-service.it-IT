@@ -5,14 +5,14 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 translation-type: tm+mt
-source-git-commit: b879a0ddecd5370c754dfe9e1bf33121dd5ecc97
+source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
 
 ---
 
 
 # Integrazione di un modulo adattivo con un database tramite il flusso di lavoro AEM {#submit-forms-to-database-using-forms-portal}
 
-Il servizio di conversione automatica dei moduli consente di convertire un modulo PDF non interattivo, un modulo Acrobat o un modulo PDF basato su XFA in un modulo adattivo. Quando si avvia il processo di conversione, è possibile generare un modulo adattivo con o senza binding dei dati.
+Il servizio di conversione automatizzata dei moduli consente di convertire un modulo PDF non interattivo, un modulo Acrobat o un modulo PDF basato su XFA in un modulo adattivo. Quando si avvia il processo di conversione, è possibile generare un modulo adattivo con o senza binding dei dati.
 
 Se si sceglie di generare un modulo adattivo senza binding dei dati, è possibile integrare il modulo adattivo convertito con un modello dati modulo, uno schema XML o uno schema JSON dopo la conversione. Per il modello dati del modulo, è necessario associare manualmente i campi modulo adattivi al modello dati del modulo. Tuttavia, se si genera un modulo adattivo con binding dei dati, il servizio di conversione associa automaticamente i moduli adattivi a uno schema JSON e crea un binding dei dati tra i campi disponibili nel modulo adattivo e nello schema JSON. È quindi possibile integrare il modulo adattivo con un database di propria scelta, compilare i dati del modulo e inviarlo al database. Analogamente, dopo l&#39;integrazione con il database, è possibile configurare i campi del modulo adattivo convertito per recuperare i valori dal database e precompilare i campi del modulo adattivo.
 
@@ -24,10 +24,11 @@ Questo articolo descrive le istruzioni dettagliate per eseguire correttamente tu
 
 ## Prerequisiti {#pre-requisites}
 
-* Istanza di authoring di AEM 6.5 con l’ultimo Service Pack di AEM 6.5
+* Configurazione di un’istanza di creazione AEM 6.4 o 6.5
+* Installa il service pack [](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) più recente per l’istanza di AEM
 * Ultima versione del pacchetto del componente aggiuntivo AEM Forms
-* [Servizio di conversione moduli automatizzati](configure-service.md)
-* Un database con cui effettuare l&#39;integrazione. Il database utilizzato nell&#39;implementazione di esempio è MySQL 5.6.24. Tuttavia, è possibile integrare il modulo adattivo convertito con qualsiasi database desiderato.
+* Configurare il servizio di conversione [automatizzata dei moduli](configure-service.md)
+* Configurare un database. Il database utilizzato nell&#39;implementazione di esempio è MySQL 5.6.24. Tuttavia, è possibile integrare il modulo adattivo convertito con qualsiasi database di propria scelta.
 
 ## Esempio di modulo adattivo {#sample-adaptive-form}
 
@@ -56,7 +57,7 @@ Per installare il file mysql-Connector-java-5.1.39-bin.jar, eseguite i seguenti 
 
 AEM Forms Data Integration consente di configurare e connettersi a origini dati diverse. Dopo aver generato un modulo adattivo utilizzando il processo di conversione, è possibile definire il modello di modulo in base a un modello dati del modulo, a uno schema XSD o JSON. È possibile utilizzare un database, Microsoft Dynamics o qualsiasi altro servizio di terze parti per creare un modello dati del modulo.
 
-Questa esercitazione utilizza il database MySQL come origine per creare un modello dati del modulo. Creare uno schema nel database e aggiungere la tabella **dei contatti** allo schema in base ai campi disponibili nel modulo adattivo.
+Questa esercitazione utilizza il database MySQL come origine per creare un modello dati del modulo. Create uno schema nel database e aggiungete la tabella dei **contatti** allo schema in base ai campi disponibili nel modulo adattivo.
 
 ![Dati di esempio mysql](assets/db_entries_sample_form.png)
 
@@ -150,7 +151,7 @@ Per creare una connessione tra l’istanza AEM e il database MYSQL, effettuate i
 
 ## Create form data model {#create-form-data-model}
 
-Una volta configurato MYSQL come origine dati, eseguire i seguenti passaggi per creare un modello dati modulo:
+Una volta configurato MYSQL come origine dati, eseguire i seguenti passaggi per creare un modello dati del modulo:
 
 1. Nell’istanza di creazione di AEM, andate a **[!UICONTROL Forms]** > **[!UICONTROL Data Integrations]**.
 
@@ -182,7 +183,7 @@ Utilizzare il servizio di conversione [automatizzata dei moduli per convertire](
 
 ![Modulo adattivo con binding JSON](assets/generate_af_with_data_bindings.png)
 
-Selezionate il modulo **** Contattaci convertito, disponibile nella **[!UICONTROL output]** cartella **[!UICONTROL Forms & Documents]** e toccate **[!UICONTROL Edit]**. Toccate **[!UICONTROL Preview]**, immettete i valori nei campi modulo adattivo e toccate **[!UICONTROL Submit]**.
+Selezionate il modulo **** Contattaci convertito, disponibile nella **[!UICONTROL output]** cartella **[!UICONTROL Forms & Documents]** e toccate **[!UICONTROL Edit]**. Toccate **[!UICONTROL Preview]**, immettete i valori nei campi modulo adattivi e toccate **[!UICONTROL Submit]**.
 
 Accedete a **crx-repository** e andate a */content/forms/fp/admin/submit/data* per visualizzare i valori inviati in formato JSON. Di seguito sono riportati i dati di esempio in formato JSON quando si invia il modulo adattivo **Contact Us** convertito:
 
@@ -249,7 +250,7 @@ Per inviare il modulo adattivo al modello di flusso di lavoro creato nella sezio
 
 1. Toccate ![Salva](assets/save_icon.png) per salvare le proprietà.
 
-1. Toccate **[!UICONTROL Preview]**, immettete i valori nei campi modulo adattivo e toccate **[!UICONTROL Submit]**. I valori inviati ora vengono visualizzati nella tabella del database MYSQL invece che nel **repository** crx.
+1. Toccate **[!UICONTROL Preview]**, immettete i valori nei campi modulo adattivi e toccate **[!UICONTROL Submit]**. I valori inviati ora vengono visualizzati nella tabella del database MYSQL invece che nel **repository** crx.
 
 ## Configurare il modulo adattivo per precompilare i valori dal database
 
