@@ -5,14 +5,14 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 translation-type: tm+mt
-source-git-commit: 040b0ddb489b5bdfd640a93b22cd7bc512a39aea
+source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
 
 ---
 
 
 # Integrazione di moduli adattivi con il database tramite Forms Portal {#submit-forms-to-database-using-forms-portal}
 
-Il servizio di conversione automatica dei moduli consente di convertire un modulo PDF non interattivo, un modulo Acrobat o un modulo PDF basato su XFA in un modulo adattivo. Quando si avvia il processo di conversione, è possibile generare un modulo adattivo con o senza binding dei dati.
+Il servizio di conversione automatizzata dei moduli consente di convertire un modulo PDF non interattivo, un modulo Acrobat o un modulo PDF basato su XFA in un modulo adattivo. Quando si avvia il processo di conversione, è possibile generare un modulo adattivo con o senza binding dei dati.
 
 Se si sceglie di generare un modulo adattivo senza binding dei dati, è possibile integrare il modulo adattivo convertito con un modello dati modulo, uno schema XML o uno schema JSON dopo la conversione. Tuttavia, se si genera un modulo adattivo con binding dei dati, il servizio di conversione associa automaticamente i moduli adattivi a uno schema JSON e crea un binding dei dati tra i campi disponibili nel modulo adattivo e nello schema JSON. È quindi possibile integrare il modulo adattivo con un database di propria scelta, compilare i dati del modulo e inviarlo al database utilizzando Forms Portal.
 
@@ -26,10 +26,11 @@ L&#39;esempio, illustrato in questo articolo, è un&#39;implementazione di rifer
 
 ## Prerequisiti {#pre-requisites}
 
-* Istanza di authoring di AEM 6.5 con l’ultimo Service Pack di AEM 6.5
+* Configurazione di un’istanza di creazione AEM 6.4 o 6.5
+* Installa il service pack [](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) più recente per l’istanza di AEM
 * Ultima versione del pacchetto del componente aggiuntivo AEM Forms
-* [Servizio di conversione moduli automatizzati](configure-service.md)
-* Un database con cui effettuare l&#39;integrazione. Il database utilizzato nell&#39;implementazione di esempio è MySQL 5.6.24. Tuttavia, è possibile integrare Forms Portal con qualsiasi database di propria scelta.
+* Configurare il servizio di conversione [automatizzata dei moduli](configure-service.md)
+* Configurare un database. Il database utilizzato nell&#39;implementazione di esempio è MySQL 5.6.24. Tuttavia, è possibile integrare il modulo adattivo convertito con qualsiasi database di propria scelta.
 
 ## Configurare la connessione tra l’istanza AEM e il database {#set-up-connection-aem-instance-database}
 
@@ -118,7 +119,7 @@ Per creare schema e tabelle nel database, effettuare le seguenti operazioni:
        ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
-1. Create una tabella **aggiuntiva** metadati nello schema del database utilizzando la seguente istruzione SQL:
+1. Create una tabella **aggiuntiva** con metadati nello schema del database utilizzando la seguente istruzione SQL:
 
    ```sql
    CREATE TABLE `additionalmetadatatable` (
@@ -163,7 +164,7 @@ Per creare una connessione tra l’istanza AEM e il database MYSQL, effettuate i
     </tr>
     <tr> 
     <td><p>Servizio metadati bozza del portale Forms</p></td> 
-    <td><p>Identificatore per il servizio metadati bozza</p></td>
+    <td><p>Identificatore per il servizio di metadati bozza</p></td>
     <td><p>formsPortal.samplemetadataservice</p></td> 
     </tr>
     <tr> 
