@@ -2,7 +2,7 @@
 title: Configurare il servizio di conversione dei moduli automatizzati
 description: Preparazione dell'istanza di AEM per l'utilizzo del servizio di conversione di moduli automatizzati
 translation-type: tm+mt
-source-git-commit: 5f27fcbf756350a03b7143af489f737e01a7f0e3
+source-git-commit: 01dfd20951314017d47713bfb1a2a5f2d563f434
 
 ---
 
@@ -79,7 +79,7 @@ Per utilizzare le funzioni e i miglioramenti più recenti forniti nella release 
 | Linux | https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/fd/AEM-Forms-6.5.4.0-WIN |
 
 >[!NOTE]
-> se si dispone già di un ambiente di servizio di conversione dei moduli automatizzati, per utilizzare le funzioni più recenti del servizio di conversione, installare il service pack più recente, il pacchetto aggiuntivo AEM Forms più recente e il pacchetto di connessione più recente nell&#39;ordine indicato.
+> Se si dispone già di un ambiente del servizio di conversione dei moduli automatizzati, per utilizzare le funzioni più recenti del servizio di conversione, installare il service pack più recente, il pacchetto aggiuntivo AEM Forms più recente e l&#39;ultimo pacchetto di connettori nell&#39;ordine indicato.
 
 
 ### Creare temi e modelli personalizzati {#referencepackage}
@@ -94,7 +94,7 @@ Prima di configurare il servizio e collegare l’istanza locale al servizio in e
 
 ![email di concessione di accesso amministratore](assets/admin-console-adobe-io-access-grantedx75.png)
 
-* **Sviluppatori**: Uno sviluppatore collega un’istanza di creazione locale di AEM Forms al servizio di conversione automatica dei moduli in esecuzione su Adobe Cloud. Quando un amministratore concede a uno sviluppatore i diritti per la connessione al servizio di conversione automatica dei moduli, allo sviluppatore viene inviato un messaggio e-mail con il titolo L&#39;utente dispone dell&#39;accesso dello sviluppatore per gestire le integrazioni API Adobe per la propria azienda. Se siete sviluppatori, controllate la casella di posta elettronica con il titolo sopraindicato e procedete a [collegare l’istanza locale di AEM al servizio di conversione automatica dei moduli in Adobe Cloud.](#connectafcadobeio)
+* **Sviluppatori**: Uno sviluppatore collega un’istanza di creazione locale di AEM Forms al servizio di conversione automatizzata di moduli in esecuzione su Adobe Cloud. Quando un amministratore concede a uno sviluppatore i diritti per la connessione al servizio di conversione automatica dei moduli, allo sviluppatore viene inviato un messaggio e-mail con il titolo L&#39;utente dispone dell&#39;accesso dello sviluppatore per gestire le integrazioni API Adobe per la propria azienda. Se siete sviluppatori, controllate la casella di posta elettronica con il titolo sopraindicato e procedete a [collegare l’istanza locale di AEM al servizio di conversione automatica dei moduli in Adobe Cloud.](#connectafcadobeio)
 
 ![email di concessione accesso sviluppatore](assets/email-developer-accessx94.png)
 
@@ -188,7 +188,7 @@ Un certificato pubblico consente di autenticare il profilo sull&#39;I/O di Adobe
 
 Per utilizzare il servizio di conversione moduli automatizzati, creare un&#39;integrazione in Adobe I/O. L&#39;integrazione genera Chiave API, Segreto cliente, Payload (JWT).
 
-1. Effettuate l&#39;accesso a [https://console.adobe.io/](https://console.adobe.io/). Usate il vostro account Adobe ID e sviluppatore di cui l’amministratore ha effettuato il provisioning per accedere alla console Adobe I/O per effettuare l’accesso.
+1. Effettuate l&#39;accesso a [https://console.adobe.io/](https://console.adobe.io/). Usate il vostro account Adobe ID e sviluppatore per il quale l’amministratore ha effettuato il provisioning per accedere alla console Adobe I/O per effettuare l’accesso.
 
 1. Toccare **[!UICONTROL View Integrations]**. Viene visualizzata una schermata con tutte le integrazioni disponibili.
 1. Seleziona la tua organizzazione dal menu a discesa in **[!UICONTROL Integrations]**. Toccate **[!UICONTROL New Integration]**, selezionate **[!UICONTROL Access an API]** e toccate **[!UICONTROL Continue]**.
