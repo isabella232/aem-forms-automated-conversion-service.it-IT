@@ -9,7 +9,7 @@ topic-tags: forms
 discoiquuid: cad34fff-7f9f-4a27-8b5c-d0a523903eec
 privatebeta: true
 translation-type: tm+mt
-source-git-commit: f598871fd41c402f98d94d7b2174ab8b2e487075
+source-git-commit: caccb547a5741eb0e70ddf75630a661f8fe75cb3
 
 ---
 
@@ -66,7 +66,7 @@ Questo articolo descrive i flussi di lavoro consigliati per precompilare i valor
   <tr>
   <td></td> 
    <td> 
-    <p><strong>Opzione 2</strong>: È <a href="#generate-adaptive-forms-with-json-binding">possibile generare un modulo adattivo con il binding</a> dei dati JSON utilizzando il servizio di conversione moduli automatizzata. Il servizio di precompilazione e la funzione di invio del modulo risultano perfettamente visibili. Non sono necessari passaggi di configurazione.</p> </td> 
+    <p><strong>Opzione 2</strong>: È <a href="#generate-adaptive-forms-with-json-binding">possibile generare un modulo adattivo con il binding</a> dei dati JSON utilizzando il servizio di conversione dei moduli automatizzata. Il servizio di precompilazione e la funzione di invio del modulo risultano perfettamente visibili. Non sono necessari passaggi di configurazione.</p> </td> 
   </tr>
    <tr>
   <td></td> 
@@ -254,7 +254,7 @@ In base al caso di utilizzo, creare il modello dati del modulo **di applicazione
 >
 >Prima di eseguire l&#39;esempio, assicurarsi di aggiungere servizi **get** e **insert** al modello dati del modulo, configurare e verificare i servizi.
 
-Esegui i seguenti passaggi:
+Effettuate i seguenti passaggi:
 
 1. Selezionare il modulo **di richiesta di prestito** di esempio convertito disponibile nella **[!UICONTROL output]** cartella e toccare **[!UICONTROL Properties]**.
 1. Toccate la **[!UICONTROL Form Model]** scheda, selezionate **[!UICONTROL Form Data Model]** dall&#39;elenco a **[!UICONTROL Select From]** discesa, quindi toccate **[!UICONTROL Select Form Data Model]** per selezionare il modello di dati del modulo **di applicazione** di prestito. Toccate **[!UICONTROL Save & Close]** per salvare il modulo.
@@ -268,17 +268,17 @@ Esegui i seguenti passaggi:
    1. Nella **[!UICONTROL Submission]** sezione, selezionare **[!UICONTROL Submit using Form Data Model]** dall&#39;elenco a **[!UICONTROL Submit Action]** discesa.
 
    1. Selezionare il modello dati utilizzando il **[!UICONTROL Data Model to submit]** campo.
-   1. Toccate ![l’icona](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) Fine per salvare le proprietà.
+   1. Toccate ![l’icona](assets/save_icon.svg) Fine per salvare le proprietà.
 
-1. Toccate la casella di testo Nome richiedente e selezionate l&#39;icona ![di](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) configurazione (Configura).
+1. Toccate la casella di testo Nome richiedente e selezionate l&#39;icona ![di](assets/configure_icon.svg) configurazione (Configura).
 
-   1. Nel campo Riferimento binding, selezionare **Ricorrente** > **Nome** e toccare l&#39;icona ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) Fine per salvare le proprietà. Allo stesso modo, create un binding dei dati per **Indirizzo**, Numero **** telefono, **E-mail**, **Occupazione**, Salario **annuale (in dollari)****e Numero. dei campi dei membri** della famiglia dipendenti con le entità del modello dati del modulo.
+   1. Nel campo Riferimento binding, selezionare **Ricorrente** > **Nome**, quindi toccare l&#39;icona ![](assets/save_icon.svg) Fine per salvare le proprietà. Allo stesso modo, create un binding dei dati per **Indirizzo**, Numero **** telefono, **E-mail**, **Occupazione**, Salario **annuale (in dollari)****e Numero. dei campi dei membri** della famiglia dipendenti con le entità del modello dati del modulo.
    ![Riferimenti a binding](assets/bind_references.png)
 
 1. Toccate **[!UICONTROL Preview]** per visualizzare i valori dei campi modulo adattivo precompilati.
 1. Se necessario, modificare i valori dei campi e inviare il modulo adattivo. I valori dei campi vengono inviati al database MySQL. È possibile aggiornare la tabella **richiedente** nel database per visualizzare i valori aggiornati nella tabella.
 
-**** Caso di utilizzo: È possibile generare un modulo adattivo senza alcun binding dei dati utilizzando il servizio di conversione moduli automatizzati e configurare il database MYSQL come origine dati. I campi modulo adattivo vengono associati utilizzando l&#39;editor di regole per precompilare i valori dei campi. Se necessario, modificare i valori dei campi e inviare i dati al repository crx.
+**Caso di utilizzo:** È possibile generare un modulo adattivo senza alcun binding dei dati utilizzando il servizio di conversione moduli automatizzati e configurare il database MYSQL come origine dati. I campi modulo adattivo vengono associati utilizzando l&#39;editor di regole per precompilare i valori dei campi. Se necessario, modificare i valori dei campi e inviare i dati al repository crx.
 
 Per richiamare il servizio del modello dati del modulo per eseguire il binding di campi e valori di precompilazione in un modulo adattivo, eseguire i passaggi seguenti per utilizzare l&#39;editor [](https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html) regole:
 
@@ -319,21 +319,21 @@ Per richiamare il servizio del modello dati del modulo per eseguire il binding d
 
 ### Utilizzare lo schema JSON come origine dati {#jsondatasource}
 
-**** Caso di utilizzo: È possibile generare un modulo adattivo senza alcun binding dei dati utilizzando il servizio di conversione moduli automatizzati e configurare lo schema JSON come origine dati. Per precompilare i valori dei campi, è possibile eseguire manualmente il binding dei campi modulo adattivo allo schema JSON e utilizzare l&#39;opzione **Anteprima con i dati** . Se necessario, modificare i valori dei campi e inviare i dati al repository crx.
+**Caso di utilizzo:** È possibile generare un modulo adattivo senza alcun binding dei dati utilizzando il servizio di conversione moduli automatizzati e configurare lo schema JSON come origine dati. Per precompilare i valori dei campi, è possibile eseguire manualmente il binding dei campi modulo adattivo allo schema JSON e utilizzare l&#39;opzione **Anteprima con i dati** . Se necessario, modificare i valori dei campi e inviare i dati al repository crx.
 
 Prima di eseguire il caso d’uso, accertatevi di disporre di:
 
 * [uno schema JSON valido conforme alla struttura dello schema JSON](#prepare-data-for-form-model)
 * [un modulo adattivo senza binding dei dati](#generate-adaptive-forms-with-no-data-binding)
 
-Esegui i seguenti passaggi:
+Effettuate i seguenti passaggi:
 
 1. Selezionare il modulo **di domanda di prestito** di esempio convertito disponibile nella cartella di **output** e toccare **[!UICONTROL Properties]**.
 1. Toccate la **[!UICONTROL Form Model]** scheda, selezionate **[!UICONTROL Schema]** dall&#39;elenco a **[!UICONTROL Select From]** discesa, quindi toccate **[!UICONTROL Select Schema]** per caricare lo schema JSON **** demo.schema salvato nel file system locale. Toccate **[!UICONTROL Save & Close]** per salvare il modulo.
 1. Selezionare il modulo **di domanda di prestito di** esempio e toccare **[!UICONTROL Edit]**.
-1. Toccate la casella di testo Nome richiedente e selezionate l&#39;icona ![di](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) configurazione (Configura).
+1. Toccate la casella di testo Nome richiedente e selezionate l&#39;icona ![di](assets/configure_icon.svg) configurazione (Configura).
 
-   Nel campo Riferimento binding, selezionare **Ricorrente** > **Nome** e toccare l&#39;icona ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) Fine per salvare le proprietà. Allo stesso modo, create un binding dei dati per **Indirizzo**, Numero **** telefono, **E-mail**, **Occupazione**, Salario **annuale (in dollari)****e Numero. dei campi dei membri** della famiglia dipendenti con le entità dello schema JSON.
+   Nel campo Riferimento binding, selezionare **Ricorrente** > **Nome**, quindi toccare l&#39;icona ![](assets/save_icon.svg) Fine per salvare le proprietà. Allo stesso modo, create un binding dei dati per **Indirizzo**, Numero **** telefono, **E-mail**, **Occupazione**, Salario **annuale (in dollari)****e Numero. dei campi dei membri** della famiglia dipendenti con le entità dello schema JSON.
 
 1. Selezionare di nuovo il modulo **di domanda di prestito** di esempio convertito disponibile nella **[!UICONTROL output]** cartella e selezionare **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
 
@@ -347,20 +347,20 @@ Esegui i seguenti passaggi:
 
 ### Utilizzare lo schema XSD come origine dati {#xsddatasource}
 
-**** Caso di utilizzo: È possibile generare un modulo adattivo senza alcun binding dei dati utilizzando il servizio di conversione moduli automatizzati e configurare lo schema XSD come origine dati. Eseguire un binding manuale dei campi modulo adattivo allo schema XSD e utilizzare l&#39; **anteprima con i dati** per precompilare i valori dei campi. Se necessario, modificare i valori dei campi e inviare i dati al repository crx.
+**Caso di utilizzo:** È possibile generare un modulo adattivo senza alcun binding dei dati utilizzando il servizio di conversione moduli automatizzati e configurare lo schema XSD come origine dati. Eseguire un binding manuale dei campi modulo adattivo allo schema XSD e utilizzare l&#39; **anteprima con i dati** per precompilare i valori dei campi. Se necessario, modificare i valori dei campi e inviare i dati al repository crx.
 
 Prima di eseguire il caso d’uso, accertatevi di disporre di:
 
 * [uno schema XSD valido conforme alla struttura dello schema XML](#prepare-data-for-form-model)
 * [un modulo adattivo senza binding dei dati](#generate-adaptive-forms-with-no-data-binding)
 
-Esegui i seguenti passaggi:
+Effettuate i seguenti passaggi:
 
 1. Selezionare il modulo **di richiesta di prestito** di esempio convertito disponibile nella **[!UICONTROL output]** cartella e toccare **[!UICONTROL Properties]**.
 1. Toccate la **[!UICONTROL Form Model]** scheda, selezionate **[!UICONTROL Schema]** dall&#39;elenco a **[!UICONTROL Select From]** discesa, quindi toccate **[!UICONTROL Select Schema]** per caricare lo schema XSD dell&#39;applicazione di **caricamento** salvata nel file system locale. Selezionare l&#39;elemento principale per lo schema XSD e toccare **[!UICONTROL Save & Close]** per salvare il modulo.
 1. Selezionare il modulo **di domanda di prestito di** esempio e toccare **[!UICONTROL Edit]**.
-1. Toccate la casella di testo Nome richiedente e selezionate l&#39;icona ![di](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) configurazione (Configura).
-Nel campo Riferimento binding, selezionare **Ricorrente** > **Nome**, quindi toccare ![Icona](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) Fine per salvare le proprietà. Allo stesso modo, create un binding dei dati per **Indirizzo**, Numero **** telefono, **E-mail**, **Occupazione**, Salario **annuale (in dollari)****e Numero. dei campi dei membri** della famiglia dipendenti con le entità dello schema XSD.
+1. Toccate la casella di testo Nome richiedente e selezionate l&#39;icona ![di](assets/configure_icon.svg) configurazione (Configura).
+Nel campo Riferimento binding, selezionare **Ricorrente** > **Nome**, quindi toccare ![Icona](assets/save_icon.svg) Fine per salvare le proprietà. Allo stesso modo, create un binding dei dati per **Indirizzo**, Numero **** telefono, **E-mail**, **Occupazione**, Salario **annuale (in dollari)****e Numero. dei campi dei membri** della famiglia dipendenti con le entità dello schema XSD.
 
 1. Selezionare di nuovo il modulo **di domanda di prestito** di esempio convertito disponibile nella cartella di **output** e selezionare **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
 
@@ -381,11 +381,11 @@ Utilizzare il servizio di conversione [automatizzata dei moduli per convertire](
 
 ### Utilizzare lo schema JSON come origine dati {#jsonwithdatabinding}
 
-**** Caso di utilizzo: È possibile generare un modulo adattivo con il binding dei dati JSON utilizzando il servizio di conversione moduli automatizzati. Il servizio di precompilazione e la funzione di invio del modulo risultano perfettamente visibili. Non sono necessari passaggi di configurazione.
+**Caso di utilizzo:** È possibile generare un modulo adattivo con il binding dei dati JSON utilizzando il servizio di conversione moduli automatizzati. Il servizio di precompilazione e la funzione di invio del modulo risultano perfettamente visibili. Non sono necessari passaggi di configurazione.
 
 Prima di eseguire il caso di utilizzo, assicurarsi di disporre di [un modulo adattivo con binding](#generate-adaptive-forms-with-json-binding)dei dati.
 
-Esegui i seguenti passaggi:
+Effettuate i seguenti passaggi:
 
 1. Selezionare di nuovo il modulo **di domanda di prestito** di esempio convertito disponibile nella **[!UICONTROL output]** cartella e selezionare **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
 
