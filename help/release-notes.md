@@ -2,38 +2,42 @@
 title: Novità? Note sulla versione - Servizio di conversione moduli automatizzati
 description: 'Informazioni sulle funzioni più recenti e sui bug corretti per il servizio di conversione moduli automatizzati '
 translation-type: tm+mt
-source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
+source-git-commit: e88b9606878cb408c0369b5f20a644db93578f64
 
 ---
 
 
-# Novità di Automated Forms Conversion Service
+# Servizio di conversione moduli automatizzati: Note sulla versione
 
 Automated Forms Conversion Service riceve continuamente dei miglioramenti. Per restare aggiornati sugli ultimi sviluppi, visita questa pagina regolarmente. Questa pagina fornisce informazioni su:
 
 * Versioni più recenti
 * Nuove funzioni
-* Problemi noti
 * Correzioni di bug
 * Funzionalità obsoleta
+* Istruzioni speciali
 * Piani futuri per le modifiche
 
 Questa pagina viene aggiornata mensilmente, quindi riutilizzarla regolarmente.
 
-## Febbraio 2020
+## 20 marzo 2020 (AFC-2020.03.1)
 
-### 20 febbraio 2020 (AFC-2020.02.2)
+### Novità
 
-* Comunicazione tra servizio sicuro e servizio
+**Rilevamento automatico delle sezioni logiche in un modulo**
 
+Per impostazione predefinita, il servizio crea un pannello di primo livello separato per ciascuna pagina di un modulo PDF di input. Ora è possibile selezionare l&#39; **[!UICONTROL Auto-detect logical sections]** opzione per rimuovere la nozione di creazione di un pannello di livello principale separato per ciascuna pagina PDF e rilevare automaticamente le sezioni logiche. I club di servizi correlati campi di un modulo a una sezione logica. Ad esempio, tutti i campi relativi all&#39;indirizzo di fatturazione sono raggruppati in una sezione e tutti i campi relativi all&#39;indirizzo di spedizione sono raggruppati in una sezione diversa. Il servizio crea inoltre un pannello di livello principale separato per ciascuna sezione logica rilevata automaticamente.
 
-## Gennaio 2020
+### Miglioramenti
 
-### 09 gennaio 2020 (AFC-2020.01.1)
+**Miglioramenti nel rilevamento degli elenchi**
 
-### 23 gennaio 2020 (AFC-2020.01.2)
+Il servizio ora è più efficiente nel rilevamento degli elenchi puntati e numerati. Ora è possibile rilevare facilmente gli elenchi a più livelli.
 
-## Dicembre 2019
+### Istruzioni speciali
 
-### 05 dicembre 2019 (AFC-2019.12.1)
+**Installare il pacchetto del connettore del servizio di conversione di moduli automatizzati**
 
+Per utilizzare le funzioni e i miglioramenti più recenti forniti nella release AFC-2020.03.1 è necessario il pacchetto di connettori 1.1.38 o superiore. Potete scaricare il pacchetto del connettore da [AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/fd/AEM-Forms-6.5.4.0-WIN).
+
+Se si dispone già di un ambiente di servizio di conversione dei moduli automatizzati, per utilizzare le funzionalità più recenti del servizio di conversione, installare il service pack più recente, il pacchetto aggiuntivo AEM Forms più recente e il pacchetto di connessione più recente nell&#39;ordine indicato. Per istruzioni dettagliate, vedere l&#39;articolo [Configurare il servizio](configure-service.md) di conversione moduli automatizzati.
