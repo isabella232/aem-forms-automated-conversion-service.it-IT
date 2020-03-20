@@ -2,7 +2,7 @@
 title: Configurare il servizio di conversione dei moduli automatizzati
 description: Preparazione dell'istanza di AEM per l'utilizzo del servizio di conversione di moduli automatizzati
 translation-type: tm+mt
-source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
+source-git-commit: 5f27fcbf756350a03b7143af489f737e01a7f0e3
 
 ---
 
@@ -43,6 +43,7 @@ Prima di usare il servizio, preparate l’istanza di creazione di AEM per colleg
 1. [Scaricare e installare AEM 6.4 o AEM 6.5](#aemquickstart)
 1. [Scarica e installa la versione più recente di AEM Service Pack](#servicepack)
 1. [Scaricare e installare il pacchetto del componente aggiuntivo AEM Forms più recente](#downloadaemformsaddon)
+1. [Scarica e installa il pacchetto di connessione più recente](#installConnectorPackage)
 1. [Creare temi e modelli personalizzati](#referencepackage)
 
 ### Scaricare e installare AEM 6.4 o AEM 6.5 {#aemquickstart}
@@ -65,8 +66,20 @@ Scarica e installa la versione più recente di AEM Service Pack. Per istruzioni 
 Un&#39;istanza di AEM contiene funzionalità di base per i moduli. Il servizio di conversione richiede funzionalità complete di AEM Forms. Scaricate e installate il pacchetto del componente aggiuntivo AEM Forms per sfruttare tutte le funzionalità di AEM Forms. Il pacchetto è necessario per configurare ed eseguire il servizio di conversione. Per istruzioni dettagliate, consultate [Installare e configurare le funzionalità di acquisizione dei dati.](https://helpx.adobe.com/experience-manager/6-5/forms/using/installing-configuring-aem-forms-osgi.html)
 
 >[!NOTE]
-> Se si è già utenti di un servizio di conversione automatica dei moduli, installare il componente aggiuntivo AEM Forms più recente per continuare a utilizzare il servizio. Il pacchetto del connettore viene unito al pacchetto AEM Forms Add-on. Il pacchetto di connettori aggiuntivo non è più richiesto.
 > Dopo aver installato il pacchetto del componente aggiuntivo, accertatevi di eseguire le configurazioni obbligatorie per il post-installazione.
+
+
+### Download e installazione del pacchetto di connettori {#installConnectorPackage}
+
+Per utilizzare le funzioni e i miglioramenti più recenti forniti nella release AFC-2020.03.1 è necessario il pacchetto di connettori 1.1.38 o superiore. Potete scaricare il pacchetto del connettore da AEM Package Share.
+
+| Sistema operativo | Collegamento per il download del pacchetto del connettore |
+| ------------- | ------------- |
+| Microsoft Windows | https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/fd/AEM-Forms-6.5.4.0-WIN |
+| Linux | https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/fd/AEM-Forms-6.5.4.0-WIN |
+
+>[!NOTE]
+> se si dispone già di un ambiente di servizio di conversione dei moduli automatizzati, per utilizzare le funzioni più recenti del servizio di conversione, installare il service pack più recente, il pacchetto aggiuntivo AEM Forms più recente e il pacchetto di connessione più recente nell&#39;ordine indicato.
 
 
 ### Creare temi e modelli personalizzati {#referencepackage}
@@ -81,7 +94,7 @@ Prima di configurare il servizio e collegare l’istanza locale al servizio in e
 
 ![email di concessione di accesso amministratore](assets/admin-console-adobe-io-access-grantedx75.png)
 
-* **Sviluppatori**: Uno sviluppatore collega un’istanza di creazione locale di AEM Forms al servizio di conversione automatizzata di moduli in esecuzione su Adobe Cloud. Quando un amministratore concede a uno sviluppatore i diritti per la connessione al servizio di conversione automatica dei moduli, allo sviluppatore viene inviato un messaggio e-mail con il titolo L&#39;utente dispone dell&#39;accesso dello sviluppatore per gestire le integrazioni API Adobe per la propria azienda. Se siete sviluppatori, controllate la casella di posta elettronica con il titolo sopraindicato e procedete a [collegare l’istanza locale di AEM al servizio di conversione automatica dei moduli in Adobe Cloud.](#connectafcadobeio)
+* **Sviluppatori**: Uno sviluppatore collega un’istanza di creazione locale di AEM Forms al servizio di conversione automatica dei moduli in esecuzione su Adobe Cloud. Quando un amministratore concede a uno sviluppatore i diritti per la connessione al servizio di conversione automatica dei moduli, allo sviluppatore viene inviato un messaggio e-mail con il titolo L&#39;utente dispone dell&#39;accesso dello sviluppatore per gestire le integrazioni API Adobe per la propria azienda. Se siete sviluppatori, controllate la casella di posta elettronica con il titolo sopraindicato e procedete a [collegare l’istanza locale di AEM al servizio di conversione automatica dei moduli in Adobe Cloud.](#connectafcadobeio)
 
 ![email di concessione accesso sviluppatore](assets/email-developer-accessx94.png)
 
@@ -175,7 +188,7 @@ Un certificato pubblico consente di autenticare il profilo sull&#39;I/O di Adobe
 
 Per utilizzare il servizio di conversione moduli automatizzati, creare un&#39;integrazione in Adobe I/O. L&#39;integrazione genera Chiave API, Segreto cliente, Payload (JWT).
 
-1. Effettuate l&#39;accesso a [https://console.adobe.io/](https://console.adobe.io/). Usate il vostro account Adobe ID e sviluppatore per il quale l’amministratore ha effettuato il provisioning per accedere alla console Adobe I/O per effettuare l’accesso.
+1. Effettuate l&#39;accesso a [https://console.adobe.io/](https://console.adobe.io/). Usate il vostro account Adobe ID e sviluppatore di cui l’amministratore ha effettuato il provisioning per accedere alla console Adobe I/O per effettuare l’accesso.
 
 1. Toccare **[!UICONTROL View Integrations]**. Viene visualizzata una schermata con tutte le integrazioni disponibili.
 1. Seleziona la tua organizzazione dal menu a discesa in **[!UICONTROL Integrations]**. Toccate **[!UICONTROL New Integration]**, selezionate **[!UICONTROL Access an API]** e toccate **[!UICONTROL Continue]**.
