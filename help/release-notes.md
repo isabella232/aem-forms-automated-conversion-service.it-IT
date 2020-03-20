@@ -2,7 +2,7 @@
 title: Novità? Note sulla versione - Servizio di conversione moduli automatizzati
 description: 'Informazioni sulle funzioni più recenti e sui bug corretti per il servizio di conversione moduli automatizzati '
 translation-type: tm+mt
-source-git-commit: 01dfd20951314017d47713bfb1a2a5f2d563f434
+source-git-commit: 6d658dbb181c09e42073e328e0232e40d4fb6b58
 
 ---
 
@@ -16,9 +16,7 @@ Automated Forms Conversion Service riceve continuamente dei miglioramenti. Per r
 * Correzioni di bug
 * Funzionalità obsoleta
 * Istruzioni speciali
-* Piani futuri per le modifiche
-
-Questa pagina viene aggiornata mensilmente, quindi riutilizzarla regolarmente.
+* Progetti futuri per le modifiche
 
 ## 20 marzo 2020 (AFC-2020.03.1)
 
@@ -26,7 +24,7 @@ Questa pagina viene aggiornata mensilmente, quindi riutilizzarla regolarmente.
 
 **Rilevamento automatico delle sezioni logiche in un modulo**
 
-Per impostazione predefinita, il servizio crea un pannello di primo livello separato per ciascuna pagina di un modulo PDF di input. Ora è possibile selezionare l&#39; **[!UICONTROL Auto-detect logical sections]** opzione per rimuovere la nozione di creazione di un pannello di livello principale separato per ciascuna pagina PDF e rilevare automaticamente le sezioni logiche. I club di servizi correlati campi di un modulo a una sezione logica. Ad esempio, tutti i campi relativi all&#39;indirizzo di fatturazione sono raggruppati in una sezione e tutti i campi relativi all&#39;indirizzo di spedizione sono raggruppati in una sezione diversa. Il servizio crea inoltre un pannello di livello principale separato per ciascuna sezione logica rilevata automaticamente.
+Per impostazione predefinita, il servizio crea un pannello di primo livello separato per ciascuna pagina di un modulo PDF. Ora è possibile utilizzare l&#39; **[!UICONTROL Auto-detect logical sections]** opzione per rilasciare pannelli a livello di pagina (pannelli basati su numeri di pagina) e creare solo pannelli logici.  Essa inoltre dispone i campi che non appartengono ad alcuna sezione con la sezione logica precedente. Inoltre unisce i campi di una sezione logica sparsa su due pagine adiacenti in un&#39;unica sezione logica. Ad esempio, se alcuni campi di una sezione logica si trovano alla fine della pagina 1 e alcuni si trovano all&#39;inizio della pagina 2, tutti questi campi sono raggruppati in una singola sezione logica.
 
 ### Miglioramenti
 
