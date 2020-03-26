@@ -8,22 +8,22 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: bbf39e3bae55654f92a50f52a22cee5da938236d
+source-git-commit: bcd55fa59f37b71b95b7cbfd80fcda368eaba408
 
 ---
 
 
-#  Conversione di moduli PDF in moduli adattivi {#convert-print-forms-to-adaptive-forms}
+# Conversione di moduli PDF in moduli adattivi {#convert-print-forms-to-adaptive-forms}
 
-Il servizio di conversione AEM Forms Automated Forms, basato su Adobe Sensei, converte automaticamente i moduli PDF in moduli adattivi reattivi e semplici da dispositivo. Sia che si utilizzino moduli PDF non interattivi, moduli Acrobat o moduli PDF basati su XFA, il servizio di conversione moduli automatizzata è in grado di convertire facilmente tali moduli in moduli adattivi. Per informazioni su funzionalità, flusso di lavoro di conversione e informazioni di registrazione, consultare il servizio [Automated Forms Conversion](introduction.md) Service.
+Il servizio di conversione AEM Forms Automated Forms, basato su Adobe Sensei, converte automaticamente i moduli PDF in moduli adattivi reattivi e semplici da dispositivo. Sia che si utilizzino moduli PDF non interattivi, moduli Acrobat o moduli PDF basati su XFA, il servizio di conversione moduli automatizzata è in grado di convertire facilmente tali moduli in moduli adattivi. Per informazioni su funzionalità, flusso di lavoro di conversione e informazioni di registrazione, consultare il servizio di conversione [](introduction.md) automatica dei moduli.
 
 ## Prerequisiti {#pre-requisites}
 
 * [**Configurare il servizio di conversione **](configure-service.md)
 
-* **[Preparare i](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)modelli** da applicare ai moduli convertiti: L&#39;utilizzo di un modello consente di applicare un marchio coerente a tutti i moduli adattivi. Inoltre, il servizio di conversione moduli automatizzati non estrae né utilizza l&#39;intestazione e il piè di pagina dei documenti PDF di origine. È possibile utilizzare i modelli di modulo adattivo per specificare intestazione e piè di pagina. L&#39;intestazione e il piè di pagina specificati nel modello vengono applicati ai moduli adattivi durante la conversione.
+* **Preparare i[modelli](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)da applicare ai moduli convertiti:** L&#39;utilizzo di un modello consente di applicare un marchio coerente a tutti i moduli adattivi. Inoltre, il servizio di conversione moduli automatizzati non estrae né utilizza l&#39;intestazione e il piè di pagina dei documenti PDF di origine. È possibile utilizzare i modelli di modulo adattivo per specificare intestazione e piè di pagina. L&#39;intestazione e il piè di pagina specificati nel modello vengono applicati ai moduli adattivi durante la conversione.
 
-* **[Preparare i](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html)temi** da applicare ai moduli convertiti: L&#39;utilizzo di un tema consente di applicare uno stile coerente a tutti i moduli adattivi dell&#39;organizzazione.
+* **Preparare i[temi](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html)da applicare ai moduli convertiti:** L&#39;utilizzo di un tema consente di applicare uno stile coerente a tutti i moduli adattivi dell&#39;organizzazione.
 
 ## Avvio del processo di conversione {#start-the-conversion-process}
 
@@ -35,14 +35,14 @@ Dopo aver collegato l&#39;istanza di AEM con il servizio di conversione moduli A
 
 ### Caricare moduli PDF nel server AEM Forms {#upload-pdf-forms-to-your-aem-forms-server}
 
-Il servizio di conversione converte i moduli PDF disponibili nell’istanza di AEM Forms in moduli adattivi. È possibile caricare tutti i moduli PDF contemporaneamente o in modo graduale, a seconda delle necessità. Prima di caricare i moduli, tenere presente quanto segue:
+Il servizio di conversione converte i moduli PDF disponibili nell’istanza di AEM Forms in moduli adattivi. È possibile caricare tutti i moduli PDF contemporaneamente o in modo graduale, a seconda delle necessità. Prima di caricare i moduli, considera quanto segue:
 
 * Mantenere il numero di moduli in una cartella inferiore a 15 e mantenere il numero totale di pagine in una cartella inferiore a 50.
 * Le dimensioni della cartella devono essere inferiori a 10 MB. Non tenere i moduli in una sottocartella.
 * Tenere il numero di pagine in un modulo inferiore a 15.
 * Non caricare i moduli protetti. Il servizio non converte i moduli protetti da password e protetti.
 * Non caricare moduli di origine con spazi nel nome file. Rimuovere lo spazio dal nome del file prima di caricare i moduli.
-* Non caricare i portfolio [](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html)PDF. Il servizio non converte un portfolio PDF in moduli adattivi.
+* Non caricare [portfolio PDF](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). Il servizio non può convertire un portfolio PDF in un modulo adattivo.
 * Leggere le sezioni [Problemi](known-issues.md) noti e [Best practice e considerazioni](styles-and-pattern-considerations-and-best-practices.md) e apportare modifiche suggerite ai moduli.
 
 Per caricare i moduli da convertire in una cartella nell’istanza di AEM Forms, effettuate le seguenti operazioni:
@@ -91,6 +91,10 @@ Se si seleziona questa opzione, il servizio di conversione genera un modulo adat
 
 
    * Selezionare l&#39; **[!UICONTROL Auto-detect multi-column layout of input forms]** opzione per mantenere il layout del modulo di origine per schermi di grandi dimensioni come computer desktop e computer portatili. Questa opzione è utile per mantenere il layout a più colonne dei moduli di origine. Ad esempio, quando un PDF di origine ha un layout a due colonne, il servizio genera un modulo adattivo di output con un layout a due colonne per gli schermi grandi e un layout a una colonna singola per i dispositivi a schermo piccolo come i telefoni cellulari. La funzione presenta alcuni problemi noti con la struttura dello schema dell&#39;origine dati. Per informazioni dettagliate, consultate l&#39;articolo sui problemi [](known-issues.md) noti.
+   * Per impostazione predefinita, il servizio crea un pannello di primo livello separato per ciascuna pagina di un modulo PDF. Ora è possibile utilizzare l&#39; **[!UICONTROL Auto-detect logical sections]** opzione per rilasciare pannelli a livello di pagina (pannelli basati su numeri di pagina) e creare solo pannelli logici. Inoltre unisce i campi che non appartengono ad alcuna sezione con la sezione logica precedente e i campi di una sezione logica sparsi su due pagine adiacenti in un&#39;unica sezione logica. Ad esempio, se alcuni campi di una sezione logica si trovano alla fine della pagina 1 e alcuni si trovano all&#39;inizio della pagina 2, tutti questi campi sono raggruppati in una singola sezione logica.
+
+      >[!NOTE]
+      > Per utilizzare la **[!UICONTROL Auto-detect logical sections]** funzione è necessario disporre del connettore 1.1.38 o superiore.
 
 
 
@@ -100,7 +104,7 @@ Se si seleziona questa opzione, il servizio di conversione genera un modulo adat
    * In caso di conversione non riuscita, il **[!UICONTROL Conversion Failed]** messaggio viene visualizzato se tutti i moduli di input non riescono a essere convertiti o se solo alcuni di essi non riescono a convertire **[!UICONTROL Partially Failed]** viene visualizzato il messaggio. Un messaggio e-mail di stato viene inviato sull’indirizzo [e-mail](configure-service.md#configureemailnotification) configurato e viene registrato un errore nel file error.log.
    Se si sta convertendo un modulo PDF basato su XFA in un modulo adattivo, il servizio di conversione associa automaticamente il modulo PDF al modulo adattivo convertito come modello Documento di record. Dopo la conversione, è possibile aprire le proprietà del modulo adattivo per visualizzare il modello Documento di record nella **[!UICONTROL Document of Record Template Configuration]** sezione della **[!UICONTROL Form Model]** scheda. </br>
 
-   Il servizio di conversione carica automaticamente il modulo PDF nel modulo adattivo convertito come modello del documento di registrazione solo se si abilita l&#39;opzione **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]** > **[!UICONTROL Properties of selected configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Generate Document of Record]** .
+   Il servizio di conversione carica automaticamente il modulo PDF nel modulo adattivo convertito come modello del documento record solo se si abilita l&#39;opzione **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]** > **[!UICONTROL Properties of selected configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Generate Document of Record]** .
 
    <!--
    Comment Type: draft
@@ -127,6 +131,6 @@ Se si seleziona questa opzione, il servizio di conversione genera un modulo adat
    >
    >Se il processo di conversione richiede più di 60 minuti e il modulo PDF non viene ancora convertito in un modulo adattivo, creare una nuova cartella nell&#39;istanza di AEM Forms, caricare il modulo PDF nella nuova cartella creata e riavviare la conversione.
 
-## Revisione e correzione dei moduli convertiti {#review-and-correct-the-converted-forms}
+## Review and correct the converted forms {#review-and-correct-the-converted-forms}
 
 I moduli nel mondo reale hanno requisiti complessi per l&#39;acquisizione dei dati. Una volta completata la conversione automatizzata, i clienti possono verificare la qualità di conversione del modulo e apportare gli aggiornamenti necessari al modulo. In AEM Forms è disponibile un editor [di revisione e corretto](review-correct-ui-edited.md) per apportare le modifiche necessarie. Consente di migliorare l&#39;identificazione automatizzata dei campi modulo e di convertire i campi identificati da un tipo all&#39;altro. Ad esempio, è possibile identificare il layout a due colonne di un modulo e modificare un campo identificato automaticamente come pulsante di scelta in più campi di scelta.
