@@ -2,7 +2,7 @@
 title: Novità? Note sulla versione - Servizio di conversione moduli automatizzati
 description: 'Informazioni sulle funzioni più recenti e sui bug corretti per il servizio di conversione moduli automatizzati '
 translation-type: tm+mt
-source-git-commit: dc17dfcb331df6144b8a7ce3c9c9d840b1182a95
+source-git-commit: c0ca850a0a1e82e34364766601011d6367b218ac
 
 ---
 
@@ -26,14 +26,18 @@ Automated Forms Conversion Service riceve continuamente dei miglioramenti. Per r
 
 **Rilevamento automatico delle sezioni logiche in un modulo**
 
-La versione AFC-2020.03.1 fornisce l&#39;accesso anticipato alla **[!UICONTROL Auto-detect logical sections]** funzione.
-
-Per impostazione predefinita, il servizio crea un pannello di primo livello separato per ciascuna pagina di un modulo PDF. Ora è possibile utilizzare l&#39; **[!UICONTROL Auto-detect logical sections]** opzione per rilasciare pannelli a livello di pagina (pannelli basati su numeri di pagina) e creare solo pannelli logici.  Inoltre unisce i campi che non appartengono ad alcuna sezione con la sezione logica precedente e i campi di una sezione logica sparsi su due pagine adiacenti in un&#39;unica sezione logica. Ad esempio, se alcuni campi di una sezione logica si trovano alla fine della pagina 1 e alcuni si trovano all&#39;inizio della pagina 2, tutti questi campi sono raggruppati in una singola sezione logica.
-
-Per utilizzare la **[!UICONTROL Auto-detect logical sections]** funzione è necessario disporre del connettore 1.1.38 o superiore. Potete scaricare il pacchetto del connettore da [AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
+Per impostazione predefinita, il servizio crea un pannello di primo livello separato per ciascuna pagina di un modulo PDF. Ora è possibile utilizzare l&#39; **[!UICONTROL Auto-detect logical sections]** opzione per rilasciare i pannelli a livello di pagina (pannelli basati sul numero di pagina) e creare solo pannelli logici. Inoltre unisce i campi che non appartengono ad alcuna sezione con la sezione logica precedente e i campi di una sezione logica sparsi su due pagine adiacenti in un&#39;unica sezione logica. Ad esempio, se alcuni campi di una sezione logica si trovano alla fine della pagina 1 e alcuni si trovano all&#39;inizio della pagina 2, tutti questi campi sono raggruppati in una singola sezione logica.
 
 ### Miglioramenti
 
 **Miglioramenti nel rilevamento degli elenchi**
 
 Il servizio ora è più efficiente nel rilevamento degli elenchi puntati e numerati.
+
+### Istruzioni speciali
+
+**Installare il pacchetto del connettore del servizio di conversione di moduli automatizzati**
+
+Per utilizzare le funzioni e i miglioramenti più recenti forniti nella release AFC-2020.03.1 è necessario il pacchetto di connettori 1.1.38 o superiore. Potete scaricare il pacchetto del connettore da [AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
+
+Se si dispone già di un ambiente del servizio di conversione dei moduli automatizzati, per utilizzare le funzioni più recenti del servizio di conversione, installare il service pack più recente, il pacchetto aggiuntivo AEM Forms più recente e l&#39;ultimo pacchetto di connettori nell&#39;ordine indicato. Per istruzioni dettagliate, vedere l&#39;articolo [Configurare il servizio](configure-service.md) di conversione moduli automatizzati.
