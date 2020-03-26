@@ -5,7 +5,7 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 translation-type: tm+mt
-source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
+source-git-commit: c0ca850a0a1e82e34364766601011d6367b218ac
 
 ---
 
@@ -29,7 +29,7 @@ L&#39;esempio, illustrato in questo articolo, è un&#39;implementazione di rifer
 * Configurazione di un’istanza di creazione AEM 6.4 o 6.5
 * Installa il service pack [](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) più recente per l’istanza di AEM
 * Ultima versione del pacchetto del componente aggiuntivo AEM Forms
-* Configurare il servizio di conversione [automatizzata dei moduli](configure-service.md)
+* Configure [Automated Forms Conversion service](configure-service.md)
 * Configurare un database. Il database utilizzato nell&#39;implementazione di esempio è MySQL 5.6.24. Tuttavia, è possibile integrare il modulo adattivo convertito con qualsiasi database di propria scelta.
 
 ## Configurare la connessione tra l’istanza AEM e il database {#set-up-connection-aem-instance-database}
