@@ -8,7 +8,7 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: bcd55fa59f37b71b95b7cbfd80fcda368eaba408
+source-git-commit: c0ca850a0a1e82e34364766601011d6367b218ac
 
 ---
 
@@ -21,7 +21,7 @@ Il servizio di conversione AEM Forms Automated Forms, basato su Adobe Sensei, co
 
 * [**Configurare il servizio di conversione **](configure-service.md)
 
-* **Preparare i[modelli](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)da applicare ai moduli convertiti:** L&#39;utilizzo di un modello consente di applicare un marchio coerente a tutti i moduli adattivi. Inoltre, il servizio di conversione moduli automatizzati non estrae né utilizza l&#39;intestazione e il piè di pagina dei documenti PDF di origine. È possibile utilizzare i modelli di modulo adattivo per specificare intestazione e piè di pagina. L&#39;intestazione e il piè di pagina specificati nel modello vengono applicati ai moduli adattivi durante la conversione.
+* **Preparare i[modelli](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)da applicare ai moduli convertiti:** L&#39;utilizzo di un modello consente di applicare un marchio coerente a tutti i moduli adattivi. Inoltre, il servizio di conversione moduli automatizzati non estrae né utilizza l&#39;intestazione e il piè di pagina dei documenti PDF di origine. È possibile utilizzare i modelli di modulo adattivo per specificare intestazione e piè di pagina. L&#39;intestazione e il piè di pagina specificati nel modello vengono applicati al modulo adattivo durante la conversione.
 
 * **Preparare i[temi](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html)da applicare ai moduli convertiti:** L&#39;utilizzo di un tema consente di applicare uno stile coerente a tutti i moduli adattivi dell&#39;organizzazione.
 
@@ -42,7 +42,7 @@ Il servizio di conversione converte i moduli PDF disponibili nell’istanza di A
 * Tenere il numero di pagine in un modulo inferiore a 15.
 * Non caricare i moduli protetti. Il servizio non converte i moduli protetti da password e protetti.
 * Non caricare moduli di origine con spazi nel nome file. Rimuovere lo spazio dal nome del file prima di caricare i moduli.
-* Non caricare [portfolio PDF](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). Il servizio non può convertire un portfolio PDF in un modulo adattivo.
+* Non caricare [portfolio PDF](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). Il servizio non converte un portfolio PDF in un modulo adattivo.
 * Leggere le sezioni [Problemi](known-issues.md) noti e [Best practice e considerazioni](styles-and-pattern-considerations-and-best-practices.md) e apportare modifiche suggerite ai moduli.
 
 Per caricare i moduli da convertire in una cartella nell’istanza di AEM Forms, effettuate le seguenti operazioni:
@@ -67,7 +67,7 @@ Dopo aver caricato i moduli e configurato il servizio, eseguire i seguenti passa
 
    * **[!UICONTROL Select a cloud configuration]**. Quando selezionate una configurazione, vengono già specificati il modello e il tema predefiniti. Potete specificare un modello o un tema diverso, se necessario.
    * Specificare un percorso in cui salvare i moduli adattivi generati e lo schema corrispondente. È possibile utilizzare percorsi predefiniti o specificare percorsi personalizzati.
-   * Utilizzare l&#39;opzione **Genera moduli adattivi senza binding** del modello dati per selezionare se si desidera generare un modulo adattivo con o senza binding del modello dati.
+   * Utilizzare l&#39;opzione **Genera moduli adattivi senza binding** dei modelli dati per selezionare se si desidera generare un modulo adattivo con o senza binding dei modelli dati.
 Se non si seleziona questa opzione, il servizio di conversione associa automaticamente i moduli adattivi a uno schema JSON e crea un binding di dati tra i campi disponibili nel modulo adattivo e nello schema JSON. Il **[!UICONTROL Save generated data model schema at]** campo visualizza il percorso predefinito per salvare lo schema JSON generato. È inoltre possibile personalizzare la posizione per salvare lo schema generato.
 Se si seleziona questa opzione, il servizio di conversione genera un modulo adattivo senza binding del modello dati. Dopo la conversione, è possibile associare un modulo adattivo a un modello dati modulo, a uno schema XML o a uno schema JSON. Per ulteriori informazioni, vedere [Creazione di un modulo](https://helpx.adobe.com/experience-manager/6-5/forms/using/creating-adaptive-form.html)adattivo.
    <!--
@@ -91,7 +91,7 @@ Se si seleziona questa opzione, il servizio di conversione genera un modulo adat
 
 
    * Selezionare l&#39; **[!UICONTROL Auto-detect multi-column layout of input forms]** opzione per mantenere il layout del modulo di origine per schermi di grandi dimensioni come computer desktop e computer portatili. Questa opzione è utile per mantenere il layout a più colonne dei moduli di origine. Ad esempio, quando un PDF di origine ha un layout a due colonne, il servizio genera un modulo adattivo di output con un layout a due colonne per gli schermi grandi e un layout a una colonna singola per i dispositivi a schermo piccolo come i telefoni cellulari. La funzione presenta alcuni problemi noti con la struttura dello schema dell&#39;origine dati. Per informazioni dettagliate, consultate l&#39;articolo sui problemi [](known-issues.md) noti.
-   * Per impostazione predefinita, il servizio crea un pannello di primo livello separato per ciascuna pagina di un modulo PDF. Ora è possibile utilizzare l&#39; **[!UICONTROL Auto-detect logical sections]** opzione per rilasciare pannelli a livello di pagina (pannelli basati su numeri di pagina) e creare solo pannelli logici. Inoltre unisce i campi che non appartengono ad alcuna sezione con la sezione logica precedente e i campi di una sezione logica sparsi su due pagine adiacenti in un&#39;unica sezione logica. Ad esempio, se alcuni campi di una sezione logica si trovano alla fine della pagina 1 e alcuni si trovano all&#39;inizio della pagina 2, tutti questi campi sono raggruppati in una singola sezione logica.
+   * Per impostazione predefinita, il servizio crea un pannello di primo livello separato per ciascuna pagina di un modulo PDF. Ora è possibile utilizzare l&#39; **[!UICONTROL Auto-detect logical sections]** opzione per non creare pannelli a livello di pagina (pannelli basati su numeri di pagina) e creare solo pannelli logici. Inoltre unisce i campi che non appartengono ad alcuna sezione con la sezione logica precedente e i campi di una sezione logica sparsi su due pagine adiacenti in un&#39;unica sezione logica. Ad esempio, se alcuni campi di una sezione logica si trovano alla fine della pagina 1 e alcuni si trovano all&#39;inizio della pagina 2, tutti questi campi sono raggruppati in una singola sezione logica.
 
       >[!NOTE]
       > Per utilizzare la **[!UICONTROL Auto-detect logical sections]** funzione è necessario disporre del connettore 1.1.38 o superiore.
@@ -129,7 +129,7 @@ Se si seleziona questa opzione, il servizio di conversione genera un modulo adat
 
    >[!NOTE]
    >
-   >Se il processo di conversione richiede più di 60 minuti e il modulo PDF non viene ancora convertito in un modulo adattivo, creare una nuova cartella nell&#39;istanza di AEM Forms, caricare il modulo PDF nella nuova cartella creata e riavviare la conversione.
+   >Se il processo di conversione richiede più di 60 minuti e il modulo PDF non viene ancora convertito in un modulo adattivo, creare una cartella nell’istanza di AEM Forms, caricare il modulo PDF nella nuova cartella creata e riavviare la conversione.
 
 ## Review and correct the converted forms {#review-and-correct-the-converted-forms}
 
