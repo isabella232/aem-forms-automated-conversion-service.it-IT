@@ -1,13 +1,13 @@
 ---
-title: 'Best practice e considerazioni '
-seo-title: 'Best practice e considerazioni '
+title: 'Procedure consigliate e considerazioni '
+seo-title: 'Procedure consigliate e considerazioni '
 description: Best practice e considerazioni per il servizio di conversione dei moduli automatizzati
 seo-description: Elenco di stili e pattern nei moduli PDF di origine per i quali il servizio di conversione moduli automatizzata non è in grado di identificare
 uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: 0f413a8bc0bb444b6faaddaf32f84f36e38438a5
+source-git-commit: 8e373b978535cd6616072cf50c223bd7f4f7c35a
 
 ---
 
@@ -16,16 +16,16 @@ source-git-commit: 0f413a8bc0bb444b6faaddaf32f84f36e38438a5
 
 Questo documento contiene le linee guida e le raccomandazioni che gli amministratori, gli autori e gli sviluppatori di moduli possono trarre vantaggio dall&#39;utilizzo del servizio di conversione dei moduli automatizzata. Vengono illustrate le procedure ottimali, dalla preparazione dei moduli di origine alla correzione di pattern complessi che richiedono un ulteriore sforzo per la conversione automatizzata. Queste best practice contribuiscono collettivamente alle prestazioni e all&#39;output complessivi del servizio di conversione dei moduli automatizzati.
 
-## Best practice
+## Best practice  
 
-Il servizio di conversione converte i moduli PDF disponibili nell’istanza di AEM Forms in moduli adattivi. È possibile caricare tutti i moduli PDF contemporaneamente o in modo graduale, a seconda delle necessità. Prima di caricare i moduli, tenere presente quanto segue:
+Il servizio di conversione converte i moduli PDF disponibili nell’istanza di AEM Forms in moduli adattivi. È possibile caricare tutti i moduli PDF contemporaneamente o in modo graduale, a seconda delle necessità. Prima di caricare i moduli, considera quanto segue:
 
 * Mantenere il numero di moduli in una cartella inferiore a 15 e mantenere il numero totale di pagine in una cartella inferiore a 50.
 * Le dimensioni della cartella devono essere inferiori a 10 MB. Non tenere i moduli in una sottocartella.
 * Tenere il numero di pagine in un modulo inferiore a 15.
 * Non caricare i moduli protetti. Il servizio non converte i moduli protetti da password e protetti.
-* Non caricare i portfolio [PDF](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). Il servizio non converte un portfolio PDF in moduli adattivi.
-* Non caricare moduli digitalizzati, colorati, non in lingua inglese e compilati. Tali moduli non sono supportati.
+* Do not upload the [PDF Portfolios](https://helpx.adobe.com/it/acrobat/using/overview-pdf-portfolios.html). Il servizio non può convertire un portfolio PDF in un modulo adattivo.
+* Non caricare moduli digitalizzati, colorati, compilati e redatti in lingue diverse dall’inglese. Tali moduli non sono supportati.
 * Non caricare moduli di origine con spazi nel nome file. Rimuovere lo spazio dal nome del file prima di caricare i moduli.
 * Utilizzare i modelli di modulo adattivo per specificare l&#39;intestazione e il piè di pagina del modulo adattivo di output. Il servizio ignora l’intestazione e il piè di pagina dei documenti PDF sorgente e utilizza il piè di pagina intestazione specificato nel modello di modulo adattivo.
 
@@ -39,9 +39,9 @@ Il servizio inizierebbe a identificare e assegnare campi o pannelli corretti a q
 
 ### Pattern generali {#general}
 
-| Pattern | Risoluzione |
+| Pattern | Esempio |
 |--- |--- |
-| **Il servizio pattern** <br> non converte i moduli PDF colorati in moduli adattivi. <br><br>**Risoluzione **<br>Utilizzare moduli PDF in bianco e nero o in scala di grigio. | ![Modulo colorato](assets/best-practice-coloured-forms.png) |
+| **Il servizio Pattern**<br> non converte i moduli PDF colorati in moduli adattivi. <br><br>**Risoluzione **<br>Utilizzare moduli PDF in bianco e nero o in scala di grigio. | ![Modulo colorato](assets/best-practice-coloured-forms.png) |
 | **Il** servizio Pattern <br>non converte i moduli PDF compilati in moduli adattivi. <br><br>**Risoluzione **<br>Utilizzare moduli adattivi vuoti. | ![Modulo compilato](assets/best-practice-filled-forms.png) |
 | **Il** servizio pattern <br>potrebbe non riuscire a riconoscere testo e campi in un modulo denso. <br><br>**Risoluzione **<br>Aumentare la larghezza tra il testo e i campi di un modulo denso prima di avviare la conversione. |  |
 | **Il** servizio Pattern <br>non supporta i moduli digitalizzati. <br><br>**Risoluzione **<br>Non utilizzare moduli digitalizzati. | ![Modulo acquisito](assets/scanned-forms.png) |
