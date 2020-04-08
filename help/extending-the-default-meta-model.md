@@ -1,24 +1,24 @@
 ---
-title: Estende il metamodello predefinito
-seo-title: Estende il metamodello predefinito
+title: Estensione del metamodello predefinito
+seo-title: Estensione del metamodello predefinito
 description: Estende il meta-modello predefinito per aggiungere pattern, convalide ed entità specifici dell'organizzazione e applica configurazioni ai campi modulo adattivi durante l'esecuzione del servizio Conversione automatizzata dei moduli.
 seo-description: Estende il meta-modello predefinito per aggiungere pattern, convalide ed entità specifici dell'organizzazione e applica configurazioni ai campi modulo adattivi durante l'esecuzione del servizio Conversione automatizzata dei moduli.
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 translation-type: tm+mt
-source-git-commit: 5d4dba8fea7439b991a7a15872e6f4ed48156ac9
+source-git-commit: ffab4d916cbd545078f4b72b8de5c9968f23b0da
 
 ---
 
 
-# Estende il metamodello predefinito {#extend-the-default-meta-model}
+# Estensione del metamodello predefinito {#extend-the-default-meta-model}
 
 Il servizio di conversione automatizzata dei moduli identifica ed estrae gli oggetti dei moduli dai moduli di origine. Mapper semantico consente al servizio di decidere in che modo gli oggetti estratti vengono rappresentati in un modulo adattivo. Ad esempio, un modulo di origine può avere diversi tipi di rappresentazioni di una data. Il mappatore semantico consente di mappare tutte le rappresentazioni degli oggetti modulo data del modulo di origine con il componente data dei moduli adattivi. Mappatore semantico consente inoltre al servizio di preconfigurare e applicare convalide, regole, pattern di dati, testo della Guida e proprietà di accessibilità ai componenti dei moduli adattivi durante la conversione.
 
 ![](assets/meta-model.gif)
 
-Meta-model è uno schema JSON. Prima di iniziare con il meta-modello, assicurati di avere una buona esperienza con JSON. Devi avere esperienza nella creazione, modifica e lettura dei dati salvati in formato JSON.
+Il metamodello è uno schema JSON. Prima di iniziare con il meta-modello, assicurati di avere una buona esperienza con JSON. Devi avere esperienza nella creazione, modifica e lettura dei dati salvati in formato JSON.
 
 ## meta-modello predefinito {#default-meta-model}
 
@@ -115,11 +115,11 @@ Ogni proprietà può includere:
 
 In base alle parole chiave a cui si fa riferimento utilizzando **aem:affKeyword**, il servizio di conversione esegue un&#39;operazione di ricerca nei campi del modulo di origine. Il servizio di conversione applica le proprietà dello schema JSON e le proprietà aggiuntive ai campi che soddisfano i criteri di ricerca.
 
-In questo esempio, il servizio di conversione cerca il telefono, il telefono, il cellulare, il telefono di lavoro, il telefono di casa, il numero di telefono, il numero di telefono e le parole chiave del numero di telefono nel modulo di origine. In base ai campi che includono queste parole chiave, il servizio di conversione applica i campi tipo, pattern e aem:afProperties ai campi modulo adattivi dopo la conversione.
+In questo esempio, il servizio di conversione cerca il telefono, il telefono, il telefono cellulare, il telefono di lavoro, il telefono di casa, il numero di telefono, il numero di telefono e le parole chiave del numero di telefono nel modulo di origine. In base ai campi che includono queste parole chiave, il servizio di conversione applica i campi tipo, pattern e aem:afProperties ai campi modulo adattivi dopo la conversione.
 
 ### Proprietà dello schema JSON per i campi modulo adattivo generati {#jsonschemaproperties}
 
-Il meta-modello supporta le seguenti proprietà comuni dello schema JSON per i campi modulo adattivi generati utilizzando il servizio di conversione moduli automatizzati:
+Il meta-modello supporta le seguenti proprietà comuni dello schema JSON per i campi modulo adattivi generati utilizzando il servizio di conversione dei moduli automatizzati:
 
 <table> 
  <tbody> 
@@ -130,7 +130,7 @@ Il meta-modello supporta le seguenti proprietà comuni dello schema JSON per i c
   <tr> 
    <td><p>titolo</p></td> 
    <td> 
-    <p>Il testo menzionato nella proprietà title in un metamodello funge da parola chiave di ricerca per eseguire azioni sui campi modulo adattivo generati. Ad esempio, modificare l'etichetta di un campo modulo adattivo. Per ulteriori informazioni, vedere <strong>Modificare l'etichetta di un campo</strong> modulo negli esempi di metadati <a href="#custommetamodelexamples">personalizzati.</a></p> </td> 
+    <p>Il testo menzionato nella proprietà title di un metacomodello funge da parola chiave di ricerca per eseguire azioni sui campi modulo adattivo generati. Ad esempio, modificare l'etichetta di un campo modulo adattivo. Per ulteriori informazioni, vedere <strong>Modificare l'etichetta di un campo</strong> modulo negli esempi di metadati <a href="#custommetamodelexamples">personalizzati.</a></p> </td> 
   </tr>
   <td><p>descrizione</p></td> 
    <td> 
@@ -140,7 +140,7 @@ Il meta-modello supporta le seguenti proprietà comuni dello schema JSON per i c
    <td> 
     <p>La proprietà type definisce il tipo di dati per il campo modulo adattivo generato. I valori possibili per la proprietà title includono:</p>
     <ul> 
-     <li>stringa: Genera un campo modulo adattivo di tipo dati testo.</li> 
+     <li>stringa: Genera un campo modulo adattivo di tipo dati di testo.</li> 
      <li>numero: Genera un campo modulo adattivo di tipo numerico.</li>
      <li>integer: Genera un campo modulo adattivo di tipo numerico con sottotipo impostato su numero intero.</li>
      <li>booleano: Genera un componente per modulo adattivo switch.</li>
@@ -189,9 +189,9 @@ In questo esempio, il servizio di conversione utilizza il testo all’interno di
    <th><strong>Descrizione</strong></th> 
   </tr> 
   <tr> 
-   <td><p>multiline</p></td> 
+   <td><p>multiLine</p></td> 
    <td> 
-    <p>La proprietà multiline converte un campo modulo di origine in un campo multiriga del modulo adattivo dopo la conversione. Per ulteriori informazioni, vedere <strong>Convertire un campo stringa in un campo</strong> multiriga negli esempi di metadati <a href="#custommetamodelexamples">personalizzati.</a></p> </td> 
+    <p>La proprietà multiLine converte un campo modulo di origine in un campo multiriga del modulo adattivo dopo la conversione. Per ulteriori informazioni, vedere <strong>Convertire un campo stringa in un campo</strong> multiriga negli esempi di metadati <a href="#custommetamodelexamples">personalizzati.</a></p> </td> 
   </tr>
   <td><p>mandatory</p></td> 
    <td> 
@@ -222,7 +222,7 @@ Il servizio di conversione automatizzata dei moduli utilizza un meta-modello pre
 
 http://&lt;server>:&lt;porta>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json
 
-Tuttavia, potete salvare un meta-modello personalizzato in una cartella e modificare le proprietà del servizio di conversione per utilizzare il meta-modello personalizzato durante la conversione.
+Tuttavia, è possibile salvare un meta-modello personalizzato in una cartella e modificare le proprietà del servizio di conversione per utilizzare il meta-modello personalizzato durante la conversione.
 
 ### Utilizzare un metamodello personalizzato durante la conversione {#use-custom-meta-model-during-conversion}
 
@@ -252,7 +252,7 @@ Alcuni esempi comuni dell&#39;utilizzo di un meta-modello personalizzato per mod
 
 #### Modificare l&#39;etichetta di un campo modulo {#modify-the-label-of-a-form-field}
 
-**** Esempio: Modificare l&#39;etichetta del numero di conto bancario nel modulo su Numero di conto personalizzato nel modulo adattivo dopo la conversione.
+**Esempio:** Modificare l&#39;etichetta del numero di conto bancario nel modulo su Numero di conto personalizzato nel modulo adattivo dopo la conversione.
 
 In questo meta-modello personalizzato, il servizio di conversione utilizza la proprietà **title** come parola chiave di ricerca. Dopo aver recuperato il testo del numero **di conto** bancario nel modulo, il servizio di conversione sostituisce il testo con la stringa numero **di conto** cliente menzionata con la proprietà **jcr:title** nella sezione **aem:afProperties** .
 
@@ -351,7 +351,7 @@ In questo meta-modello personalizzato, il servizio di conversione utilizza il te
 
 #### Aggiunta di convalide ai campi modulo adattivi {#add-validations-to-adaptive-form-fields}
 
-**** Esempio 1: Aggiungere una convalida al campo Codice **** postale del modulo adattivo.
+**Esempio 1:** Aggiungere una convalida al campo Codice **** postale del modulo adattivo.
 
 In questo meta-modello personalizzato, il servizio di conversione utilizza il testo all&#39;interno di **aem:affKeyword** come parola chiave di ricerca. Dopo aver recuperato il testo del codice **** postale nel modulo, il servizio di conversione aggiunge una convalida al campo utilizzando la proprietà **validatePictureClause** definita nella sezione **aem:afProperties** . In base alla convalida, l&#39;input specificato per il campo Codice **** postale nel modulo adattivo dopo la conversione deve includere sei caratteri.
 
@@ -367,7 +367,7 @@ In questo meta-modello personalizzato, il servizio di conversione utilizza il te
 }
 ```
 
-**** Esempio 2: Aggiungere una convalida al campo Numero **conto** bancario del modulo adattivo.
+**Esempio 2:** Aggiungere una convalida al campo Numero **conto** bancario del modulo adattivo.
 
 In questo meta-modello personalizzato, il servizio di conversione utilizza il testo all&#39;interno di **aem:affKeyword** come parola chiave di ricerca. Dopo aver recuperato il testo relativo al numero **di conto** bancario nel modulo, il servizio di conversione aggiunge una convalida al campo utilizzando la proprietà **mandatory** definita nella sezione **aem:afProperties** . In base alla convalida, è necessario specificare un valore per il campo Numero **conto** bancario prima di inviare il modulo dopo la conversione.
 
@@ -419,7 +419,7 @@ In questo meta-modello personalizzato, il servizio di conversione utilizza il te
 
 #### Aggiungere ulteriori opzioni all&#39;elenco a discesa {#add-additional-options-to-the-drop-down-list}
 
-**** Esempio: Aggiungi **Sri Lanka** come opzione aggiuntiva a un elenco a discesa esistente utilizzando un meta-modello personalizzato.
+**Esempio:** Aggiungi **Sri Lanka** come opzione aggiuntiva a un elenco a discesa esistente utilizzando un meta-modello personalizzato.
 
 Per aggiungere un&#39;opzione aggiuntiva, aggiornate la proprietà **enum** con la nuova opzione. In questo esempio, aggiornate la proprietà **enum** con **Sri Lanka** come opzione aggiuntiva. I valori elencati nella proprietà **enum** vengono visualizzati nell&#39;elenco a discesa.
 
@@ -447,19 +447,19 @@ Per aggiungere un&#39;opzione aggiuntiva, aggiornate la proprietà **enum** con 
 
 #### Conversione di un campo stringa in un campo multiriga {#convert-a-string-field-to-a-multi-line-field}
 
-**** Esempio: Dopo la conversione, convertire il campo **Indirizzo** di tipo stringa in un campo multiriga del modulo.
+**Esempio:** Dopo la conversione, convertire il campo **Indirizzo** di tipo stringa in un campo multiriga del modulo.
 
-In questo meta-modello personalizzato, il servizio di conversione utilizza il testo all&#39;interno di **aem:affKeyword** come parola chiave di ricerca. Dopo aver recuperato il testo **Indirizzo** nel modulo, il servizio converte il campo di testo in un campo a più righe utilizzando la proprietà **multiline** definita nella sezione **aem:afProperties** .
+In questo meta-modello personalizzato, il servizio di conversione utilizza il testo all&#39;interno di **aem:affKeyword** come parola chiave di ricerca. Dopo aver recuperato il testo **Address** nel modulo, il servizio converte il campo di testo in un campo multi-riga utilizzando la proprietà **multiLine** definita nella sezione **aem:afProperties** .
 
 ```
 {
- "multiline" : {
+ "multiLine" : {
    "aem:affKeyword": [
       "Address"
     ],
     "type" : "string",
     "aem:afProperties": {
-      "multiline": "true"
+      "multiLine": "true"
     }
   }
 }
