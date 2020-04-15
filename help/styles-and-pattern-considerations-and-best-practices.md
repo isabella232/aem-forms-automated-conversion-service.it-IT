@@ -7,7 +7,7 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: 8e373b978535cd6616072cf50c223bd7f4f7c35a
+source-git-commit: 12b4df8feb19fdc6e723c4d7301d299f26676716
 
 ---
 
@@ -18,16 +18,38 @@ Questo documento contiene le linee guida e le raccomandazioni che gli amministra
 
 ## Best practice  
 
-Il servizio di conversione converte i moduli PDF disponibili nell’istanza di AEM Forms in moduli adattivi. È possibile caricare tutti i moduli PDF contemporaneamente o in modo graduale, a seconda delle necessità. Prima di caricare i moduli, considera quanto segue:
+Il servizio di conversione converte i moduli PDF disponibili nell’istanza di AEM Forms in moduli adattivi. Le best practice elencate di seguito consentono di migliorare la velocità e la precisione di conversione. Inoltre, queste best practice consentono di risparmiare tempo dedicato alle attività di conversione.
+
+### Prima di caricare i moduli di origine
+È possibile caricare tutti i moduli PDF contemporaneamente o in modo graduale, a seconda delle necessità. Prima di caricare i moduli, considera quanto segue:
 
 * Mantenere il numero di moduli in una cartella inferiore a 15 e mantenere il numero totale di pagine in una cartella inferiore a 50.
 * Le dimensioni della cartella devono essere inferiori a 10 MB. Non tenere i moduli in una sottocartella.
 * Tenere il numero di pagine in un modulo inferiore a 15.
+* Organizzate i documenti sorgente in un batch di 8-15 documenti. Tenere i moduli di origine con i frammenti di modulo adattivi più comuni in un unico batch.
 * Non caricare i moduli protetti. Il servizio non converte i moduli protetti da password e protetti.
-* Do not upload the [PDF Portfolios](https://helpx.adobe.com/it/acrobat/using/overview-pdf-portfolios.html). Il servizio non può convertire un portfolio PDF in un modulo adattivo.
-* Non caricare moduli digitalizzati, colorati, compilati e redatti in lingue diverse dall’inglese. Tali moduli non sono supportati.
+* Do not upload the [PDF Portfolios](https://helpx.adobe.com/it/acrobat/using/overview-pdf-portfolios.html). Il servizio non converte un portfolio PDF in un modulo adattivo.
+* Non caricare moduli digitalizzati, colorati, non in lingua inglese e compilati. Tali moduli non sono supportati.
 * Non caricare moduli di origine con spazi nel nome file. Rimuovere lo spazio dal nome del file prima di caricare i moduli.
-* Utilizzare i modelli di modulo adattivo per specificare l&#39;intestazione e il piè di pagina del modulo adattivo di output. Il servizio ignora l’intestazione e il piè di pagina dei documenti PDF sorgente e utilizza il piè di pagina intestazione specificato nel modello di modulo adattivo.
+
+Quando si utilizza un modulo XDP per la conversione, effettuare le seguenti operazioni prima di caricare i moduli XPD di origine:
+
+* Analizzare il modulo XDP e risolvere i problemi visivi. Verificare che il documento di origine utilizzi i controlli e le strutture previsti. Ad esempio, il modulo di origine potrebbe avere caselle di controllo invece dei pulsanti di scelta per una singola selezione. Le caselle di controllo vengono modificate in pulsanti di scelta per creare un modulo adattivo con i componenti desiderati.
+* [Aggiungere i binding al modulo](http://www.adobe.com/go/learn_aemforms_designer_65) XDP prima di avviare la conversione. Quando nel modulo XDP di origine sono disponibili binding, il servizio applica automaticamente i binding ai campi modulo adattivi corrispondenti durante la conversione. Consente di risparmiare il tempo necessario per applicare manualmente i binding.
+* [Aggiungere tag](https://helpx.adobe.com/sign/using/text-tag.html) Adobe Sign al file XDP. Il servizio converte automaticamente i tag Adobe Sign nei campi modulo adattivi corrispondenti. I moduli adattivi supportano un numero limitato di campi di Adobe Sign. Per l&#39;elenco completo dei campi supportati, vedere [Utilizzo di Adobe Sign nella documentazione relativa ai moduli](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) adattivi.
+* Utilizzare i sottomoduli nei documenti XDP per creare pannelli nei moduli adattivi. Il servizio converte ciascun sottomodulo in un pannello di moduli adattivi durante la conversione.
+* Se possibile, convertite tabelle complesse in tabelle semplici.
+
+### Prima di avviare la conversione
+
+* Creare modelli di modulo adattivi. I modelli consentono di specificare una struttura uniforme per i moduli dell&#39;organizzazione o del dipartimento.
+* Specificare l&#39;intestazione e il piè di pagina nei modelli di modulo adattivo. Il servizio ignora l’intestazione e il piè di pagina dei documenti sorgente e utilizza il piè di pagina intestazione specificato nel modello di modulo adattivo.
+* Creare temi modulo adattivi. I temi consentono di conferire un aspetto uniforme alle forme dell’organizzazione o del dipartimento.
+* Configurare il modello dati del modulo per salvare e recuperare da un&#39;origine dati. Creare e configurare i servizi di lettura e scrittura per il modello dati del modulo.
+* Creare frammenti di modulo adattivi e configurare il servizio per l’utilizzo dei frammenti di modulo adattivi.
+* Preparare modelli di flusso di lavoro comuni per i moduli che richiedono l&#39;automazione dei processi aziendali.
+* Configurare Adobe Analytics, se necessario
+
 
 ## Conoscere pattern complessi
 
