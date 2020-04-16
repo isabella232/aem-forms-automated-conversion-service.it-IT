@@ -7,7 +7,7 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: 83e35b3cf21c1348c09dcddbae3edf77990457d0
+source-git-commit: 43b9b30e7e912081756050aa002a9e398d1d74fc
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: 83e35b3cf21c1348c09dcddbae3edf77990457d0
 
 Questo documento contiene le linee guida e le raccomandazioni che gli amministratori, gli autori e gli sviluppatori di moduli possono trarre vantaggio dall&#39;utilizzo del servizio di conversione dei moduli automatizzata. Vengono illustrate le procedure ottimali, dalla preparazione dei moduli di origine alla correzione di pattern complessi che richiedono un ulteriore sforzo per la conversione automatizzata. Queste best practice contribuiscono collettivamente alle prestazioni e all&#39;output complessivi del servizio di conversione dei moduli automatizzati.
 
-## Best practice  
+## Best practice
 
 Il servizio di conversione converte i moduli PDF disponibili nell’istanza di AEM Forms in moduli adattivi. Le best practice elencate di seguito consentono di migliorare la velocità e la precisione di conversione. Inoltre, queste best practice consentono di risparmiare tempo dedicato alle attività di conversione.
 
@@ -35,10 +35,10 @@ Il servizio di conversione converte i moduli PDF disponibili nell’istanza di A
 
 Quando si utilizza un modulo XDP per la conversione, effettuare le seguenti operazioni prima di caricare i moduli XPD di origine:
 
-* Analizzare il modulo XDP e risolvere i problemi visivi. Verificare che il documento di origine utilizzi i controlli e le strutture previsti. Ad esempio, il modulo di origine potrebbe avere caselle di controllo invece dei pulsanti di scelta per una singola selezione. Le caselle di controllo vengono modificate in pulsanti di scelta per creare un modulo adattivo con i componenti desiderati.
+* Analizzare il modulo XDP e risolvere i problemi visivi. Assicurarsi che il documento di origine utilizzi i controlli e le strutture previsti. Ad esempio, il modulo di origine potrebbe avere caselle di controllo invece dei pulsanti di scelta per una singola selezione. Le caselle di controllo vengono modificate in pulsanti di scelta per creare un modulo adattivo con i componenti desiderati.
 * [Aggiungere i binding al modulo](http://www.adobe.com/go/learn_aemforms_designer_65) XDP prima di avviare la conversione. Quando nel modulo XDP di origine sono disponibili binding, il servizio applica automaticamente i binding ai campi modulo adattivi corrispondenti durante la conversione. Consente di risparmiare il tempo necessario per applicare manualmente i binding.
 * [Aggiungere tag](https://helpx.adobe.com/sign/using/text-tag.html) Adobe Sign al file XDP. Il servizio converte automaticamente i tag Adobe Sign nei campi modulo adattivi corrispondenti. I moduli adattivi supportano un numero limitato di campi di Adobe Sign. Per l&#39;elenco completo dei campi supportati, vedere [Utilizzo di Adobe Sign nella documentazione relativa ai moduli](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) adattivi.
-* Se possibile, convertite tabelle complesse in tabelle semplici. Una tabella con campi modulo in celle di tabella, celle di dimensioni diverse, celle con estensione di riga o colonna, celle unite, bordi parziali o nessun bordo visibile è considerata una tabella complessa. Una tabella con uno dei suddetti elementi è considerata una tabella complessa.
+* Se possibile, convertite tabelle complesse in tabelle semplici. Una tabella con campi modulo in celle di tabella, celle di dimensioni diverse, celle con estensione di riga o colonna, celle unite, bordi parziali o nessun bordo visibile è considerata una tabella complessa. Una tabella con uno degli elementi di cui sopra è considerata una tabella complessa.
 <!-- * Use sub-forms in XDP documents to create panels in adaptive forms. Service converts each sub-form to one or more adaptive form panels during conversion. -->
 
 ### Prima di avviare la conversione
@@ -64,13 +64,13 @@ Il servizio inizierebbe a identificare e assegnare campi o pannelli corretti a q
 
 | Pattern | Esempio |
 |--- |--- |
-| **Il servizio Pattern**<br> non converte i moduli PDF colorati in moduli adattivi. <br><br>**Risoluzione **<br>Utilizzare moduli PDF in bianco e nero o in scala di grigio. | ![Modulo colorato](assets/best-practice-coloured-forms.png) |
+| **Il servizio pattern** <br> non converte i moduli PDF colorati in moduli adattivi. <br><br>**Risoluzione **<br>Utilizzare moduli PDF in bianco e nero o in scala di grigio. | ![Modulo colorato](assets/best-practice-coloured-forms.png) |
 | **Il** servizio Pattern <br>non converte i moduli PDF compilati in moduli adattivi. <br><br>**Risoluzione **<br>Utilizzare moduli adattivi vuoti. | ![Modulo compilato](assets/best-practice-filled-forms.png) |
 | **Il** servizio pattern <br>potrebbe non riuscire a riconoscere testo e campi in un modulo denso. <br><br>**Risoluzione **<br>Aumentare la larghezza tra il testo e i campi di un modulo denso prima di avviare la conversione. |  |
 | **Il** servizio Pattern <br>non supporta i moduli digitalizzati. <br><br>**Risoluzione **<br>Non utilizzare moduli digitalizzati. | ![Modulo acquisito](assets/scanned-forms.png) |
 | **Il** servizio Pattern <br>non estrae immagini e testo all’interno delle immagini. <br><br>**Risoluzione **<br>Aggiunta manuale di immagini o testo ai moduli convertiti. | ![Immagine con modulo di testo](assets/best-practice-image-with-text.png) |
 | **Le** tabelle pattern <br>con bordi punteggiati o non chiari non vengono convertite. <br><br>**Risoluzione **<br>Utilizzare tabelle con bordi e bordi chiari ed espliciti. supportati. | ![Modulo tabella non chiaro](assets/best-practice-table-dotted-non-clear.png) |
-| **Il modulo adattivo per pattern** <br> non supporta il testo verticale fuori dalla casella. Pertanto, il servizio non converte il testo verticale nel testo dei moduli adattivi corrispondente. <br><br>**Risoluzione **<br>Utilizzate l&#39;editor di moduli adattivi per aggiungere testo verticale, se necessario. | ![Modulo tabella non chiaro](assets/vertical-text.png) |
+| **I moduli adattivi con pattern** <br> non supportano il testo verticale. Pertanto, il servizio non converte il testo verticale nel testo dei moduli adattivi corrispondente. <br><br>**Risoluzione **<br>Utilizzate l&#39;editor di moduli adattivi per aggiungere testo verticale, se necessario. | ![Modulo tabella non chiaro](assets/vertical-text.png) |
 
 
 
