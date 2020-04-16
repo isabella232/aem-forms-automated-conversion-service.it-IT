@@ -7,7 +7,7 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: cab926fc408a1a680853ee557e36354938f7424a
+source-git-commit: a5d663c2a59895eb71eb5287586bc6b3862927fc
 
 ---
 
@@ -39,7 +39,7 @@ Quando si utilizza un modulo XDP per la conversione, effettuare le seguenti oper
 * [Aggiungere i binding al modulo](http://www.adobe.com/go/learn_aemforms_designer_65) XDP prima di avviare la conversione. Quando nel modulo XDP di origine sono disponibili binding, il servizio applica automaticamente i binding ai campi modulo adattivi corrispondenti durante la conversione. Consente di risparmiare il tempo necessario per applicare manualmente i binding.
 * [Aggiungere tag](https://helpx.adobe.com/sign/using/text-tag.html) Adobe Sign al file XDP. Il servizio converte automaticamente i tag Adobe Sign nei campi modulo adattivi corrispondenti. I moduli adattivi supportano un numero limitato di campi di Adobe Sign. Per l&#39;elenco completo dei campi supportati, vedere [Utilizzo di Adobe Sign nella documentazione relativa ai moduli](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) adattivi.
 * Utilizzare i sottomoduli nei documenti XDP per creare pannelli nei moduli adattivi. Il servizio converte ciascun sottomodulo in un pannello di moduli adattivi durante la conversione.
-* Se possibile, convertite tabelle complesse in tabelle semplici.
+* Se possibile, convertite tabelle complesse in tabelle semplici. Una tabella con campi modulo in celle di tabella, celle di dimensioni diverse, celle con estensione di riga o colonna, celle unite, bordi parziali o nessun bordo visibile è considerata una tabella complessa. Una tabella con uno dei suddetti elementi è considerata una tabella complessa.
 
 ### Prima di avviare la conversione
 
