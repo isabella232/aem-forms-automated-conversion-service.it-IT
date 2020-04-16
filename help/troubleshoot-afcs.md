@@ -6,7 +6,7 @@ seo-description: Problemi AFCS comuni e relative soluzioni
 contentOwner: khsingh
 topic-tags: forms
 translation-type: tm+mt
-source-git-commit: 638d2adec39a4ecba335ae7bdebebd8bf9ab2274
+source-git-commit: ccf30bc990c1a7cdb261332403668af6f35aeb9e
 
 ---
 
@@ -22,4 +22,4 @@ L&#39;articolo fornisce informazioni sui problemi di installazione, configurazio
 |--- |--- |
 | **Messaggio** di errore <br> L&#39;intestazione del token di accesso non è disponibile. <br><br>**Motivo **<br>: un amministratore ha creato più configurazioni IMS o la configurazione IMS non è in grado di raggiungere il servizio AFCS su Adobe Cloud.<br><br>**Risoluzione**<br> In presenza di più configurazioni, eliminate tutte le configurazioni e [create una nuova configurazione](configure-service.md#obtainpubliccertificates). <br> Se è presente una singola configurazione, utilizzate **[!UICONTROL Health Check]** per [controllare la connettività](configure-service.md#createintegrationoption). | ![L&#39;intestazione del token di accesso non è disponibile](assets/invalid-ims-configuration.png) |
 | **Messaggio** di errore <br> Impossibile connettersi al servizio.  <br><br>**Motivo **<br>: l&#39;URL del servizio non corretto o l&#39;URL del servizio non è indicato nei servizi cloud di Automated Forms Conversion Service.<br><br>**URL** <br> del [servizio di correzione della risoluzione](configure-service.md#configure-the-cloud-service) nei servizi cloud Automated Forms Conversion Service. | ![Impossibile connettersi al servizio.](assets/wrong-endpoint-configured.png) |
-| **Messaggio** di errore <br> Impossibile connettersi al servizio.  <br><br>**Motivo **<br>: l&#39;URL del servizio non corretto o l&#39;URL del servizio non è indicato nei servizi cloud di Automated Forms Conversion Service.<br><br>**URL** <br> del [servizio di correzione della risoluzione](configure-service.md#configure-the-cloud-service) nei servizi cloud Automated Forms Conversion Service. | ![Impossibile connettersi al servizio.](assets/wrong-endpoint-configured.png) |
+| **Messaggio** di errore <br> Impossibile convertire il modulo.  <br><br>**Motivo **<br>: problemi di connettività di rete al termine del servizio o problemi di manutenzione pianificati o di interruzione del servizio in Adobe Cloud.<br><br>**Risoluzione**<br> dei problemi di connettività di rete al termine dell&#39;evento e verifica lo stato del servizio su https://status.adobe.com/# per un&#39;interruzione pianificata o non pianificata. | ![Impossibile connettersi al servizio.](assets/service-failure.png) |
