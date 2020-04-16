@@ -1,26 +1,27 @@
 ---
 cloud: experience-cloud
 product: experience manager
-sub-product: forms conversion service
+sub-product: servizio di conversione moduli
 audience: end-user
 user-guide-title: Adobe Experience Manager Forms Automated Conversion Service
 translation-type: tm+mt
-source-git-commit: a6eed86bf4581a4c20aa8e2c3fddbf88d1ac7b97
+source-git-commit: 4b9f3f4fe3b3901cb99c9374ff40e8f49855237f
 
 ---
 
 
 # Sommario {#using}
 + [Note sulla versione](release-notes.md)
-+ [Introduzione al servizio di conversione dei moduli automatizzati](introduction.md)
-+ [Configurare il servizio di conversione dei moduli automatizzati](configure-service.md)
++ [Introduzione](introduction.md)
++ [Configurare il servizio](configure-service.md)
 + [Conversione di moduli per la stampa in moduli adattivi](convert-existing-forms-to-adaptive-forms.md)
-+ [Revisione e correzione dei moduli convertiti](review-correct-ui-edited.md)
-+ [Estende il metamodello predefinito](extending-the-default-meta-model.md)
-+ [Flussi di lavoro di precompilazione e invio basati sull&#39;origine dati consigliati per i moduli adattivi](prefill-submit-forms.md)
-+ [Flussi di lavoro consigliati per abilitare la generazione di documenti di registrazione per i moduli adattivi](enable-document-of-record-generation.md)
-+ [Integrazione di un modulo adattivo con un database tramite il flusso di lavoro AEM](submit-converted-adaptive-form-to-database.md)
++ [Revisione dei moduli convertiti](review-correct-ui-edited.md)
++ [Estensione del metamodello predefinito](extending-the-default-meta-model.md)
++ [Workflow di preriempimento basato su origine di dati e invio consigliati per i moduli adattivi](prefill-submit-forms.md)
++ [Workflow di abilitazione della generazione di documenti di record consigliati per i moduli adattivi](enable-document-of-record-generation.md)
++ [Integrazione del modulo adattivo con il database utilizzando workflow AEM](submit-converted-adaptive-form-to-database.md)
 + [Domande frequenti](frequently-asked-questions.md)
-+ [Best practice e considerazioni](styles-and-pattern-considerations-and-best-practices.md)
++ [Procedure consigliate e considerazioni](styles-and-pattern-considerations-and-best-practices.md)
 + [Problemi noti](known-issues.md)
++ [Risoluzione dei problemi del servizio](troubleshoot-afcs.md)
 
