@@ -7,7 +7,7 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: 12b4df8feb19fdc6e723c4d7301d299f26676716
+source-git-commit: cab926fc408a1a680853ee557e36354938f7424a
 
 ---
 
@@ -20,7 +20,8 @@ Questo documento contiene le linee guida e le raccomandazioni che gli amministra
 
 Il servizio di conversione converte i moduli PDF disponibili nell’istanza di AEM Forms in moduli adattivi. Le best practice elencate di seguito consentono di migliorare la velocità e la precisione di conversione. Inoltre, queste best practice consentono di risparmiare tempo dedicato alle attività di conversione.
 
-### Prima di caricare i moduli di origine
+### Prima di caricare la sorgente
+
 È possibile caricare tutti i moduli PDF contemporaneamente o in modo graduale, a seconda delle necessità. Prima di caricare i moduli, considera quanto segue:
 
 * Mantenere il numero di moduli in una cartella inferiore a 15 e mantenere il numero totale di pagine in una cartella inferiore a 50.
