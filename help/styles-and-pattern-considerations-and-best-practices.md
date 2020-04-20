@@ -7,18 +7,18 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: 43b9b30e7e912081756050aa002a9e398d1d74fc
+source-git-commit: fa3b365b9762a044fddb3820ad3c091d211e0ae6
 
 ---
 
 
 # Best practice e pattern complessi noti {#Best-practices-and-considerations2}
 
-Questo documento contiene le linee guida e le raccomandazioni che gli amministratori, gli autori e gli sviluppatori di moduli possono trarre vantaggio dall&#39;utilizzo del servizio di conversione dei moduli automatizzata. Vengono illustrate le procedure ottimali, dalla preparazione dei moduli di origine alla correzione di pattern complessi che richiedono un ulteriore sforzo per la conversione automatizzata. Queste best practice contribuiscono collettivamente alle prestazioni e all&#39;output complessivi del servizio di conversione dei moduli automatizzati.
+Questo documento contiene le linee guida e le raccomandazioni che gli amministratori, gli autori e gli sviluppatori di moduli possono trarre vantaggio dall&#39;utilizzo dei moduli [!DNL Automated Forms Conversion service]. Vengono illustrate le procedure ottimali, dalla preparazione dei moduli di origine alla correzione di pattern complessi che richiedono un ulteriore sforzo per la conversione automatizzata. Queste best practice collettivamente contribuiscono alle prestazioni complessive e alla produzione del [!DNL Automated Forms Conversion service].
 
 ## Best practice
 
-Il servizio di conversione converte i moduli PDF disponibili nell’istanza di AEM Forms in moduli adattivi. Le best practice elencate di seguito consentono di migliorare la velocità e la precisione di conversione. Inoltre, queste best practice consentono di risparmiare tempo dedicato alle attività di conversione.
+Il servizio di conversione converte i moduli PDF disponibili nell’ [!DNL Forms] istanza di AEM in moduli adattivi. Le best practice elencate di seguito consentono di migliorare la velocità e la precisione di conversione. Inoltre, queste best practice consentono di risparmiare tempo dedicato alle attività di conversione.
 
 ### Prima di caricare la sorgente
 
@@ -54,9 +54,9 @@ Quando si utilizza un modulo XDP per la conversione, effettuare le seguenti oper
 
 ## Conoscere pattern complessi
 
-Il servizio di conversione automatizzata di AEM Forms utilizza algoritmi di intelligenza artificiale e di machine learning per comprendere il layout e i campi del modulo di origine. Ogni servizio di machine learning impara continuamente dai dati di origine e produce un output migliore con ogni churn. Questi servizi imparano dall&#39;esperienza come gli umani.
+AEM [!DNL Forms Automated Conversion service] utilizza algoritmi di intelligenza artificiale e di machine learning per comprendere il layout e i campi del modulo di origine. Ogni servizio di machine learning impara continuamente dai dati di origine e produce un output migliore con ogni churn. Questi servizi imparano dall&#39;esperienza come gli umani.
 
-Il servizio di conversione automatizzata dei moduli è disponibile in una vasta gamma di moduli. Identifica facilmente i campi in un modulo di origine e produce moduli adattivi. Tuttavia, nei moduli PDF sono presenti alcuni campi e stili che possono essere facilmente visibili all&#39;occhio umano ma che sono difficili da comprendere per il servizio. Il servizio può assegnare tipi di campi o pannelli diversi da quelli applicabili ad alcuni campi o stili. Tutti questi pattern di campo e stile sono elencati di seguito.
+[!DNL Automated Forms Conversion service] viene addestrato su una vasta gamma di moduli. Identifica facilmente i campi in un modulo di origine e produce moduli adattivi. Tuttavia, nei moduli PDF sono presenti alcuni campi e stili che possono essere facilmente visibili all&#39;occhio umano ma che sono difficili da comprendere per il servizio. Il servizio può assegnare tipi di campi o pannelli diversi da quelli applicabili ad alcuni campi o stili. Tutti questi pattern di campo e stile sono elencati di seguito.
 
 Il servizio inizierebbe a identificare e assegnare campi o pannelli corretti a questi pattern, continuando a imparare dai dati di origine. Al momento, per risolvere tali problemi è possibile utilizzare l&#39;editor [Revisione e Correzione](review-correct-ui-edited.md) . Prima di iniziare a risolvere i problemi o a leggere meglio, è necessario acquisire dimestichezza con i componenti [dei moduli](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html)adattivi.
 
