@@ -1,7 +1,7 @@
 ---
 title: Introduzione
-description: 'Conversione più rapida dei moduli per la stampa in moduli adattivi '
-translation-type: tm+mt
+description: 'Accelerazione della conversione dei moduli di stampa in moduli adattivi '
+translation-type: ht
 source-git-commit: ceff5cb56aa9896a28004628c5e26c262b7918bd
 
 ---
@@ -9,51 +9,51 @@ source-git-commit: ceff5cb56aa9896a28004628c5e26c262b7918bd
 
 # Introduzione {#introduction-to-automated-forms-conversion-service}
 
-Il servizio di conversione automatizzata dei moduli consente di accelerare la digitalizzazione e la modernizzazione dell&#39;esperienza di acquisizione dei dati attraverso la conversione automatizzata dei moduli PDF in moduli adattivi. Il servizio, basato su Adobe Sensei, converte automaticamente i moduli PDF in moduli adattivi semplici da periferica, reattivi e basati su HTML5. Sfruttando gli investimenti esistenti in PDF Forms e XFA, il servizio applica anche convalide, stili e layout appropriati ai campi modulo adattivi durante la conversione. Il servizio consente di:
+Il servizio di conversione automatica dei moduli aiuta ad accelerare la digitalizzazione e la modernizzazione dell’esperienza di acquisizione dei dati attraverso la conversione automatica dei moduli PDF in moduli adattivi. Il servizio, basato su Adobe Sensei, converte automaticamente i moduli PDF in moduli adattivi facili da usare su diversi dispositivi, reattivi e basati su HTML5. Pur sfruttando gli investimenti esistenti nei moduli PDF e XFA, il servizio applica anche convalide, stili e layout appropriati ai campi del modulo adattivo durante la conversione. Il servizio consente di:
 
-* Risparmio manuale per la conversione dei moduli per la stampa in moduli adattivi
-* Applica pattern e convalide appropriate durante la conversione
-* Genera documento record durante la conversione
-* Raggruppare i campi più comuni in frammenti di modulo riutilizzabili
+* Evitare la conversione manuale dei moduli di stampa in moduli adattivi, con risparmio di tempo e risorse
+* Applicare modelli e convalide appropriati durante la conversione
+* Generare documenti di record durante la conversione
+* Raggruppare i campi più comuni in frammenti riutilizzabili per i moduli
 * Abilita Adobe Analytics durante la conversione
 
-![È semplice. Basta fornirci i moduli di origine e lasciare tutto a noi. Vi forniremo bellissimi moduli adattivi. Naturalmente, si lavorerà con l&#39;output con la vostra soddisfazione. ](assets/pdf-to-adaptive-form-gitx50.gif)
+![È semplice. Tu dovrai solo fornirci i moduli di origine, noi ci occuperemo del resto. Ti forniremo splendidi moduli adattivi. Naturalmente potrai regolare l’output nel modo che preferisci. ](assets/pdf-to-adaptive-form-gitx50.gif)
 
 ## Onboarding {#onboarding}
 
-Il servizio è disponibile gratuitamente per i clienti a tempo indeterminato di AEM 6.4 Forms e AEM 6.5 Forms e per i clienti enterprise di Adobe Managed Service. Per richiedere l&#39;accesso al servizio, contattate il team vendite Adobe o il rappresentante Adobe.
+Il servizio è disponibile gratuitamente per i clienti AEM 6.4 Forms e AEM 6.5 Forms On-Premise e per i clienti aziendali di Adobe Managed Service. È possibile contattare il team di vendita Adobe o il proprio rappresentante Adobe per richiedere l’accesso al servizio.
 
-Adobe consente l’accesso alla vostra organizzazione e fornisce i privilegi richiesti alla persona designata come amministratore nella vostra organizzazione. L&#39;amministratore può concedere l&#39;accesso agli sviluppatori AEM Forms (utenti) dell&#39;organizzazione per connettersi al servizio. Per ulteriori informazioni, vedere [Configurare il servizio](configure-service.md) di conversione moduli automatizzati.
+Adobe abilita l’accesso per la tua organizzazione e fornisce i privilegi richiesti alla persona designata come amministratore dell’organizzazione. L’amministratore può concedere agli sviluppatori AEM Forms (utenti) dell’organizzazione l’accesso al servizio. Consulta [Configurazione del servizio di conversione automatica dei moduli](configure-service.md) per maggiori dettagli.
 
-## Moduli e lingue PDF supportati {#supported-languages-and-pdf-forms}
+## Moduli PDF e lingue supportati {#supported-languages-and-pdf-forms}
 
-Il servizio supporta i moduli PDF non interattivi, i moduli creati con Adobe Acrobat, denominati AcroForms, e i moduli basati su XFA creati utilizzando AEM Forms o Adobe LiveCycle.
+Il servizio supporta moduli PDF non interattivi, moduli creati con Adobe Acrobat noti come AcroForms e moduli basati su XFA creati utilizzando AEM Forms o Adobe LiveCycle.
 
-Il servizio può convertire solo moduli in lingua inglese in moduli adattivi. È possibile tradurre i moduli adattivi generati in un&#39;altra lingua utilizzando il flusso di lavoro [di traduzione di](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)AEM.
+Il servizio è in grado di convertire in moduli adattivi solo i moduli in lingua inglese. Puoi tradurre i moduli adattativi generati in un’altra lingua usando [workflow di traduzione AEM](https://helpx.adobe.com/it/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 
-## Flusso di lavoro di conversione {#conversion-workflow}
+## Workflow di conversione  {#conversion-workflow}
 
-Il servizio di conversione automatica dei moduli è eseguito su Adobe Cloud. Collegate l&#39;istanza di AEM al servizio, caricate i moduli nell&#39;istanza di AEM e avviate la conversione. Il processo di conversione completo è riportato di seguito:
+Il servizio di conversione automatica dei moduli è compatibile con Adobe Cloud. Connetti la tua istanza AEM al servizio, carica i moduli nella tua istanza AEM e avvia la conversione. Il processo di conversione completo è descritto di seguito:
 
 ![Flusso di lavoro](assets/conversion-workflow.png)
 
-### 1. Configurare l&#39;ambiente {#set-up-the-environment}
+### 1. Configurazione dell’ambiente {#set-up-the-environment}
 
-Il servizio di conversione automatica dei moduli è eseguito su Adobe Cloud. [Configura l’account di I/O Adobe dell’organizzazione e collega l’istanza](configure-service.md) locale di AEM al servizio di conversione in esecuzione su Adobe Cloud.
+Il servizio di conversione automatica dei moduli è compatibile con Adobe Cloud. [Configura l’account Adobe I/O della tua organizzazione e connetti la tua istanza AEM locale](configure-service.md) al servizio di conversione in esecuzione su Adobe Cloud.
 
 ### 2. Conversione di moduli PDF in moduli adattivi {#use-the-conversion-service}
 
-Una volta configurato l’ambiente AEM Forms, per convertire i moduli PDF in moduli adattivi è necessario [caricare i moduli](convert-existing-forms-to-adaptive-forms.md) PDF nell’istanza di AEM e [avviare la conversione](convert-existing-forms-to-adaptive-forms.md#run-the-conversion). Prima di caricare i moduli, tenere presente quanto segue:
+Dopo aver configurato l’ambiente di AEM Forms per convertire i moduli PDF in moduli adattivi, [carica i moduli PDF](convert-existing-forms-to-adaptive-forms.md) nella tua istanza AEM e [avvia la conversione](convert-existing-forms-to-adaptive-forms.md#run-the-conversion). Prima di caricare i moduli, considera quanto segue:
 
-* Non caricare i moduli protetti. Il servizio non converte i moduli protetti da password e crittografati.
-* Non caricare moduli digitalizzati, colorati, non in lingua inglese e compilati. Tali moduli non sono supportati.
+* Non caricare moduli protetti. Il servizio non può convertire i moduli crittografati e protetti da password.
+* Non caricare moduli digitalizzati, colorati, compilati e redatti in lingue diverse dall’inglese. Tali moduli non sono supportati.
 * Non caricare moduli PDF con spazi nel nome file.
-* Non caricare i portfolio [](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html)PDF. Il servizio non converte un portfolio PDF in moduli adattivi.
-* Apportare le modifiche suggerite ai moduli PDF descritte nell&#39;articolo [Best practice e considerazioni](styles-and-pattern-considerations-and-best-practices.md) .
-* Leggi l’articolo sui problemi [](known-issues.md) noti per evitare possibili insidie.
+* Non caricare [portfolio PDF](https://helpx.adobe.com/it/acrobat/using/overview-pdf-portfolios.html). Il servizio non può convertire un portfolio PDF in un modulo adattivo.
+* Apporta ai moduli PDF le modifiche descritte nell’articolo [Procedure consigliate e considerazioni](styles-and-pattern-considerations-and-best-practices.md).
+* Leggi l’articolo [Problemi noti](known-issues.md) per evitare malfunzionamenti.
 
-### 3. Verifica dei moduli convertiti {#review-converted-forms}
+### 3. Revisione dei moduli convertiti {#review-converted-forms}
 
-I moduli Real World possono presentare complesse esigenze di acquisizione dei dati in termini di layout del campo, denominazione o suggerimenti impliciti che potrebbero non essere catturati con precisione dalla logica di rilevamento basata su AI/ML. Una volta completata la conversione automatizzata, è possibile utilizzare l&#39;editor [](review-correct-ui-edited.md) Revisione e Correzione per rivedere il modulo convertito e apportare gli aggiornamenti necessari e generare un output migliorato più vicino all&#39;esperienza desiderata. Dopo aver apportato le modifiche necessarie, inviare di nuovo il modulo per la conversione.
+I moduli non digitali possono presentare requisiti di acquisizione dei dati complessi in termini di layout dei campi, denominazione o suggerimenti impliciti che potrebbero non essere acquisiti con precisione da una logica di rilevamento basata su AI o machine learning. Una volta completata la conversione automatica, è possibile utilizzare l’[editor di revisione e correzione](review-correct-ui-edited.md) per rivedere il modulo convertito, apportare gli aggiornamenti necessari e generare un output migliorato più simile all’esperienza desiderata. Dopo aver apportato le modifiche necessarie, invia nuovamente il modulo per convertirlo.
 
-Il tempo necessario per la conversione automatizzata dipende da una varietà di fattori, come dimensioni del modulo di input, complessità del modulo, prestito sulla coda di elaborazione del servizio. L&#39;utente riceve regolarmente una notifica dei progressi compiuti tramite l&#39;indicatore di stato su cartella/file. Una volta completata la conversione, all&#39;indirizzo e-mail configurato viene inviata anche una notifica e-mail.
+Il tempo impiegato per la conversione automatica dipende da diversi fattori quali le dimensioni del modulo di input, la complessità del modulo e la posizione nella coda di elaborazione del servizio. L’utente viene informato regolarmente dell’avanzamento tramite l’indicatore di stato sulla cartella/sul file. Al termine della conversione, viene inviata anche una notifica e-mail all’indirizzo e-mail configurato.
