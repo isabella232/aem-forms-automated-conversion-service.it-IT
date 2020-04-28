@@ -1,10 +1,10 @@
 ---
 cloud: experience-cloud
 product: experience manager
-sub-product: servizio di conversione moduli
+sub-product: Servizio di conversione moduli
 audience: end-user
-user-guide-title: Adobe Experience Manager Forms Automated Conversion Service
-translation-type: tm+mt
+user-guide-title: Servizio di conversione automatica dei moduli Adobe Experience Manager
+translation-type: ht
 source-git-commit: 56e4696c0372223e0b27f1c313382a2a637b6db1
 
 ---
@@ -14,7 +14,7 @@ source-git-commit: 56e4696c0372223e0b27f1c313382a2a637b6db1
 
 + [Note sulla versione](release-notes.md)
 + [Introduzione](introduction.md)
-+ [Configurare il servizio](configure-service.md)
++ [Configurazione del servizio](configure-service.md)
 + [Conversione di moduli per la stampa in moduli adattivi](convert-existing-forms-to-adaptive-forms.md)
 + [Revisione dei moduli convertiti](review-correct-ui-edited.md)
 + [Estensione del metamodello predefinito](extending-the-default-meta-model.md)
@@ -24,4 +24,4 @@ source-git-commit: 56e4696c0372223e0b27f1c313382a2a637b6db1
 + [Domande frequenti](frequently-asked-questions.md)
 + [Procedure consigliate e considerazioni](styles-and-pattern-considerations-and-best-practices.md)
 + [Problemi noti](known-issues.md)
-+ [Risolvere i problemi](troubleshoot-afcs.md)
++ [Risoluzione dei problemi](troubleshoot-afcs.md)
