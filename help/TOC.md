@@ -4,7 +4,7 @@ product: experience manager
 sub-product: Servizio di conversione moduli
 audience: end-user
 user-guide-title: Servizio di conversione automatica dei moduli Adobe Experience Manager
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 41fb68ef566f5bd44d6f47f31de0b0edeeb978f2
 
 ---
