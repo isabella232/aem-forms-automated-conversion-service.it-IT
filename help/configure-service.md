@@ -2,7 +2,10 @@
 title: Configurazione del servizio di conversione automatica dei moduli
 description: Preparazione dell'istanza di AEM per l'utilizzo del servizio di conversione di moduli automatizzati
 translation-type: tm+mt
-source-git-commit: 68824c2f398d00141d67996121f7b758af16d2e4
+source-git-commit: e1ef5be14fd3f1ec7e6ccf569c8d76518dfc5c6b
+workflow-type: tm+mt
+source-wordcount: '2519'
+ht-degree: 8%
 
 ---
 
@@ -17,13 +20,13 @@ Questa guida descrive come un amministratore AEM può configurare il servizio di
 
 * Configurazione dei server di posta SMTP
 
->[!VIDEO](https://video.tv.adobe.com/v/29267/)
+<!--- >[!VIDEO](https://video.tv.adobe.com/v/29267/) 
 
-**Guardate il video o leggete l&#39;articolo per configurare il servizio di conversione moduli automatizzati**
+**Watch the video or read the article to configure Automated Forms Conversion service** -->
 
 ## Onboarding{#onboarding}
 
-Il servizio è disponibile gratuitamente per i clienti a tempo indeterminato di AEM 6.4 Forms e AEM 6.5 Forms e per i clienti enterprise di Adobe Managed Service. È possibile contattare il team di vendita Adobe o il proprio rappresentante Adobe per richiedere l’accesso al servizio.
+Il servizio è disponibile gratuitamente per i clienti AEM 6.4 Forms e AEM 6.5 Forms On-Premise e per i clienti aziendali di Adobe Managed Service. È possibile contattare il team di vendita Adobe o il proprio rappresentante Adobe per richiedere l’accesso al servizio.
 
 Adobe abilita l’accesso per la tua organizzazione e fornisce i privilegi richiesti alla persona designata come amministratore dell’organizzazione. L’amministratore può concedere agli sviluppatori AEM Forms (utenti) dell’organizzazione l’accesso al servizio.
 
@@ -59,9 +62,9 @@ Dopo aver scaricato AEM, per istruzioni su come impostare un’istanza di creazi
 
 ### Download e installazione dell&#39;ultimo Service Pack di AEM {#servicepack}
 
-Scarica e installa la versione più recente di AEM Service Pack. Per istruzioni dettagliate, consultate le note [sulla versione di](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) AEM 6.4 Service Pack o [AEM 6.5 Service Pack](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html).
+Scarica e installa la versione più recente di AEM Service Pack. Per istruzioni dettagliate, consultate le note [sulla versione di](https://helpx.adobe.com/it/experience-manager/6-4/release-notes/sp-release-notes.html) AEM 6.4 Service Pack o [AEM 6.5 Service Pack](https://helpx.adobe.com/it/experience-manager/6-5/release-notes/sp-release-notes.html).
 
-### Download e installazione del pacchetto del componente aggiuntivo AEM Forms {#downloadaemformsaddon}
+### Download e installazione del pacchetto del componente aggiuntivo AEM Forms  {#downloadaemformsaddon}
 
 Un&#39;istanza di AEM contiene funzionalità di base per i moduli. Il servizio di conversione richiede funzionalità complete di AEM Forms. Scaricate e installate il pacchetto del componente aggiuntivo AEM Forms per sfruttare tutte le funzionalità di AEM Forms. Il pacchetto è necessario per configurare ed eseguire il servizio di conversione. Per istruzioni dettagliate, consultate [Installare e configurare le funzionalità di acquisizione dei dati.](https://helpx.adobe.com/experience-manager/6-5/forms/using/installing-configuring-aem-forms-osgi.html)
 
@@ -69,19 +72,16 @@ Un&#39;istanza di AEM contiene funzionalità di base per i moduli. Il servizio d
 > Dopo aver installato il pacchetto del componente aggiuntivo, accertatevi di eseguire le configurazioni obbligatorie per il post-installazione.
 
 
-### (Facoltativo) Scaricare e installare il pacchetto del connettore {#installConnectorPackage}
+### (Facoltativo) Scaricare e installare il pacchetto del connettore  {#installConnectorPackage}
 
-Installare il pacchetto di connettori 1.1.38 o superiore per utilizzare le funzioni di rilevamento [automatico delle sezioni](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) logiche e i miglioramenti forniti nella release AFC-2020.03.1. Potete [scaricare il pacchetto del connettore da AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
-
->[!NOTE]
-> Se si dispone già di un ambiente del servizio di conversione dei moduli automatizzati, per utilizzare le funzioni più recenti del servizio di conversione, installare il service pack più recente, il pacchetto aggiuntivo AEM Forms più recente e l&#39;ultimo pacchetto di connettori nell&#39;ordine indicato.
+Il pacchetto del connettore permette di accedere rapidamente alle funzioni di rilevamento [automatico delle sezioni](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) logiche e ai miglioramenti introdotti nella release AFC-2020.03.1. Non installate il pacchetto se non avete bisogno di funzionalità e miglioramenti implementati in AFC-2020.03.1.  Potete [scaricare il pacchetto del connettore da AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
 
 
 ### Creare temi e modelli personalizzati {#referencepackage}
 
 Se avviate AEM in modalità [di](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/production-ready.html) produzione (modalità di esecuzione nosamplecontent), i pacchetti di riferimento non vengono installati. I pacchetti di riferimento contengono temi e modelli di esempio. Per convertire i moduli PDF in moduli adattivi, il servizio di conversione automatica dei moduli richiede almeno un tema e un modello. Create un tema e un modello personalizzati con la configurazione [del vostro e del vostro](#configure-the-cloud-service) servizio per utilizzare modelli e temi personalizzati prima di usare il servizio.
 
-## Configurare il servizio {#configure-the-service}
+## Configurazione del servizio {#configure-the-service}
 
 Prima di configurare il servizio e collegare l’istanza locale al servizio in esecuzione su Adobe Cloud, è necessario conoscere le persone e i privilegi necessari per connettersi al servizio. Il servizio utilizza due diversi tipi di personalità, amministratori e sviluppatori:
 
@@ -89,7 +89,7 @@ Prima di configurare il servizio e collegare l’istanza locale al servizio in e
 
 ![email di concessione di accesso amministratore](assets/admin-console-adobe-io-access-grantedx75.png)
 
-* **Sviluppatori**: Uno sviluppatore collega un’istanza di creazione locale di AEM Forms al servizio di conversione automatica dei moduli in esecuzione su Adobe Cloud. Quando un amministratore concede a uno sviluppatore i diritti per la connessione al servizio di conversione automatica dei moduli, allo sviluppatore viene inviato un messaggio e-mail con il titolo L&#39;utente dispone dell&#39;accesso dello sviluppatore per gestire le integrazioni API Adobe per la propria azienda. Se siete sviluppatori, controllate la casella di posta elettronica con il titolo sopraindicato e procedete a [collegare l’istanza locale di AEM al servizio di conversione automatica dei moduli in Adobe Cloud.](#connectafcadobeio)
+* **Sviluppatori**: Uno sviluppatore collega un’istanza di creazione locale di AEM Forms al servizio di conversione automatizzata di moduli in esecuzione su Adobe Cloud. Quando un amministratore concede a uno sviluppatore i diritti per la connessione al servizio di conversione automatica dei moduli, allo sviluppatore viene inviato un messaggio e-mail con il titolo L&#39;utente dispone dell&#39;accesso dello sviluppatore per gestire le integrazioni API Adobe per la propria azienda. Se siete sviluppatori, controllate la casella di posta elettronica con il titolo sopraindicato e procedete a [collegare l’istanza locale di AEM al servizio di conversione automatica dei moduli in Adobe Cloud.](#connectafcadobeio)
 
 ![email di concessione accesso sviluppatore](assets/email-developer-accessx94.png)
 
@@ -123,7 +123,7 @@ Dopo che un amministratore ha fornito agli sviluppatori l&#39;accesso, potete co
 * [Configurare le notifiche e-mail](configure-service.md#configureemailnotification)
 * [Aggiunta di un utente al gruppo di utenti dei moduli](#adduserstousergroup)
 * [Ottenere certificati pubblici](#obtainpubliccertificates)
-* [Crea integrazione I/O Adobe](#createintegration)
+* [Creare l’integrazione di Adobe I/O](#createintegration)
 * [Configurare il servizio cloud](configure-service.md#configure-the-cloud-service)
 
 #### Configurare la notifica e-mail {#configureemailnotification}
@@ -159,7 +159,7 @@ Un certificato pubblico consente di autenticare il profilo sull&#39;I/O di Adobe
 
 1. Selezionare la **[!UICONTROL Create new certificate]** casella di controllo e specificare un alias. L’alias funge da nome della finestra di dialogo. Toccare **[!UICONTROL Create certificate]**. Viene visualizzata una finestra di dialogo. Clic **[!UICONTROL OK]**. Il certificato viene creato.
 
-1. Toccate **[!UICONTROL Download Public Key]** e salvate il file di certificato *AEM-Adobe-IMS.crt* sul computer. Il file del certificato viene utilizzato per [creare l&#39;integrazione nella console](#createintegration)di I/O di Adobe. Toccare **[!UICONTROL Next]**.
+1. Toccate **[!UICONTROL Download Public Key]** e salvate il file di certificato *AEM-Adobe-IMS.crt* sul computer. The certificate file is used to [create integration on Adobe I/O Console](#createintegration). Toccare **[!UICONTROL Next]**.
 
 1. Specificate quanto segue:
 
@@ -179,31 +179,30 @@ Un certificato pubblico consente di autenticare il profilo sull&#39;I/O di Adobe
    <li>Step text</li>
    -->
 
-#### Crea integrazione I/O Adobe {#createintegration}
+#### Creare l’integrazione di Adobe I/O {#createintegration}
 
 Per utilizzare il servizio di conversione moduli automatizzati, creare un&#39;integrazione in Adobe I/O. L&#39;integrazione genera Chiave API, Segreto cliente, Payload (JWT).
 
-1. Effettuate l&#39;accesso a [https://console.adobe.io/](https://console.adobe.io/). Usate il vostro account Adobe ID e sviluppatore per il quale l’amministratore ha effettuato il provisioning per accedere alla console Adobe I/O per effettuare l’accesso.
+1. Effettuate l&#39;accesso a https://console.adobe.io/. Usate il vostro account Adobe ID e sviluppatore per il quale l’amministratore ha effettuato il provisioning per accedere alla console Adobe I/O per effettuare l’accesso.
+1. Seleziona la tua organizzazione dall’angolo in alto a destra. Se non sai qual è la tua organizzazione, contatta l’amministratore.
+1. Toccare **[!UICONTROL Create new project]**. Viene visualizzata una schermata per iniziare a utilizzare il nuovo progetto. Toccare **[!UICONTROL Add API]**. Viene visualizzata una schermata con l&#39;elenco di tutte le API abilitate per l&#39;account.
+1. Seleziona **[!UICONTROL Automated Forms Conversion service]** e tocca **[!UICONTROL Next]**. Viene visualizzata una schermata per configurare l&#39;API.
+1. Selezionate l&#39; [!UICONTROL Upload your public key] opzione, caricate il file AEM-Adobe-IMS.crt scaricato nella sezione [Ottieni certificati](#obtainpubliccertificates) pubblici e toccate **[!UICONTROL Next]**. Viene visualizzata l&#39;opzione Crea una nuova credenziale JWT (Service Account). Toccare **[!UICONTROL Next]**.
+1. Selezionate un profilo di prodotto e toccate **[!UICONTROL Save configured API]**. Selezionate il profilo creato durante la [concessione dell&#39;accesso agli sviluppatori dell&#39;organizzazione](#adduseranddevs). Se non conosci il profilo da selezionare, contatta l’amministratore.
+1. Toccate **[!UICONTROL Service Account (JWT)]** per visualizzare la chiave API, il Segreto cliente e altre informazioni necessarie per collegare l&#39;istanza locale di AEM al servizio di conversione dei moduli automatizzata. Le informazioni presenti nella pagina vengono utilizzate per creare la configurazione IMS sul computer locale.
 
-1. Toccare **[!UICONTROL View Integrations]**. Viene visualizzata una schermata con tutte le integrazioni disponibili.
-1. Seleziona la tua organizzazione dal menu a discesa in **[!UICONTROL Integrations]**. Toccate **[!UICONTROL New Integration]**, selezionate **[!UICONTROL Access an API]** e toccate **[!UICONTROL Continue]**.
-1. Selezionare **[!UICONTROL Experience Cloud]** > **[!UICONTROL Automated Forms Conversion]** e toccare **[!UICONTROL Continue]**. Se l&#39;opzione Conversione automatizzata dei moduli è disabilitata, assicurarsi di aver selezionato l&#39;organizzazione corretta dalla casella a discesa sopra l&#39; **[!UICONTROL Adobe Services]** opzione. Se non conosci la tua organizzazione, contatta l’amministratore.
-
-   ![Seleziona conversione moduli automatizzati](assets/create-new-integration.png)
-
-1. Specificate nome e descrizione per l&#39;integrazione. Toccate **[!UICONTROL Select a File from your computer]** e caricate il file AEM-Adobe-IMS.crt scaricato nella sezione [Ottieni certificati](#obtainpubliccertificates) pubblici.
-1. Selezionate il profilo creato durante la [concessione dell&#39;accesso agli sviluppatori dell&#39;organizzazione](#adduseranddevs) e toccate **[!UICONTROL Create Integration]**. L&#39;integrazione viene creata.
-1. Toccate **[!UICONTROL Continue to integration details]** per visualizzare le informazioni sull&#39;integrazione. La pagina contiene la chiave API, il Segreto cliente e altre informazioni necessarie per collegare l’istanza locale di AEM al servizio di conversione automatica dei moduli. Le informazioni presenti nella pagina vengono utilizzate per creare la configurazione IMS sul computer locale.
-
-   ![Informazioni su chiave API, segreto cliente e payload di un&#39;integrazione](assets/integration-details.png)
-
-1. Aprite la pagina Configurazione IMS nell’istanza locale. Hai tenuto la pagina aperta alla fine della sezione [Ottieni certificato](#obtainpubliccertificates)pubblico.
+1. Aprite la pagina Configurazione IMS nell’istanza locale. Hai tenuto aperta questa pagina alla fine della sezione [Recuperare il certificato pubblico](#obtainpubliccertificates).
 
    ![Specificare titolo, chiave API, segreto cliente e payload ](assets/ims-configuration-details.png)
 
-1. Nella pagina tecnica di Adobe IMS, specificate Chiave API e Segreto cliente. Utilizzate i valori specificati nella pagina di integrazione.
+1. Nella pagina tecnica di Adobe IMS, specificate Chiave API e Segreto cliente. Utilizzate i valori specificati in Account servizio (JWT) della pagina della console Adobe Developer.
 
-   **Per il payload, utilizzate il codice fornito nella scheda JWT della pagina di integrazione.** Toccare  **[!UICONTROL Save]**. Viene creata la configurazione IMS. Chiudete la pagina di integrazione.
+   >[!NOTE]
+   >
+   >
+   >Per il payload, utilizzate il codice fornito nella scheda Generate JWT della pagina Service Account (JWT) di Adobe Developer Console.
+
+1. Toccare **[!UICONTROL Save]**. Viene creata la configurazione IMS.
 
    ![Usa valori del campo JWT per il campo payload](assets/jwt.png)
 
@@ -211,13 +210,13 @@ Per utilizzare il servizio di conversione moduli automatizzati, creare un&#39;in
    >
    >Create una sola configurazione IMS. Non create più configurazioni IMS.
 
-1. Selezionate la configurazione IMS e toccate **[!UICONTROL Check Health]**. Viene visualizzata una finestra di dialogo. Toccare **[!UICONTROL Check]**. In caso di connessione riuscita, viene visualizzato il messaggio *Token recuperato* .
+1. Selezionate la configurazione IMS e toccate **[!UICONTROL Check Health]**. Viene visualizzata una finestra di dialogo. Toccare **[!UICONTROL Check]**. Una volta stabilita la connessione, viene visualizzato il messaggio *Token recuperato correttamente*.
 
    ![In caso di connessione riuscita, viene visualizzato il messaggio di recupero token completato. ](assets/health-check.png)
 
    <br/> <br/>
 
-#### Configurare il servizio cloud {#configure-the-cloud-service}
+#### Configure the cloud service {#configure-the-cloud-service}
 
 Crea una configurazione di servizio cloud per collegare l’istanza di AEM al servizio di conversione. Consente inoltre di specificare un modello, un tema e frammenti di modulo per una conversione. È possibile creare più configurazioni del servizio cloud distinte per ciascun set di moduli. Ad esempio, è possibile disporre di una configurazione separata per i moduli del reparto vendite e di una configurazione separata per i moduli di assistenza clienti. Per creare una configurazione di servizio cloud, effettuate le seguenti operazioni:
 
@@ -261,7 +260,7 @@ Crea una configurazione di servizio cloud per collegare l’istanza di AEM al se
    </table>
 
    * Se l&#39;origine è un modulo basato su XFA con estensione .XDP, il DOR di output mantiene il layout XFA, altrimenti il servizio di conversione utilizza un modello predefinito per generare DOR per altri moduli basati su XFA.
-   * Quando viene inviato un modulo XFA, i dati di invio del modulo vengono salvati come elemento XML o come attributo. Esempio, `<Amount currency="USD"> 10.00 </Amount>`. La valuta viene salvata come attributo e l&#39;importo della valuta, 10.00 viene salvato come elemento. I dati di invio di un modulo adattivo non hanno attributi, ma solo elementi. Pertanto, quando un modulo basato su XFA viene convertito in modulo adattivo, i dati di invio del modulo adattivo contengono un elemento per ciascun attributo. Esempio,
+   * Quando viene inviato un modulo XFA, i dati di invio del modulo vengono salvati come elemento XML o come attributo. Esempio, `<Amount currency="USD"> 10.00 </Amount>`. La valuta viene salvata come attributo e l&#39;importo della valuta, 10.00 viene salvato come elemento. I dati di invio di un modulo adattivo non hanno attributi, ma solo elementi. Pertanto, quando un modulo basato su XFA viene convertito in modulo adattivo, i dati di invio del modulo adattivo contengono un elemento per ciascun attributo. Ad esempio,
 
    ```css
       {
