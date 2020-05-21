@@ -8,7 +8,10 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: c0ca850a0a1e82e34364766601011d6367b218ac
+source-git-commit: 5031050795a558795c151e9f3c26a16736566adf
+workflow-type: tm+mt
+source-wordcount: '1464'
+ht-degree: 8%
 
 ---
 
@@ -42,7 +45,7 @@ Il servizio di conversione converte i moduli PDF disponibili nell’istanza di A
 * Tenere il numero di pagine in un modulo inferiore a 15.
 * Non caricare i moduli protetti. Il servizio non converte i moduli protetti da password e protetti.
 * Non caricare moduli di origine con spazi nel nome file. Rimuovere lo spazio dal nome del file prima di caricare i moduli.
-* Non caricare [portfolio PDF](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). Il servizio non converte un portfolio PDF in un modulo adattivo.
+* Non caricare [portfolio PDF](https://helpx.adobe.com/it/acrobat/using/overview-pdf-portfolios.html). Il servizio non converte un portfolio PDF in un modulo adattivo.
 * Leggere le sezioni [Problemi](known-issues.md) noti e [Best practice e considerazioni](styles-and-pattern-considerations-and-best-practices.md) e apportare modifiche suggerite ai moduli.
 
 Per caricare i moduli da convertire in una cartella nell’istanza di AEM Forms, effettuate le seguenti operazioni:
@@ -91,7 +94,7 @@ Se si seleziona questa opzione, il servizio di conversione genera un modulo adat
 
 
    * Selezionare l&#39; **[!UICONTROL Auto-detect multi-column layout of input forms]** opzione per mantenere il layout del modulo di origine per schermi di grandi dimensioni come computer desktop e computer portatili. Questa opzione è utile per mantenere il layout a più colonne dei moduli di origine. Ad esempio, quando un PDF di origine ha un layout a due colonne, il servizio genera un modulo adattivo di output con un layout a due colonne per gli schermi grandi e un layout a una colonna singola per i dispositivi a schermo piccolo come i telefoni cellulari. La funzione presenta alcuni problemi noti con la struttura dello schema dell&#39;origine dati. Per informazioni dettagliate, consultate l&#39;articolo sui problemi [](known-issues.md) noti.
-   * Per impostazione predefinita, il servizio crea un pannello di primo livello separato per ciascuna pagina di un modulo PDF. Ora è possibile utilizzare l&#39; **[!UICONTROL Auto-detect logical sections]** opzione per non creare pannelli a livello di pagina (pannelli basati su numeri di pagina) e creare solo pannelli logici. Inoltre unisce i campi che non appartengono ad alcuna sezione con la sezione logica precedente e i campi di una sezione logica sparsi su due pagine adiacenti in un&#39;unica sezione logica. Ad esempio, se alcuni campi di una sezione logica si trovano alla fine della pagina 1 e alcuni si trovano all&#39;inizio della pagina 2, tutti questi campi sono raggruppati in una singola sezione logica.
+   * Per impostazione predefinita, il servizio crea un pannello di primo livello separato per ciascuna pagina di un modulo PDF. Now, you can use the **[!UICONTROL Auto-detect logical sections]** option to not create page level panels (page number-based panels) and create only logical panels. Questa opzione, inoltre, unisce alla sezione logica precedente i campi che non appartengono ad alcuna sezione e unisce in un’unica sezione logica i campi di una sezione logica suddivisi su due pagine adiacenti. Ad esempio, se alcuni campi di una sezione logica si trovano alla fine della pagina 1 e altri si trovano all’inizio della pagina 2, tutti questi campi sono raggruppati in una singola sezione logica.
 
       >[!NOTE]
       > Per utilizzare la **[!UICONTROL Auto-detect logical sections]** funzione è necessario disporre del connettore 1.1.38 o superiore.
