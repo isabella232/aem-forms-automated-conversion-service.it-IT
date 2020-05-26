@@ -2,9 +2,9 @@
 title: Configurazione del servizio di conversione automatica dei moduli
 description: Preparazione dell'istanza di AEM per l'utilizzo del servizio di conversione di moduli automatizzati
 translation-type: tm+mt
-source-git-commit: 7e94acb29f30603d9b22fbee9dc8052fafa5704b
+source-git-commit: 117280695bfddad627e5f7bcb54ff019bbf2026a
 workflow-type: tm+mt
-source-wordcount: '2528'
+source-wordcount: '2531'
 ht-degree: 8%
 
 ---
@@ -89,7 +89,7 @@ Prima di configurare il servizio e collegare l’istanza locale al servizio in e
 
 ![email di concessione di accesso amministratore](assets/admin-console-adobe-io-access-grantedx75.png)
 
-* **Sviluppatori**: Uno sviluppatore collega un’istanza di creazione locale di AEM Forms al servizio di conversione automatica dei moduli in esecuzione su Adobe Cloud. Quando un amministratore concede a uno sviluppatore i diritti per la connessione al servizio di conversione automatica dei moduli, allo sviluppatore viene inviato un messaggio e-mail con il titolo L&#39;utente dispone dell&#39;accesso dello sviluppatore per gestire le integrazioni API Adobe per la propria azienda. Se siete sviluppatori, controllate la casella di posta elettronica con il titolo sopraindicato e procedete a [collegare l’istanza locale di AEM al servizio di conversione automatica dei moduli in Adobe Cloud.](#connectafcadobeio)
+* **Sviluppatori**: Uno sviluppatore collega un’istanza di creazione locale di AEM Forms al servizio di conversione automatizzata di moduli in esecuzione su Adobe Cloud. Quando un amministratore concede a uno sviluppatore i diritti per la connessione al servizio di conversione automatica dei moduli, allo sviluppatore viene inviato un messaggio e-mail con il titolo L&#39;utente dispone dell&#39;accesso dello sviluppatore per gestire le integrazioni API Adobe per la propria azienda. Se siete sviluppatori, controllate la casella di posta elettronica con il titolo sopraindicato e procedete a [collegare l’istanza locale di AEM al servizio di conversione automatica dei moduli in Adobe Cloud.](#connectafcadobeio)
 
 ![email di concessione accesso sviluppatore](assets/email-developer-accessx94.png)
 
@@ -139,7 +139,7 @@ Il servizio di conversione dei moduli automatizzati utilizza il servizio di post
 
 #### Aggiunta di un utente al gruppo di utenti dei moduli {#adduserstousergroup}
 
-Specificate un indirizzo e-mail nel profilo dell’utente AEM designato per eseguire il servizio. Assicurarsi che l&#39;utente sia il membro del gruppo di utenti [dei](https://helpx.adobe.com/experience-manager/6-4/forms/using/forms-groups-privileges-tasks.html) moduli. Le e-mail vengono inviate all&#39;indirizzo e-mail dell&#39;utente che esegue la conversione. Per specificare un indirizzo e-mail per l&#39;utente e aggiungere l&#39;utente al gruppo di utenti dei moduli:
+Specificate un indirizzo e-mail nel profilo dell’utente AEM designato per eseguire il servizio. Assicurarsi che l&#39;utente sia il membro del gruppo di utenti [dei](https://helpx.adobe.com/experience-manager/6-4/forms/using/forms-groups-privileges-tasks.html) moduli. Le e-mail vengono inviate all&#39;indirizzo e-mail dell&#39;utente che esegue la conversione. Per specificare un indirizzo e-mail per l&#39;utente e aggiungere l&#39;utente al gruppo di utenti dei`e moduli:
 
 1. Accedi all’istanza di creazione di AEM Forms come amministratore AEM. Utilizzate le credenziali AEM locali per effettuare l&#39;accesso. Non utilizzate l&#39;Adobe ID per effettuare l&#39;accesso. Tap **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
 
@@ -183,7 +183,7 @@ Un certificato pubblico consente di autenticare il profilo sull&#39;I/O di Adobe
 
 Per utilizzare il servizio di conversione dei moduli automatizzati, creare un progetto e aggiungere al progetto l&#39;API del servizio di configurazione dei moduli automatizzati in Adobe Developer Console. L&#39;integrazione genera Chiave API, Segreto cliente, Payload (JWT).
 
-1. Effettuate l&#39;accesso a https://console.adobe.io/. Usate il vostro account Adobe ID e sviluppatore di cui l’amministratore ha effettuato il provisioning per accedere alla console Adobe I/O per effettuare l’accesso.
+1. Effettuate l&#39;accesso a [https://console.adobe.io/](https://console.adobe.io/). Usate il vostro account Adobe ID e sviluppatore per il quale l’amministratore ha effettuato il provisioning per accedere alla console Adobe I/O per effettuare l’accesso.
 1. Seleziona la tua organizzazione dall’angolo in alto a destra. Se non sai qual è la tua organizzazione, contatta l’amministratore.
 1. Toccare **[!UICONTROL Create new project]**. Viene visualizzata una schermata per iniziare a utilizzare il nuovo progetto. Toccare **[!UICONTROL Add API]**. Viene visualizzata una schermata con l&#39;elenco di tutte le API abilitate per l&#39;account.
 1. Seleziona **[!UICONTROL Automated Forms Conversion service]** e tocca **[!UICONTROL Next]**. Viene visualizzata una schermata per configurare l&#39;API.
