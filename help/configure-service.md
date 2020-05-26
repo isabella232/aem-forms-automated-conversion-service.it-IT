@@ -2,9 +2,9 @@
 title: Configurazione del servizio di conversione automatica dei moduli
 description: Preparazione dell'istanza di AEM per l'utilizzo del servizio di conversione di moduli automatizzati
 translation-type: tm+mt
-source-git-commit: e1ef5be14fd3f1ec7e6ccf569c8d76518dfc5c6b
+source-git-commit: 7e94acb29f30603d9b22fbee9dc8052fafa5704b
 workflow-type: tm+mt
-source-wordcount: '2519'
+source-wordcount: '2528'
 ht-degree: 8%
 
 ---
@@ -89,7 +89,7 @@ Prima di configurare il servizio e collegare l’istanza locale al servizio in e
 
 ![email di concessione di accesso amministratore](assets/admin-console-adobe-io-access-grantedx75.png)
 
-* **Sviluppatori**: Uno sviluppatore collega un’istanza di creazione locale di AEM Forms al servizio di conversione automatizzata di moduli in esecuzione su Adobe Cloud. Quando un amministratore concede a uno sviluppatore i diritti per la connessione al servizio di conversione automatica dei moduli, allo sviluppatore viene inviato un messaggio e-mail con il titolo L&#39;utente dispone dell&#39;accesso dello sviluppatore per gestire le integrazioni API Adobe per la propria azienda. Se siete sviluppatori, controllate la casella di posta elettronica con il titolo sopraindicato e procedete a [collegare l’istanza locale di AEM al servizio di conversione automatica dei moduli in Adobe Cloud.](#connectafcadobeio)
+* **Sviluppatori**: Uno sviluppatore collega un’istanza di creazione locale di AEM Forms al servizio di conversione automatica dei moduli in esecuzione su Adobe Cloud. Quando un amministratore concede a uno sviluppatore i diritti per la connessione al servizio di conversione automatica dei moduli, allo sviluppatore viene inviato un messaggio e-mail con il titolo L&#39;utente dispone dell&#39;accesso dello sviluppatore per gestire le integrazioni API Adobe per la propria azienda. Se siete sviluppatori, controllate la casella di posta elettronica con il titolo sopraindicato e procedete a [collegare l’istanza locale di AEM al servizio di conversione automatica dei moduli in Adobe Cloud.](#connectafcadobeio)
 
 ![email di concessione accesso sviluppatore](assets/email-developer-accessx94.png)
 
@@ -123,7 +123,7 @@ Dopo che un amministratore ha fornito agli sviluppatori l&#39;accesso, potete co
 * [Configurare le notifiche e-mail](configure-service.md#configureemailnotification)
 * [Aggiunta di un utente al gruppo di utenti dei moduli](#adduserstousergroup)
 * [Ottenere certificati pubblici](#obtainpubliccertificates)
-* [Creare l’integrazione di Adobe I/O](#createintegration)
+* [Configurare le API del servizio in Adobe Developer Console](#createintegration)
 * [Configurare il servizio cloud](configure-service.md#configure-the-cloud-service)
 
 #### Configurare la notifica e-mail {#configureemailnotification}
@@ -159,12 +159,12 @@ Un certificato pubblico consente di autenticare il profilo sull&#39;I/O di Adobe
 
 1. Selezionare la **[!UICONTROL Create new certificate]** casella di controllo e specificare un alias. L’alias funge da nome della finestra di dialogo. Toccare **[!UICONTROL Create certificate]**. Viene visualizzata una finestra di dialogo. Clic **[!UICONTROL OK]**. Il certificato viene creato.
 
-1. Toccate **[!UICONTROL Download Public Key]** e salvate il file di certificato *AEM-Adobe-IMS.crt* sul computer. The certificate file is used to [create integration on Adobe I/O Console](#createintegration). Toccare **[!UICONTROL Next]**.
+1. Toccate **[!UICONTROL Download Public Key]** e salvate il file di certificato *AEM-Adobe-IMS.crt* sul computer. Il file del certificato viene utilizzato per [configurare le API del servizio in Adobe Developer Console](#createintegration). Toccare **[!UICONTROL Next]**.
 
 1. Specificate quanto segue:
 
    * Titolo: Specificate un titolo.
-   * Server autorizzazioni: [https://ims-na1.adobelogin.com](https://ims-na1.adobelogin.com)
+   * Server autorizzazioni: [https://ims-na1.adobelogin.com](https://ims-na1.adobelogin.com)\
    Lasciate vuoti gli altri campi per ora (da fornire successivamente). Tenete la pagina aperta.
 
    <!--
@@ -179,11 +179,11 @@ Un certificato pubblico consente di autenticare il profilo sull&#39;I/O di Adobe
    <li>Step text</li>
    -->
 
-#### Creare l’integrazione di Adobe I/O {#createintegration}
+#### Configurare le API del servizio su Adobe Developer Console {#createintegration}
 
-Per utilizzare il servizio di conversione moduli automatizzati, creare un&#39;integrazione in Adobe I/O. L&#39;integrazione genera Chiave API, Segreto cliente, Payload (JWT).
+Per utilizzare il servizio di conversione dei moduli automatizzati, creare un progetto e aggiungere al progetto l&#39;API del servizio di configurazione dei moduli automatizzati in Adobe Developer Console. L&#39;integrazione genera Chiave API, Segreto cliente, Payload (JWT).
 
-1. Effettuate l&#39;accesso a https://console.adobe.io/. Usate il vostro account Adobe ID e sviluppatore per il quale l’amministratore ha effettuato il provisioning per accedere alla console Adobe I/O per effettuare l’accesso.
+1. Effettuate l&#39;accesso a https://console.adobe.io/. Usate il vostro account Adobe ID e sviluppatore di cui l’amministratore ha effettuato il provisioning per accedere alla console Adobe I/O per effettuare l’accesso.
 1. Seleziona la tua organizzazione dall’angolo in alto a destra. Se non sai qual è la tua organizzazione, contatta l’amministratore.
 1. Toccare **[!UICONTROL Create new project]**. Viene visualizzata una schermata per iniziare a utilizzare il nuovo progetto. Toccare **[!UICONTROL Add API]**. Viene visualizzata una schermata con l&#39;elenco di tutte le API abilitate per l&#39;account.
 1. Seleziona **[!UICONTROL Automated Forms Conversion service]** e tocca **[!UICONTROL Next]**. Viene visualizzata una schermata per configurare l&#39;API.
@@ -203,8 +203,6 @@ Per utilizzare il servizio di conversione moduli automatizzati, creare un&#39;in
    >Per il payload, utilizzate il codice fornito nella scheda Generate JWT della pagina Service Account (JWT) di Adobe Developer Console.
 
 1. Toccare **[!UICONTROL Save]**. Viene creata la configurazione IMS.
-
-   ![Usa valori del campo JWT per il campo payload](assets/jwt.png)
 
    >[!CAUTION]
    >
