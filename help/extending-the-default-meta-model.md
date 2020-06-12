@@ -7,7 +7,10 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 translation-type: tm+mt
-source-git-commit: ffab4d916cbd545078f4b72b8de5c9968f23b0da
+source-git-commit: 77bdb4e88194bd634dea125852ff2a897bc24678
+workflow-type: tm+mt
+source-wordcount: '2372'
+ht-degree: 1%
 
 ---
 
@@ -22,9 +25,7 @@ Il metamodello è uno schema JSON. Prima di iniziare con il meta-modello, assicu
 
 ## meta-modello predefinito {#default-meta-model}
 
-Il servizio di conversione moduli automatizzati dispone di un meta-modello predefinito. Si tratta di uno schema JSON e risiede in Adobe Cloud con altri componenti del servizio di conversione dei moduli automatizzata. Puoi trovare una copia del meta-modello sul server AEM locale all’indirizzo:
-
-http://&lt;server>:&lt;porta>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json.
+Il servizio di conversione moduli automatizzati dispone di un meta-modello predefinito. Si tratta di uno schema JSON e risiede in Adobe Cloud con altri componenti del servizio di conversione dei moduli automatizzata. Puoi trovare una copia del meta-modello sul server AEM locale all’indirizzo: http://&lt;server>:&lt;porta>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json. È inoltre possibile [fare clic qui](assets/global.schema.json) per accedere o scaricare lo schema predefinito.
 
 Lo schema del meta-modello è derivato dalle entità dello schema all&#39;indirizzo https://schema.org/docs/schemas.html. Dispone di Persona, IndirizzoPostale, AffariLocali e più entità, come definito in https://schema.org. Ogni entità del meta-modello aderisce al tipo di oggetto schema JSON. Il codice seguente rappresenta una struttura di metadati di esempio:
 
