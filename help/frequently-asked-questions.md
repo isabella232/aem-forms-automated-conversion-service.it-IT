@@ -7,9 +7,9 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: b1df14a331dc4aef7ce6383dec0091fa6db1fd7b
+source-git-commit: 3b3bb98352e23544d32c39f0bfb5f0d9b7ae99cf
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1686'
 ht-degree: 5%
 
 ---
@@ -92,7 +92,7 @@ I motivi più comuni per cui la conversione non riesce sono:</p>
    È possibile utilizzare un meta-modello per mappare gli oggetti modulo al componente modulo adattivo di propria scelta e preconfigurare convalide, regole, pattern di dati, testo della guida e proprietà di accessibilità per i componenti. Tutte le proprietà specificate vengono applicate durante la conversione. È possibile utilizzare il meta-modello per applicare proprietà comuni ai campi. Può essere utile per ridurre alcuni problemi ripetuti nei diversi moduli.<br/><br/>
 
 1. **Quali sono le opzioni per i moduli con dati sensibili come informazioni personali (PII)?**
-Il servizio supporta solo moduli vuoti o non compilati. Non caricare moduli compilati o moduli con informazioni personali (PII). Inoltre, rimuovere i dati precompilati e le informazioni PII con etichetta bianca, riservate e proprietarie nei moduli di origine. <br/>
+Il servizio supporta solo moduli vuoti o non compilati. Non caricare moduli compilati o moduli con informazioni personali (PII). Inoltre, rimuovere i dati precompilati, le informazioni personali (PII), le informazioni confidenziali e proprietarie nei moduli di origine. <br/>
 
 1. **Dove devono essere posizionati l&#39;intestazione e i piè di pagina?**
    <p>Posizionare l'intestazione e il piè di pagina in un modello di modulo adattivo. Se il modulo PDF di origine ha intestazione e piè di pagina, durante la conversione il servizio rileva e sostituisce l'intestazione e il piè di pagina rilevati con l'intestazione e il piè di pagina disponibili nel modello di modulo adattivo. Se nel modulo adattivo sono presenti intestazioni o piè di pagina aggiuntivi, è possibile utilizzare l’editor <a href="review-correct-ui-edited.md">Revisione e Correzione</a> per correggere o rimuovere tale intestazione o piè di pagina.</p> <br />
