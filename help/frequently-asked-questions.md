@@ -7,29 +7,32 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: 022b86b77c4a524f320cbcbcd6bad4403ddf57d8
+source-git-commit: b1df14a331dc4aef7ce6383dec0091fa6db1fd7b
+workflow-type: tm+mt
+source-wordcount: '1685'
+ht-degree: 5%
 
 ---
 
 
-# Frequently asked questions{#frequently-asked-questions}
+# Domande frequenti{#frequently-asked-questions}
 
-1. **Quale versione di AEM Forms supporta il servizio di conversione automatica dei moduli?**
-   <p>Il servizio di conversione automatizzata dei moduli supporta i moduli AEM 6.4 e AEM 6.5. Funziona sia con AEM Forms su OSGi che con AEM Forms su JEE. Per utilizzare il servizio è necessario disporre del pacchetto aggiuntivo AEM Forms più recente sull’istanza di creazione di AEM. Per istruzioni dettagliate, vedere <a href="configure-service.md">Configurare il servizio di conversione</a> automatica dei moduli.</p> 
+1. **Quale versione di AEM Forms è supportata dal servizio di conversione moduli automatica?**
+   <p>Il servizio di conversione automatizzata dei moduli supporta i moduli AEM 6.4 e AEM 6.5. Funziona con entrambi i AEM Forms sui moduli OSGi e AEM su JEE. Per utilizzare il servizio è necessario il pacchetto aggiuntivo AEM Forms più recente sopra l’istanza di creazione di AEM. For detailed instructions, see <a href="configure-service.md">Configure the Automated Forms Conversion</a> service.</p> 
     <br>
 
 1. **È possibile installare il servizio in sede?**
    <p>Adobe addestra regolarmente gli algoritmi AI e ML del servizio di conversione automatizzata dei moduli con nuovi dati impostati per migliorare la precisione di conversione. Gli algoritmi aggiornati vengono distribuiti al servizio di conversione in esecuzione su Adobe Cloud a intervalli periodici. A tutti i clienti del servizio vengono aggiunti gli algoritmi aggiornati. Pertanto, l'implementazione centrale ospitata nel cloud è ideale per il servizio di conversione automatica dei moduli per apprendere e distribuire continuamente miglioramenti a tutti i clienti.</p> 
-    <p>Il servizio converte i moduli vuoti in moduli adattivi. Il servizio non supporta i moduli compilati e l'estrazione dei dati dai moduli compilati. Rimuovere i dati dai moduli compilati e rimuovere o inserire nella whitelist le informazioni proprietarie dei moduli prima di inviarli al servizio per la conversione</p> <br>
+    <p>Il servizio converte i moduli vuoti in moduli adattivi. Il servizio non supporta i moduli compilati e l'estrazione dei dati dai moduli compilati. Rimuovere i dati dai moduli compilati e rimuovere o elencare le informazioni proprietarie dai moduli prima di inviare i moduli al servizio per la conversione</p> <br>
 
-1. **Il servizio supporta tutti i formati di moduli PDF? Quali lingue sono supportate?**
-   <p>Il servizio consente di convertire moduli PDF non interattivi, moduli XFA, XDP e PDF basati su XFA e moduli Acrobat in moduli adattivi. Il servizio non supporta moduli digitalizzati o compilati. Per altre limitazioni, consultate l'articolo sui problemi <a href="known-issues.md"></a> noti.<br /> </p> 
+1. **Il servizio supporta tutti i formati di PDF forms? Quali lingue sono supportate?**
+   <p>Il servizio può convertire PDF forms non interattivi, XFA basati su XDP e PDF forms e AcroForms in moduli adattivi. Il servizio non supporta moduli digitalizzati o compilati. Per altre limitazioni, consultate l'articolo sui problemi <a href="known-issues.md"></a> noti.<br /> </p> 
     <p>Stiamo regolarmente aggiungendo supporto per altri tipi di fonti. Tenere presente la sezione <a href="introduction.md">dei moduli</a> PDF supportata nell'elenco di controllo per un aggiornamento regolare delle funzioni e delle funzionalità aggiunte di recente.</p>
 
-   Il servizio può convertire solo moduli in lingua inglese in moduli adattivi. È possibile tradurre i moduli adattivi generati in un&#39;altra lingua utilizzando il flusso di lavoro di traduzione di [AEM.](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
+   Il servizio è in grado di convertire in moduli adattivi solo i moduli in lingua inglese. Puoi tradurre i moduli adattativi generati in un’altra lingua usando [workflow di traduzione AEM.](https://helpx.adobe.com/it/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
 
 1. **Il servizio può produrre un XDP invece di un modulo adattivo?**
-   <p>Il servizio non produce un output XDP. Stiamo aggiungendo regolarmente funzioni e servizi. Tenere presente nell'elenco di controllo la sezione relativa alle lingue e ai moduli <a href="introduction.md">PDF</a> supportati per un aggiornamento regolare delle funzioni e delle funzionalità aggiunte di recente.</p> <br>
+   <p>Il servizio non produce un output XDP. Stiamo aggiungendo regolarmente funzioni e servizi. Mantieni la sezione relativa alle lingue e agli PDF forms <a href="introduction.md"></a> supportati nell’elenco di controllo per un aggiornamento regolare delle funzioni e delle funzionalità aggiunte di recente.</p> <br>
 
 1. **Qual è il tipo di schema generato?**
    <p>Potete utilizzare il servizio per generare: </p>
@@ -41,16 +44,16 @@ source-git-commit: 022b86b77c4a524f320cbcbcd6bad4403ddf57d8
    <p>No, il servizio non converte un modulo di Microsoft Word in modulo adattivo. È possibile salvare i moduli di Microsoft Word in un modulo PDF e convertire il modulo PDF in un modulo adattivo. Il processo completo è </p> <br>
 
    1. Utilizzare Adobe Acrobat per [convertire il documento Word in un PDF](https://helpx.adobe.com/acrobat/how-to/create-pdf-files-word-excel-website.html)non interattivo.
-   1. Utilizzare Adobe Acrobat per [convertire i moduli PDF prodotti in moduli](https://helpx.adobe.com/acrobat/how-to/convert-word-excel-paper-pdf-forms.html)PDF compilabili.
+   1. Utilizzare Adobe Acrobat per [convertire gli PDF forms prodotti in moduli](https://helpx.adobe.com/acrobat/how-to/convert-word-excel-paper-pdf-forms.html)PDF compilabili.
    1. Utilizzare Adobe Acrobat per aggiornare e correggere manualmente i campi del modulo.
    1. Salvare il modulo PDF. Ora è possibile utilizzare il modulo con il servizio di conversione per generare un modulo adattivo. È inoltre possibile utilizzare il modulo come modello Documento di registrazione.
 
 
 1. **È possibile convertire moduli cartacei scansionati e moduli colorati in moduli adattivi?**
-   <p>Il servizio consente di convertire i moduli PDF in moduli adattivi. Il servizio non supporta moduli digitalizzati o compilati. Per altre limitazioni, consultate l'articolo sui problemi <a href="known-issues.md"></a> noti.</p> <br>
+   <p>Il servizio può convertire PDF forms in moduli adattivi. Il servizio non supporta moduli digitalizzati o compilati. Per altre limitazioni, consultate l'articolo sui problemi <a href="known-issues.md"></a> noti.</p> <br>
 
 1. **È possibile convertire un modulo acquisito da scanner o solo l&#39;immagine di un modulo in un modulo adattivo?**
-   <p>Il servizio non supporta la conversione di moduli digitalizzati o di un'immagine di un modulo in un modulo out-of-the-box adattivo. Tuttavia, è possibile utilizzare Adobe Acrobat per convertire l'immagine di un modulo in un modulo PDF. Quindi, utilizzare il servizio per convertire il modulo PDF in un modulo adattivo. Utilizzare sempre un'immagine di alta qualità del modulo per la conversione in Acrobat. Migliora la qualità della conversione.</p> <br>
+   <p>Il servizio non supporta la conversione di moduli digitalizzati o di un'immagine di un modulo in un modulo out-of-the-box adattivo. Tuttavia è possibile utilizzare Adobe Acrobat per convertire l’immagine del modulo in un modulo PDF, quindi utilizzare il servizio per convertire il modulo PDF in un modulo adattivo. Utilizza sempre un’immagine di alta qualità del modulo in Acrobat per migliorare la qualità della conversione.</p> <br>
 
 1. **Alcuni moduli basati su XDP utilizzano i frammenti di modulo, dove è possibile caricare tali frammenti?**
    <p class="MsoNormal">Caricate i frammenti di modulo nella cartella di conversione e mantenete la struttura di cartelle originale. Consente di mantenere i percorsi relativi utilizzati nei moduli basati su XDP e nei frammenti di modulo.</p> <br>
@@ -60,7 +63,7 @@ source-git-commit: 022b86b77c4a524f320cbcbcd6bad4403ddf57d8
 
 1. **Il servizio non è riuscito a convertire i moduli. Qual è il motivo e come risolvere il problema?**
 I motivi più comuni per cui la conversione non riesce sono:</p>
-   * I moduli PDF protetti vengono forniti per la conversione. Non utilizzare moduli PDF protetti da password o protetti per la conversione.
+   * Per la conversione vengono forniti PDF forms protetti. Non utilizzate PDF forms protetti da password o protetti per la conversione.
    * Connessione Internet interrotta. Assicurati di essere connessi a Internet durante la conversione.
    * Nel PDF di origine è presente un&#39;immagine del modulo invece del modulo effettivo.
    * Il servizio è configurato in modo non corretto, l&#39;URL del servizio non viene fornito o l&#39;URL del servizio fornito non è corretto. Controllate la configurazione [del](configure-service.md#configure-the-cloud-service) servizio in **[!UICONTROL AEM]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion configuration]**.
@@ -69,7 +72,7 @@ I motivi più comuni per cui la conversione non riesce sono:</p>
       2. Selezionate la configurazione. Fate clic sull’intestazione **[!UICONTROL Check Health]** e fate clic su **[!UICONTROL Check]**. In caso di esito positivo, riceverete **[!UICONTROL Token retrieved successfully!]** un messaggio. <br> <br>
 
 1. **L&#39;utilizzo di font personalizzati influisce sulla conversione?**
-   <p>Quando un modulo PDF non interattivo viene convertito in un modulo adattivo, per migliorare la qualità della conversione, i font vengono incorporati nel modulo PDF. Il supporto per l'incorporazione dei font è limitato ai moduli PDF non interattivi. Per ottimizzare la conversione dei moduli PDF basati su AcroForm e XFA, vengono utilizzati i font di fallback.</p> 
+   <p>Quando un modulo PDF non interattivo viene convertito in un modulo adattivo, per migliorare la qualità della conversione, i font vengono incorporati nel modulo PDF. Il supporto per l'incorporazione dei font è limitato ai PDF forms non interattivi. Per ottimizzare la conversione dei PDF forms basati su AcroForm e XFA, vengono utilizzati i font di fallback.</p> 
     <p>Nel modulo PDF non interattivo sono incorporati solo i moduli disponibili nella directory dei font personalizzati elencata nel campo della directory <strong>Font del servizio</strong> <strong></strong> CQ-DAM-Handler-Gibson Font Manager.</p> 
     <p> </p> <br>
 
@@ -95,10 +98,11 @@ Il servizio supporta solo moduli vuoti o non compilati. Non caricare moduli comp
    <p>Posizionare l'intestazione e il piè di pagina in un modello di modulo adattivo. Se il modulo PDF di origine ha intestazione e piè di pagina, durante la conversione il servizio rileva e sostituisce l'intestazione e il piè di pagina rilevati con l'intestazione e il piè di pagina disponibili nel modello di modulo adattivo. Se nel modulo adattivo sono presenti intestazioni o piè di pagina aggiuntivi, è possibile utilizzare l’editor <a href="review-correct-ui-edited.md">Revisione e Correzione</a> per correggere o rimuovere tale intestazione o piè di pagina.</p> <br />
 
 1. **Quanto tempo risparmierà il servizio rispetto al processo manuale di pianificazione, creazione di risorse (temi, modelli), creazione e pubblicazione di un modulo adattivo?**
-   <p>Il tempo dipende dalle dimensioni e dalla complessità dei moduli di input e dal numero di richieste. Il servizio intende ridurre notevolmente il tempo necessario alla conversione dei moduli PDF in moduli adattivi con un ritmo molto più rapido rispetto al processo manuale di conversione dei moduli. </p> <br />
+   <p>Il tempo dipende dalle dimensioni e dalla complessità dei moduli di input e dal numero di richieste. Il servizio intende ridurre notevolmente il tempo a disposizione convertendo i PDF forms in moduli adattivi ad un ritmo molto più rapido rispetto al processo manuale di conversione dei moduli. </p> <br />
 
 1. **Cosa fare se si verifica un errore relativo alle librerie RSA? Il messaggio di errore è simile a quello riportato di seguito:** <br/>
-   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>L&#39;errore di cui sopra si verifica quando la delega di avvio non è configurata per le librerie RSA/BouncyCastle. Per risolvere il problema, eseguite i seguenti passaggi:
+   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
+L&#39;errore di cui sopra si verifica quando la delega di avvio non è configurata per le librerie RSA/BouncyCastle. Per risolvere il problema, eseguite i seguenti passaggi:
    <p> </p>
 
    1. Arrestate l’istanza AEM. Passate alla `[AEM installation directory]\crx-quickstart\conf\` cartella. Aprite il file sling.properties per la modifica. Se utilizzate `[AEM installation directory]\crx-quickstart\bin\start.bat` per avviare un’istanza di AEM, modificate le proprietà sling.properties che si trovano in `[AEM_root]\crx-quickstart\`.
