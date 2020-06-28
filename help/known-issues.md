@@ -7,9 +7,9 @@ uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 translation-type: tm+mt
-source-git-commit: 902131e27d458b88f7f5c5f85c90de89f77e4bd7
+source-git-commit: 1c48cc1b271bfea19ac2394eaf40be21060a349e
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '774'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Prima di iniziare a utilizzare il servizio di conversione dei moduli automatizza
    * Non supporta pannelli ripetibili per i moduli basati su XFA.
    * Se modificate un elenco in una tabella utilizzando l&#39;editor Revisione e Correzione, la larghezza della riga non viene regolata automaticamente e il testo potrebbe riversarsi nella riga successiva della tabella.
    * La **[!UICONTROL Auto-detect multi-column layout from input forms]** funzione non funziona con l&#39;editor di revisione e correzione e con i frammenti del modulo.
-   * La firma scarabocchio creata con l&#39;editor Revisione e Correzione non viene caricata nei moduli adattivi pubblicati. Gli utenti non possono firmare un modulo adattivo utilizzando tali componenti firma script.
+   * La firma scarabocchio creata con l&#39;editor Revisione e Correzione non viene caricata per i moduli adattivi pubblicati.
 
 
 * Per i moduli basati su XFA:
