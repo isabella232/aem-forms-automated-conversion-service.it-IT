@@ -1,16 +1,16 @@
 ---
 title: 'Conversione di moduli PDF in moduli adattivi '
 seo-title: 'Conversione di moduli PDF in moduli adattivi '
-description: Eseguire il servizio di conversione moduli automatizzati per convertire i moduli PDF in moduli adattivi
-seo-description: Eseguire il servizio di conversione moduli automatizzati per convertire i moduli PDF in moduli adattivi
+description: Eseguire il servizio di conversione moduli automatizzati per convertire i PDF forms in moduli adattivi
+seo-description: Eseguire il servizio di conversione moduli automatizzati per convertire i PDF forms in moduli adattivi
 uuid: 49fcd5c0-0e72-496d-9831-00f79d582f57
 contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: 5031050795a558795c151e9f3c26a16736566adf
+source-git-commit: 019ae541117f037f11703a88162ec3ab4cb67947
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1480'
 ht-degree: 8%
 
 ---
@@ -18,27 +18,27 @@ ht-degree: 8%
 
 # Conversione di moduli PDF in moduli adattivi {#convert-print-forms-to-adaptive-forms}
 
-Il servizio di conversione AEM Forms Automated Forms, basato su Adobe Sensei, converte automaticamente i moduli PDF in moduli adattivi reattivi e semplici da dispositivo. Sia che si utilizzino moduli PDF non interattivi, moduli Acrobat o moduli PDF basati su XFA, il servizio di conversione moduli automatizzata è in grado di convertire facilmente tali moduli in moduli adattivi. Per informazioni su funzionalità, flusso di lavoro di conversione e informazioni di registrazione, consultare il servizio di conversione [](introduction.md) automatica dei moduli.
+Il servizio di conversione AEM Forms Automated Forms, basato su Adobe Sensei, converte automaticamente i PDF forms in moduli adattivi reattivi e semplici da utilizzare per dispositivi. Sia che si utilizzino PDF forms non interattivi, moduli Acro o PDF forms basati su XFA, il servizio di conversione moduli automatizzata è in grado di convertire facilmente tali moduli in moduli adattivi. Per informazioni su funzionalità, flusso di lavoro di conversione e informazioni di registrazione, consultare il servizio di conversione [](introduction.md) automatica dei moduli.
 
 ## Prerequisiti {#pre-requisites}
 
 * [**Configurare il servizio di conversione **](configure-service.md)
 
-* **Preparare i[modelli](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)da applicare ai moduli convertiti:** L&#39;utilizzo di un modello consente di applicare un marchio coerente a tutti i moduli adattivi. Inoltre, il servizio di conversione moduli automatizzati non estrae né utilizza l&#39;intestazione e il piè di pagina dei documenti PDF di origine. È possibile utilizzare i modelli di modulo adattivo per specificare intestazione e piè di pagina. L&#39;intestazione e il piè di pagina specificati nel modello vengono applicati al modulo adattivo durante la conversione.
+* **Preparare i[modelli](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)da applicare ai moduli convertiti:** L&#39;utilizzo di un modello consente di applicare un marchio coerente a tutti i moduli adattivi. Inoltre, il servizio di conversione moduli automatizzati non estrae né utilizza l&#39;intestazione e il piè di pagina dei documenti PDF di origine. È possibile utilizzare i modelli di modulo adattivo per specificare intestazione e piè di pagina. L&#39;intestazione e il piè di pagina specificati nel modello vengono applicati al modulo adattivo durante la conversione. Quando create una cartella per i modelli, selezionate l’opzione **[!UICControlla configurazione]** Sfoglia per tutti.
 
 * **Preparare i[temi](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html)da applicare ai moduli convertiti:** L&#39;utilizzo di un tema consente di applicare uno stile coerente a tutti i moduli adattivi dell&#39;organizzazione.
 
 ## Avvio del processo di conversione {#start-the-conversion-process}
 
-Dopo aver collegato l&#39;istanza di AEM con il servizio di conversione moduli AEM, è possibile convertire i moduli PDF in moduli adattivi. Per convertire i moduli, effettuare i seguenti passaggi nell&#39;elenco:
+Dopo aver collegato l’istanza di AEM con il servizio di conversione AEM Forms, è possibile convertire i PDF forms in moduli adattivi. Per convertire i moduli, effettuare i seguenti passaggi nell&#39;elenco:
 
-* [Caricare moduli PDF nel server AEM Forms](convert-existing-forms-to-adaptive-forms.md#upload-pdf-forms-to-your-aem-forms-server)
+* [Caricare PDF forms nel server AEM Forms](convert-existing-forms-to-adaptive-forms.md#upload-pdf-forms-to-your-aem-forms-server)
 * [Eseguire la conversione](convert-existing-forms-to-adaptive-forms.md#run-the-conversion)
 * [Revisione e correzione dei moduli convertiti](review-correct-ui-edited.md)
 
-### Caricare moduli PDF nel server AEM Forms {#upload-pdf-forms-to-your-aem-forms-server}
+### Caricare PDF forms nel server AEM Forms {#upload-pdf-forms-to-your-aem-forms-server}
 
-Il servizio di conversione converte i moduli PDF disponibili nell’istanza di AEM Forms in moduli adattivi. È possibile caricare tutti i moduli PDF contemporaneamente o in modo graduale, a seconda delle necessità. Prima di caricare i moduli, considera quanto segue:
+Il servizio di conversione converte i PDF forms disponibili nell&#39;istanza AEM Forms in moduli adattivi. Potete caricare tutti i PDF forms contemporaneamente o in modo graduale, a seconda delle necessità. Prima di caricare i moduli, considera quanto segue:
 
 * Mantenere il numero di moduli in una cartella inferiore a 15 e mantenere il numero totale di pagine in una cartella inferiore a 50.
 * Le dimensioni della cartella devono essere inferiori a 10 MB. Non tenere i moduli in una sottocartella.
@@ -48,7 +48,7 @@ Il servizio di conversione converte i moduli PDF disponibili nell’istanza di A
 * Non caricare [portfolio PDF](https://helpx.adobe.com/it/acrobat/using/overview-pdf-portfolios.html). Il servizio non converte un portfolio PDF in un modulo adattivo.
 * Leggere le sezioni [Problemi](known-issues.md) noti e [Best practice e considerazioni](styles-and-pattern-considerations-and-best-practices.md) e apportare modifiche suggerite ai moduli.
 
-Per caricare i moduli da convertire in una cartella nell’istanza di AEM Forms, effettuate le seguenti operazioni:
+Per caricare i moduli da convertire in una cartella nell’istanza AEM Forms, effettuare le operazioni seguenti:
 
 1. Effettuate l&#39;accesso all&#39;istanza AEM Forms.
 
@@ -61,8 +61,8 @@ Per caricare i moduli da convertire in una cartella nell’istanza di AEM Forms,
 
 Dopo aver caricato i moduli e configurato il servizio, eseguire i seguenti passaggi per avviare la conversione:
 
-1. Nell’istanza di AEM Forms, toccate Finestra di dialogo **[!UICONTROL Adobe Experience Manager]** Impostazioni ![conversione >](assets/adobeexperiencemanager.png) **[!UICONTROL Navigation]** > ![](assets/compass.png) > **[!UICONTROL Forms]** **[!UICONTROL Forms & Documents]**.
-1. Selezionare un modulo o la cartella contenente i moduli PDF (moduli da convertire) e toccare **[!UICONTROL Start Automated Conversion]**. Viene visualizzata **[!UICONTROL Conversion Settings]** la finestra di dialogo.
+1. Nell’istanza AEM Forms, toccate Finestra di dialogo Impostazioni **[!UICONTROL Adobe Experience Manager]** conversione ![>](assets/adobeexperiencemanager.png) **[!UICONTROL Navigation]** > ![](assets/compass.png) > **[!UICONTROL Forms]** **[!UICONTROL Forms & Documents]**.
+1. Selezionare un modulo o la cartella contenente PDF forms (moduli da convertire) e toccare **[!UICONTROL Start Automated Conversion]**. Viene visualizzata **[!UICONTROL Conversion Settings]** la finestra di dialogo.
 
    ![Specificare le configurazioni](assets/conversion-settings-dialog.png)
 
@@ -84,12 +84,12 @@ Se si seleziona questa opzione, il servizio di conversione genera un modulo adat
 
 1. Nella **[!UICONTROL Additional]** scheda della finestra di dialogo Impostazioni conversione,
    * Selezionare l&#39; **[!UICONTROL Extract fragment from adaptive forms]** opzione per consentire al servizio di conversione di identificare, estrarre e scaricare frammenti di modulo per i moduli convertiti. Quando si seleziona l&#39; **[!UICONTROL Extract fragment from adaptive forms]** opzione, è possibile specificare i percorsi in cui salvare i frammenti di modulo estratti e gli schemi di frammenti di modulo corrispondenti.
-   * Specificare la posizione di **[!UICONTROL existing adaptive form fragments]**, se si dispone di alcuni frammenti di modulo adattivi basati su schemi JSON e basati su schemi meno adattativi esistenti e si prevede di utilizzare tali frammenti nei moduli adattivi generati automaticamente. Il servizio di conversione associa i frammenti di modulo JSON disponibili basati su schemi e su schemi meno adattivi ai moduli PDF in input (solo moduli PDF non interattivi), in presenza di una corrispondenza, il frammento di modulo adattivo corrispondente viene utilizzato nei moduli adattivi corrispondenti.
+   * Specificare la posizione di **[!UICONTROL existing adaptive form fragments]**, se si dispone di alcuni frammenti di modulo adattivi basati su schemi JSON e basati su schemi meno adattativi esistenti e si prevede di utilizzare tali frammenti nei moduli adattivi generati automaticamente. Il servizio di conversione associa i frammenti di modulo JSON disponibili basati su schema e quelli meno adattivi con i PDF forms di input (solo PDF forms non interattivi), in presenza di una corrispondenza, il frammento di modulo adattivo corrispondente viene utilizzato nei moduli adattivi corrispondenti.
    >[!NOTE]
    >
    >
    > * Potete utilizzare solo **[!UICONTROL  Extract Fragment]** o **[!UICONTROL Use existing adaptive form fragments]** opzione alla volta. Non è possibile utilizzare entrambe le opzioni contemporaneamente.
-   > * È possibile utilizzare l&#39; **[!UICONTROL Use existing adaptive form fragments]** opzione solo con moduli PDF non interattivi. Altri tipi di modulo non sono ancora supportati.
+   > * Potete utilizzare l&#39; **[!UICONTROL Use existing adaptive form fragments]** opzione solo con PDF forms non interattivi. Altri tipi di modulo non sono ancora supportati.
    > * Con Automated Conversion Service è possibile utilizzare solo frammenti o frammenti non associati associati a uno schema JSON. Non utilizzare frammenti XFA. I frammenti XFA non sono supportati.
 
 
@@ -132,8 +132,8 @@ Se si seleziona questa opzione, il servizio di conversione genera un modulo adat
 
    >[!NOTE]
    >
-   >Se il processo di conversione richiede più di 60 minuti e il modulo PDF non viene ancora convertito in un modulo adattivo, creare una cartella nell’istanza di AEM Forms, caricare il modulo PDF nella nuova cartella creata e riavviare la conversione.
+   >Se il processo di conversione richiede più di 60 minuti e il modulo PDF non viene ancora convertito in un modulo adattivo, creare una cartella nell’istanza AEM Forms, caricare il modulo PDF nella nuova cartella creata e riavviare la conversione.
 
 ## Review and correct the converted forms {#review-and-correct-the-converted-forms}
 
-I moduli nel mondo reale hanno requisiti complessi per l&#39;acquisizione dei dati. Una volta completata la conversione automatizzata, i clienti possono verificare la qualità di conversione del modulo e apportare gli aggiornamenti necessari al modulo. In AEM Forms è disponibile un editor [di revisione e corretto](review-correct-ui-edited.md) per apportare le modifiche necessarie. Consente di migliorare l&#39;identificazione automatizzata dei campi modulo e di convertire i campi identificati da un tipo all&#39;altro. Ad esempio, è possibile identificare il layout a due colonne di un modulo e modificare un campo identificato automaticamente come pulsante di scelta in più campi di scelta.
+I moduli nel mondo reale hanno requisiti complessi per l&#39;acquisizione dei dati. Una volta completata la conversione automatizzata, i clienti possono verificare la qualità di conversione del modulo e apportare gli aggiornamenti necessari al modulo. I AEM Forms forniscono un editor [revisione e corretto](review-correct-ui-edited.md) per apportare le modifiche necessarie. Consente di migliorare l&#39;identificazione automatizzata dei campi modulo e di convertire i campi identificati da un tipo all&#39;altro. Ad esempio, è possibile identificare il layout a due colonne di un modulo e modificare un campo identificato automaticamente come pulsante di scelta in più campi di scelta.
