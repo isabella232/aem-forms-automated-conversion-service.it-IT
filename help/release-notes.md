@@ -2,7 +2,7 @@
 title: Scopri le novità Note sulla versione - Servizio di conversione automatica dei moduli
 description: 'Scopri le ultime funzionalità e i bug corretti per il servizio di conversione automatica dei moduli '
 translation-type: tm+mt
-source-git-commit: 054b6cb03843c28cea19cdbc68e439f86cb1625f
+source-git-commit: 9fe3de9decbebc66c07d99b21424e3183599c64a
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 94%
@@ -24,7 +24,7 @@ Il servizio di conversione automatica dei moduli viene migliorato continuamente.
 * Modifiche programmate per il futuro
 
 
-## 16 luglio 2020 (AFC-2020.07.1)
+## 16 luglio 2020 (AFC-2020.07.0)
 
 ### Miglioramenti
 
