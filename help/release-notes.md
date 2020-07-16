@@ -1,11 +1,11 @@
 ---
 title: Scopri le novità Note sulla versione - Servizio di conversione automatica dei moduli
 description: 'Scopri le ultime funzionalità e i bug corretti per il servizio di conversione automatica dei moduli '
-translation-type: ht
-source-git-commit: 5031050795a558795c151e9f3c26a16736566adf
-workflow-type: ht
-source-wordcount: '305'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 054b6cb03843c28cea19cdbc68e439f86cb1625f
+workflow-type: tm+mt
+source-wordcount: '325'
+ht-degree: 94%
 
 ---
 
@@ -22,6 +22,13 @@ Il servizio di conversione automatica dei moduli viene migliorato continuamente.
 * Funzionalità obsolete
 * Istruzioni speciali
 * Modifiche programmate per il futuro
+
+
+## 16 luglio 2020 (AFC-2020.07.1)
+
+### Miglioramenti
+
+È stata migliorata la conversione automatizzata di campi di testo, moduli e gruppi di scelta in componenti modulo adattivi corrispondenti.
 
 ## 20 marzo 2020 (AFC-2020.03.1)
 
