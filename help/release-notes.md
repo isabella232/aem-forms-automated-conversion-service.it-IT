@@ -46,7 +46,7 @@ Il servizio ora è più efficiente nel rilevamento degli elenchi puntati e numer
 
 ### Istruzioni speciali
 
-**Installare il pacchetto del connettore del servizio di conversione moduli automatizzati**
+**Installa pacchetto connettore Forms Conversion Service**
 
 Per usufruire delle funzioni e dei miglioramenti più recenti forniti nella versione AFC-2020.03.1, è necessario il pacchetto del connettore 1.1.38 o versioni successive. Puoi scaricare il pacchetto del connettore da [Condivisione pacchetti AEM](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
 
