@@ -1,22 +1,22 @@
 ---
 title: Problemi noti
 seo-title: Problemi noti
-description: problemi noti e limitazioni del servizio di conversione moduli automatizzati
-seo-description: Prima di iniziare a utilizzare il servizio di conversione dei moduli automatizzati di AEM Forms, è necessario conoscere i problemi noti e le limitazioni del servizio
+description: problemi noti e limitazioni per Automated Forms Conversion Service
+seo-description: Prima di iniziare a utilizzare  AEM Forms Automated Forms Conversion Service, è necessario conoscere i problemi e i limiti noti del servizio
 uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 translation-type: tm+mt
-source-git-commit: 1c48cc1b271bfea19ac2394eaf40be21060a349e
+source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '768'
 ht-degree: 1%
 
 ---
 
 # Problemi noti e limitazioni {#known-issues-limitations}
 
-Prima di iniziare a utilizzare il servizio di conversione dei moduli automatizzati di AEM Forms, consultare i seguenti problemi noti e limitazioni:
+Prima di iniziare a utilizzare  AEM Forms Automated Forms Conversion Service, controlla i seguenti problemi e limitazioni noti:
 
 ## Problemi noti {#known-issues}
 
@@ -69,12 +69,12 @@ Prima di iniziare a utilizzare il servizio di conversione dei moduli automatizza
 
 ## Limitazioni  {#limitations}
 
-* Non sono supportati PDF forms con layout dinamico complesso, campi con struttura tratteggiata, campi compilati o campi colorati.
+* Non sono supportati PDF forms con layout dinamico complesso, campi con struttura tratteggiata o campi compilati.
 * Le immagini e il testo all’interno delle immagini non sono identificati. Aggiungere manualmente le immagini ai moduli convertiti.
 * I documenti XDP per immagini non sono supportati.
 * PDF forms maggiori di 15 pagine non sono supportati.
 * I documenti crittografati, protetti da password e protetti non vengono convertiti. Rimuovere la cifratura o le password prima di eseguire la conversione.
-* Le tabelle complesse come tabelle senza bordi, tabelle nidificate, tabelle con righe colorate e tabelle con valori segnaposto non sono supportate. Dopo la conversione, utilizzare l&#39;editor di moduli adattivi per aggiungere o modificare tabelle complesse. Sono supportate solo tabelle semplici, con campi vuoti, intestazioni corrette e bordi trasparenti.
+* Le tabelle complesse come tabelle senza bordi, tabelle nidificate e tabelle con valori segnaposto non sono supportate. Dopo la conversione, utilizzare l&#39;editor di moduli adattivi per aggiungere o modificare tabelle complesse. Sono supportate solo tabelle semplici, con campi vuoti, intestazioni corrette e bordi trasparenti.
 * Il servizio converte solo i moduli in lingua inglese in moduli adattivi. You can translate converted adaptive forms to another language using [AEM translation workflow](https://helpx.adobe.com/it/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 * AEM 6.4 Forms non supporta il rilevamento automatico del layout a più colonne dei moduli di input.
 
