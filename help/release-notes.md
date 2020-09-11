@@ -2,7 +2,7 @@
 title: Scopri le novità Note sulla versione - Servizio di conversione automatica dei moduli
 description: 'Scopri le ultime funzionalità e i bug corretti per il servizio di conversione automatica dei moduli '
 translation-type: tm+mt
-source-git-commit: bf14583de678ef963b0f2084c3da4624c9304b30
+source-git-commit: 9b904622fcf421d82a183569d915926a2761d3f5
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 89%
@@ -28,7 +28,7 @@ Il servizio di conversione automatica dei moduli viene migliorato continuamente.
 
 ### Novità
 
-È stato aggiunto il supporto per la conversione di moduli PDF colorati in moduli adattivi.
+È stato aggiunto il supporto per la conversione di PDF forms colorati in moduli adattivi.
 
 ### Miglioramenti
 
