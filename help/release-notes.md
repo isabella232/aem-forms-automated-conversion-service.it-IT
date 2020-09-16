@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 9b904622fcf421d82a183569d915926a2761d3f5
 workflow-type: tm+mt
 source-wordcount: '338'
-ht-degree: 89%
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ Il servizio di conversione automatica dei moduli viene migliorato continuamente.
 
 ### Miglioramenti
 
-Miglioramenti nella conversione automatizzata di campi di testo, moduli e gruppi di scelta in componenti modulo adattivi corrispondenti.
+Miglioramenti della conversione automatica dei campi di testo, moduli e gruppi di scelta nei corrispondenti componenti dei moduli adattativi.
 
 
 ## 20 marzo 2020 (AFC-2020.03.1)
@@ -51,7 +51,7 @@ Il servizio ora è più efficiente nel rilevamento degli elenchi puntati e numer
 
 ### Istruzioni speciali
 
-**Installa pacchetto connettore Forms Conversion Service**
+**Installazione del pacchetto del connettore del servizio di conversione automatica dei moduli**
 
 Per usufruire delle funzioni e dei miglioramenti più recenti forniti nella versione AFC-2020.03.1, è necessario il pacchetto del connettore 1.1.38 o versioni successive. Puoi scaricare il pacchetto del connettore da [Condivisione pacchetti AEM](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
 
