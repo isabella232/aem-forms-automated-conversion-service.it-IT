@@ -7,10 +7,10 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
+source-git-commit: 14e6d1fba9f27fde4fe24de83cb00c9847ea4e90
 workflow-type: tm+mt
-source-wordcount: '1709'
-ht-degree: 5%
+source-wordcount: '1822'
+ht-degree: 4%
 
 ---
 
@@ -132,4 +132,11 @@ L&#39;errore di cui sopra si verifica quando la delega di avvio non è configura
    <br/>
 
 1. **Come cambiare automaticamente la cascata del testo del modulo adattivo?**
+
    <p>È possibile utilizzare l'adattatore per i temi o l'editor di stili per cambiare la cascata di un campo di un modulo adattivo. Ad esempio, è possibile aprire l'editor di temi e impostare il valore della proprietà Case di tutto il testo del modulo su maiuscolo, minuscolo o camelCase. Potete anche utilizzare l'opzione Override CSS nell'editor di temi per creare diversi tipi di stili.</p>
+
+1. **È possibile utilizzare  tag di testo Adobe Sign con il servizio di conversione automatizzata di Forms?**
+
+   <p> Quando si utilizza Automated Forms Conversion Service per convertire un modulo PDF in un modulo adattivo e il modulo PDF contiene  tag di testo Adobe Sign, tali tag vengono convertiti nei campi modulo adattivi corrispondenti e i dettagli del firmatario vengono compilati automaticamente.  La funzione è disponibile solo per Acrobat Forms e i moduli adattivi supportano un numero limitato di  campi Adobe Sign.</p>  </br>
+
+   <p> Per un elenco completo dei tag supportati, aprire un modulo nell'editor di moduli adattivi e aggiungere un blocco Adobe Sign . Usare  blocco Adobe Sign per trovare tutti  campi Adobe Sign supportati. Fornisce un menu a discesa per selezionare tutti i campi supportati.</p>
