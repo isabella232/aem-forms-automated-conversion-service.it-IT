@@ -1,6 +1,5 @@
 ---
-title: '[NON PUBBLICARE] Best practice e considerazioni '
-seo-title: '[NON PUBBLICARE] Best practice e considerazioni '
+title: 'Procedure consigliate e considerazioni '
 description: 'null'
 seo-description: 'null'
 page-status-flag: never-activated
@@ -10,15 +9,19 @@ discoiquuid: b786e40a-202e-4e17-a2f5-1f77c46538c2
 privatebeta: true
 index: false
 translation-type: tm+mt
-source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
+source-git-commit: bc7a0a86a211214d6e43e7c95809f6f40fe267f8
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 6%
+source-wordcount: '542'
+ht-degree: 8%
 
 ---
 
 
-# [NON PUBBLICARE] Best practice e considerazioni {#do-not-publish-best-practices-and-considerations}
+# Procedure consigliate e considerazioni {#do-not-publish-best-practices-and-considerations}
+
+<!--
+[DO NOT PUBLISH]
+-->
 
  servizio di conversione automatizzata di AEM Forms converte un modulo PDF in un modulo adattivo. Il servizio utilizza algoritmi di intelligenza artificiale e di machine learning per comprendere il layout e i campi del modulo di origine. Ogni servizio di machine learning impara continuamente dai dati di origine e produce un output migliore con ogni churn. Questi servizi imparano dall&#39;esperienza come gli umani.
 
