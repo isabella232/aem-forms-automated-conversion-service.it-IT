@@ -8,9 +8,9 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: 14e6d1fba9f27fde4fe24de83cb00c9847ea4e90
+source-git-commit: fa8a27021fbccdd1c6c0721a6e5c032db486e262
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1585'
 ht-degree: 7%
 
 ---
@@ -30,8 +30,8 @@ ht-degree: 7%
 
 * **Aggiungere  tag di testo Adobe Sign ai documenti PDF di origine:** Quando nel modulo PDF di origine sono presenti [tag](https://helpx.adobe.com/sign/using/text-tag.html)di testo Adobe Sign, questi tag vengono automaticamente convertiti nei campi modulo adattivi corrispondenti e i dettagli del firmatario vengono automaticamente compilati. La funzione è disponibile solo per i moduli Acrobat e i moduli adattivi supportano un numero limitato di campi  Adobe Sign.
 
-
-   Per un elenco completo dei tag supportati, aprire un modulo nell&#39;editor di moduli adattivi e aggiungere un blocco Adobe Sign . Usare  blocco Adobe Sign per trovare tutti  campi Adobe Sign supportati. Fornisce un menu a discesa per selezionare tutti i campi supportati.
+   </br>
+    Il modulo adattivo supporta solo, firma, testo, numero, data, elenco a discesa, pulsante di scelta, casella di controllo, iniziale, blocco firma, firma digitale, titolo del firmatario, e-mail del firmatario, società del firmatario, data della firma e nome completo del firmatario  campi Adobe Sign. Pertanto, il servizio converte i tag di testo dei soli campi sopra citati in campi modulo adattivi corrispondenti.
 
 ## Avvio del processo di conversione {#start-the-conversion-process}
 
