@@ -1,20 +1,23 @@
 ---
-title: Revisione e correzione dei moduli convertiti
-seo-title: Revisione e correzione dei moduli convertiti
-description: Esaminare e correggere i moduli adattivi convertiti dal servizio di conversione moduli automatizzati.
-seo-description: Esaminare e correggere i moduli adattivi convertiti dal servizio di conversione moduli automatizzati
+title: Revisione dei moduli convertiti
+seo-title: Revisione dei moduli convertiti
+description: Esaminare e correggere i moduli adattivi convertiti dal servizio di conversione Forms automatizzata.
+seo-description: Esaminare e correggere i moduli adattivi convertiti dal servizio di conversione Forms automatizzata
 uuid: 5a0a6d24-dff6-4732-b607-24848b07b26d
 topic-tags: forms
 discoiquuid: f45ab2d7-5234-42d6-aeb6-b2cb1a7ce3c2
 translation-type: tm+mt
-source-git-commit: 3303c72b7d644dd183c036ba3cc48e629a9a503e
+source-git-commit: 3c12751cad2b3c04ad66a98ac17f20f648530d0f
+workflow-type: tm+mt
+source-wordcount: '2536'
+ht-degree: 0%
 
 ---
 
 
-# Revisione e correzione dei moduli convertiti{#review-and-correct-converted-forms}
+# Revisione dei moduli convertiti{#review-and-correct-converted-forms}
 
-Il servizio di conversione AEM Forms Automated Forms identifica campi, contenuto e layout del documento PDF di input e converte il documento PDF in un modulo adattivo. Il modulo adattivo di output può contenere alcuni campi mancanti o convertiti in modo non corretto. È possibile utilizzare l&#39;editor Revisione e Correzione per apportare miglioramenti ai campi identificati e rigenerare il modulo adattivo per ottenere un output più vicino all&#39;esperienza desiderata. Dopo la prima conversione, è possibile aprire il documento PDF di input nell&#39;editor per:
+ AEM Forms Automated Forms Conversion Service identifica campi, contenuto e layout del documento PDF di input e converte il documento PDF in un modulo adattivo. Il modulo adattivo di output può contenere alcuni campi mancanti o convertiti in modo non corretto. È possibile utilizzare l&#39;editor Revisione e Correzione per apportare miglioramenti ai campi identificati e rigenerare il modulo adattivo per ottenere un output più vicino all&#39;esperienza desiderata. Dopo la prima conversione, è possibile aprire il documento PDF di input nell&#39;editor per:
 
 * Visualizza tutti i campi e i contenuti identificati durante la conversione
 * Identificare i campi e il contenuto persi durante la conversione
@@ -22,9 +25,9 @@ Il servizio di conversione AEM Forms Automated Forms identifica campi, contenuto
 * Verificare le tabelle identificate, ridimensionare le colonne e modificare il contenuto delle celle
 * Rimozione di campi erroneamente identificati
 
-Dopo aver apportato le modifiche necessarie, inviare nuovamente i moduli PDF al servizio di conversione. In caso di conversione riuscita, le risorse aggiornate, inclusi il modulo adattivo e lo schema, vengono scaricate nell&#39;istanza di AEM Forms. Potete ripetere il processo fino a ottenere l&#39;esperienza desiderata. ![](assets/stages-of-form-2.gif)
+Dopo aver apportato le modifiche necessarie, inviate nuovamente i PDF forms al servizio di conversione. In caso di conversione riuscita, le risorse aggiornate, inclusi il modulo adattivo e lo schema, vengono scaricate nell&#39;istanza AEM Forms . Potete ripetere il processo fino a ottenere l&#39;esperienza desiderata. ![](assets/stages-of-form-2.gif)
 
-È necessario Google Chrome, Mozilla FireFox, o Microsoft Edge browser per utilizzare revisione e correzione editor. L&#39;editor non supporta Internet Explorer.
+È necessario Google Chrome, Mozilla FireFox o Microsoft Edge browser per utilizzare revisione e correzione editor. L&#39;editor non supporta Internet Explorer.
 
 ## Editor di revisione e correzione {#welcome-to-review-and-correct-editor}
 
@@ -42,7 +45,7 @@ L&#39;editor di revisione e correzione fornisce un&#39;interfaccia di facile uti
 
 ![Interfaccia utente di revisione e correzione](assets/reviewcorrectui.png)
 
-**************A. Browser dei contenuti** B. Browser proprietà **C.** Barra degli strumenti **D. Pulsante Proprietà** E. Pulsante Filtro **F. Pulsante Salva** G. Modulo PDF sovrapposto con campi identificati
+**A.** Browser dei contenuti **B.** Browser proprietà **C.** Barra degli strumenti **D.** Pulsante Proprietà **E.** Pulsante Filtro **F.** Pulsante Salva **G.** Modulo PDF sovrapposto con campi identificati
 
 Dopo la prima conversione, il servizio di conversione sovrappone il documento PDF di origine con campi e componenti identificati. Questi campi o componenti sono di tipo: Testo, Campo, Pannello, Gruppo di scelta e tabella:
 
@@ -62,7 +65,7 @@ Dopo la prima conversione, il servizio di conversione sovrappone il documento PD
 
 * L&#39;editor di revisione e correzione non supporta i frammenti. Non utilizzate l&#39;editor per esaminare le conversioni per le quali è stata abilitata l&#39;opzione **Estrai frammento** durante le conversioni. Per tali conversioni è possibile utilizzare l’editor [di moduli](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html) adattivi.
 
-* L&#39;editor di revisione e correzione non dispone di azioni di annullamento. Utilizzare il pulsante Salva solo per salvare in modo permanente le modifiche.
+* L&#39;editor di revisione e correzione non dispone di azioni di annullamento. Utilizzate il pulsante Salva solo per salvare in modo permanente le modifiche.
 
 ### Avviare la revisione {#start-the-review}
 
@@ -90,23 +93,23 @@ Per avviare la revisione delle conversioni, selezionare il documento PDF di orig
 
    * Per aggiungere del testo al modulo, toccate il pulsante +, quindi toccate **[!UICONTROL Text]**. Disegnate la casella, aprite il browser delle proprietà e digitate il testo da aggiungere alla casella Contenuto.
 
-1. **** Esaminare le tabelle: Assicurarsi che tutti i bordi della tabella siano identificati. Inoltre, verificare che il contenuto delle celle sia identificato correttamente.
+1. **Esaminare le tabelle:** Assicurarsi che tutti i bordi della tabella siano identificati. Inoltre, verificare che il contenuto delle celle sia identificato correttamente.
 
    * Per identificare i bordi mancanti, utilizzare l&#39; **[!UICONTROL Add Column]** opzione o **[!UICONTROL Add Row]** .
 
    * Per rimuovere bordi aggiuntivi, utilizzare l&#39; **[!UICONTROL Delete Column]** opzione o **[!UICONTROL Delete Row]** .
 
-Dopo aver apportato le modifiche necessarie, toccare il **[!UICONTROL Save & Convert]** pulsante per inviare nuovamente i moduli PDF al servizio di conversione. Ogni campo viene convertito in un componente campo adattivo corrispondente. Dopo la conversione, le risorse aggiornate, incluso il modulo adattivo e lo schema, vengono scaricate nell&#39;istanza di AEM Forms. A seconda della complessità del modulo, il completamento della conversione potrebbe richiedere del tempo.
+Dopo aver apportato le modifiche necessarie, toccate il **[!UICONTROL Save & Convert]** pulsante per inviare nuovamente i PDF forms al servizio di conversione. Ogni campo viene convertito in un componente campo adattivo corrispondente. Dopo la conversione, le risorse aggiornate, incluso il modulo adattivo e lo schema, vengono scaricate nell&#39;istanza AEM Forms . A seconda della complessità del modulo, il completamento della conversione potrebbe richiedere del tempo.
 
 ![Salva e converti](assets/save-and-convert.png)
 
-Dopo aver eseguito i controlli di base, è possibile esaminare il modulo per risolvere i problemi specifici dell&#39;organizzazione. Questi problemi possono essere correlati all&#39;aggiunta di campi mancanti e altro. Potete visualizzare la sezione [Utilizzare gli strumenti](review-correct-ui-edited.md#use-the-review-and-correct-editor-tools) di revisione e correzione dell&#39;editor per apprendere tutti gli strumenti forniti dall&#39;editor per risolvere tali problemi.
+Dopo aver eseguito i controlli di base, è possibile esaminare il modulo per risolvere i problemi specifici dell&#39;organizzazione. Questi problemi possono essere correlati all&#39;aggiunta di campi mancanti e molto altro. Potete visualizzare la sezione [Utilizzare gli strumenti](review-correct-ui-edited.md#use-the-review-and-correct-editor-tools) di revisione e correzione dell&#39;editor per apprendere tutti gli strumenti forniti dall&#39;editor per risolvere tali problemi.
 
-È inoltre possibile riconoscere problemi identici che si verificano in quasi tutti i moduli e segnalare tali pattern ad Adobe. Utilizzate l&#39;editor Review e correct fino a ottenere l&#39;esperienza desiderata.
+È inoltre possibile riconoscere gli stessi problemi che si verificano in quasi tutti i moduli e segnalare tali pattern al Adobe . Utilizzate l&#39;editor Review e correct fino a ottenere l&#39;esperienza desiderata.
 
 ## Utilizzare gli strumenti di modifica Revisione e Correzione {#use-the-review-and-correct-editor-tools}
 
-Con l&#39;editor Review e Right potete:
+Con l&#39;editor Review e Correction, potete:
 
 * [Aggiunta di un componente al modulo](review-correct-ui-edited.md#add-a-component-to-the-form)
 * [Aggiunta o modifica di una tabella](review-correct-ui-edited.md)
@@ -125,7 +128,7 @@ Il servizio di conversione potrebbe non identificare alcuni componenti del modul
 
 Per aggiungere un componente al modulo, toccate **[!UICONTROL +]** e toccate **[!UICONTROL Field]**. Disegnare una casella che copra l&#39;etichetta e la casella di input del campo. Ad esempio, l&#39;immagine di esempio precedente utilizza il componente Campo per aggiungere al modulo l&#39;etichetta **Data di nascita** e la casella del valore al di sotto di esso. Quando si disegna la casella, il servizio di conversione identifica il tipo di campo. Se necessario, è possibile modificare il tipo di campo dal browser delle proprietà. Dopo aver creato il componente, aprite il browser delle proprietà e impostate le proprietà del componente.
 
-Toccare **[!UICONTROL Save]** il pulsante per salvare le modifiche o utilizzare il **[!UICONTROL Save & Convert]** pulsante per inviare nuovamente i moduli PDF al servizio di conversione.
+Toccate **[!UICONTROL Save]** il pulsante per salvare le modifiche o usate il **[!UICONTROL Save & Convert]** pulsante per inviare nuovamente i PDF forms al servizio di conversione.
 
 ### Aggiunta o modifica di una tabella {#addedittable}
 
@@ -134,19 +137,19 @@ La conversione può lasciare non identificate alcune celle, bordi o contenuto di
 * Per selezionare una tabella, fare clic su una cella qualsiasi della tabella.
 * Per modificare le proprietà di una cella come nome, titolo o tipo, fare doppio clic su una cella. È inoltre possibile fare doppio clic sulla cella per modificare il contenuto, contrassegnare un campo obbligatorio e selezionare altre proprietà.
 * Per aggiungere o identificare al modulo una tabella completamente non identificata o nuova, utilizzare lo **[!UICONTROL +]** strumento.
-* Per ridimensionare le celle o le righe di una tabella, fare clic su un&#39;area vuota della tabella, passare il puntatore del mouse sul contorno di una riga o di una colonna quando il puntatore del mouse cambia, selezionare e spostare il contorno. Dopo il ridimensionamento, fate clic **[!UICONTROL Done]** per salvare le modifiche. È possibile premere il **[!UICONTROL ESC]** tasto per eliminare il ridimensionamento.
+* Per ridimensionare le celle o le righe di una tabella, fare clic su un&#39;area vuota della tabella, passare il puntatore del mouse sul contorno di una riga o di una colonna, quando il puntatore del mouse cambia, selezionare e spostare il contorno. Dopo il ridimensionamento, fate clic **[!UICONTROL Done]** per salvare le modifiche. È possibile premere il **[!UICONTROL ESC]** tasto per eliminare il ridimensionamento.
 
 * Per aggiungere o eliminare righe o colonne, selezionare una cella nella riga della tabella e selezionare l&#39; **[!UICONTROL Add Row]**, **[!UICONTROL Add Column]**, **[!UICONTROL Delete Row]** o **[!UICONTROL Delete Column]** opzione dal ![](assets/table_18x18.png) menu.
 
 * Per dividere una cella in una tabella, selezionare l&#39; **[!UICONTROL Spilt Vertical]** opzione o **[!UICONTROL Split Horizontal]** dal ![](assets/table_18x18.png) menu.
 
-* Per unire le celle di una tabella, selezionare le celle da unire e selezionare l&#39; **[!UICONTROL Merge Cells]** opzione dal menu ![](assets/table_18x18.png) della tabella.
+* Per unire le celle di una tabella, selezionare le celle da unire, quindi selezionare l&#39; **[!UICONTROL Merge Cells]** opzione dal menu ![](assets/table_18x18.png) della tabella.
 
 ### Modificare il tipo di componente {#change-type-a-component}
 
 Il servizio di conversione può creare alcuni campi di tipo errato. Ad esempio, nell&#39;immagine seguente, il campo **Genere** non è correttamente identificato come campo di **testo** . Inoltre, il contenuto dell&#39;etichetta è errato. Il campo deve essere un tipo di campo di scelta e l&#39;etichetta deve essere Genere. Per modificare il tipo di un componente e correggerne l’etichetta:
 
-Selezionare il campo da convertire, toccare ![](assets/smock_shuffle_18_n.svg) e toccare un tipo di campo. Il campo è convertito in un tipo di campo selezionato. Un campo può essere convertito solo in tipi elencati nella tabella seguente. Un componente del pannello può essere solo separato, non trasformato.
+Selezionare il campo da convertire, toccare ![](assets/smock_shuffle_18_n.svg) e toccare un tipo di campo. Il campo è convertito in un tipo di campo selezionato. Un campo può essere convertito solo in tipi elencati nella tabella seguente. Un componente di un pannello può essere solo separato, non trasformato.
 
 | **Componente** | **Converte in** |
 |---|---|
@@ -154,19 +157,19 @@ Selezionare il campo da convertire, toccare ![](assets/smock_shuffle_18_n.svg) e
 | Campo | Testo o gruppo di scelta |
 | Gruppo di scelta | Testo o pannello |
 
-Dopo la conversione, aprite il browser delle proprietà, specificate l&#39;etichetta e specificate le altre proprietà richieste. Toccare **[!UICONTROL Save]** il pulsante per salvare le modifiche o utilizzare il pulsante Salva e converti per inviare nuovamente i moduli PDF al servizio di conversione.
+Dopo la conversione, aprite il browser delle proprietà, specificate l&#39;etichetta e specificate le altre proprietà richieste. Toccate **[!UICONTROL Save]** il pulsante per salvare le modifiche o usate il pulsante Salva e converti per inviare nuovamente i PDF forms al servizio di conversione.
 
 ### Creare o rimuovere un pannello {#create-or-remove-a-panel}
 
 Il servizio di conversione aggrega i componenti correlati e il contenuto dei moduli di stampa in un pannello. Ad esempio, il modulo può avere un pannello di indirizzi con campi quali nome, numero del grafico, area, città, stato, CAP e paese. Questi campi sono raggruppati in un pannello. Un modulo può avere più pannelli.
 
-Il servizio di conversione può creare pannelli con componenti che non hanno alcuna relazione con altri componenti o che lasciano un componente relativo fuori dal pannello. Potete usare gli strumenti di gruppo o di separazione dei gruppi per correggere tali pannelli:
+Il servizio di conversione può creare pannelli con componenti che non hanno alcuna relazione con altri componenti o che escono dal pannello da un componente relativo. Potete usare gli strumenti di gruppo o di separazione dei gruppi per correggere tali pannelli:
 
 * Per rimuovere un pannello, selezionatelo e toccate Separa ![gruppo](assets/ungroupX18.png). Il pannello viene rimosso e i componenti secondari del pannello vengono spostati sul componente principale. Potete anche usare l’opzione [Elimina componente](review-correct-ui-edited.md#delete-a-panel-or-component) per eliminare un pannello e i relativi elementi secondari.
 
 * Per creare un pannello, usate il tasto Ctrl (in Windows o Linux) o il tasto Ctrl (in Mac) per selezionare i componenti correlati, quindi toccate ![il gruppo](assets/group.jpg) per creare un pannello. Aprite il browser delle proprietà per specificare le proprietà del pannello.
 
-Toccare **[!UICONTROL Save]** il pulsante per salvare le modifiche o utilizzare il **[!UICONTROL Save & Convert]** pulsante per inviare nuovamente i moduli PDF al servizio di conversione.
+Toccate **[!UICONTROL Save]** il pulsante per salvare le modifiche o usate il **[!UICONTROL Save & Convert]** pulsante per inviare nuovamente i PDF forms al servizio di conversione.
 
 ### Eliminare un pannello o un componente {#delete-a-panel-or-component}
 
@@ -178,11 +181,11 @@ Per eliminare un pannello o un componente, selezionate un pannello o un componen
 
 Ogni componente del modulo dispone di un set di proprietà come nome, titolo, tipo. Per impostare le proprietà di un componente, selezionate il componente e toccate il browser delle proprietà. Vengono visualizzate le proprietà del componente selezionato. Modificate o impostate le proprietà.
 
-Toccare **[!UICONTROL Save]** il pulsante per salvare le modifiche o utilizzare il **[!UICONTROL Save & Convert]** pulsante per inviare nuovamente i moduli PDF al servizio di conversione.
+Toccate **[!UICONTROL Save]** il pulsante per salvare le modifiche o usate il **[!UICONTROL Save & Convert]** pulsante per inviare nuovamente i PDF forms al servizio di conversione.
 
 ### Inviare un modulo per la conversione {#send-a-form-for-conversion}
 
-Dopo aver apportato tutte le modifiche necessarie nell&#39;editor di revisione e correzione, è possibile inviare nuovamente il modulo per la conversione. Per inviare il modulo per la conversione, toccate **[!UICONTROL Save & Convert]**. Il modulo **[!UICONTROL Sent for conversion label]** viene applicato alla cartella contenente il documento di origine e il modulo di origine aggiornato viene caricato nel servizio di conversione in esecuzione su Adobe I/O.
+Dopo aver apportato tutte le modifiche necessarie nell&#39;editor di revisione e correzione, è possibile inviare nuovamente il modulo per la conversione. Per inviare il modulo per la conversione, toccate **[!UICONTROL Save & Convert]**. Il modulo **[!UICONTROL Sent for conversion label]** viene applicato alla cartella contenente il documento di origine e il modulo di origine aggiornato viene caricato nel servizio di conversione in esecuzione  I/O Adobe.
 
 A seconda della complessità del modulo, il servizio di conversione può richiedere del tempo per convertire il modulo. Una volta completata la conversione, il modulo adattivo convertito e le risorse correlate vengono scaricati nel computer. È possibile esaminare il modulo nell&#39;editor dopo che la conversione è stata completata e aprire il modulo adattivo nell&#39;editor [di moduli](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html) adattivi per il set finale di correzioni, se necessario.
 
@@ -204,3 +207,4 @@ Comment Type: draft
 ## Previous {#previous}
 
 [Use Automated Forms Conversion service](convert-existing-forms-to-adaptive-forms.md)
+-->
