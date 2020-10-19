@@ -8,7 +8,7 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: 19c688ae925774c008683be8b92afcbfb9f2bcdb
+source-git-commit: 0bff37d64df233dc52310266e306edb734887727
 workflow-type: tm+mt
 source-wordcount: '1599'
 ht-degree: 7%
@@ -30,7 +30,7 @@ ht-degree: 7%
 
 * **Aggiungere  tag di testo Adobe Sign ai documenti PDF di origine:** Quando in un modulo PDF di origine sono presenti [tag](https://helpx.adobe.com/sign/using/text-tag.html)di testo Adobe Sign, il servizio mantiene tutte le informazioni relative al firmatario durante la conversione. Il modulo adattivo generato compila tutti i dettagli del firmatario durante l&#39;invio del modulo adattivo a  servizio Adobe Sign per la firma. La funzione è disponibile solo per AcroForms e le proprietà del modulo adattivo sono esattamente allineate con le proprietà AcroForm.
 
-Per aggiungere  tag di testo Adobe Sign ai documenti PDF di origine, sostituire il nome del campo nel documento PDF di origine con un tag [di](https://helpx.adobe.com/sign/using/text-tag.html) testo o utilizzare l&#39;articolo Converti in  modulo Adobe Sign come descritto in [Creazione di moduli tramite  articolo Acrobat DC](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html#) .
+   Per aggiungere  tag di testo Adobe Sign ai documenti PDF di origine, sostituire il nome del campo nel documento PDF di origine con un tag [di](https://helpx.adobe.com/sign/using/text-tag.html) testo o utilizzare l&#39;articolo Converti in  modulo Adobe Sign come descritto in [Creazione di moduli tramite  articolo Acrobat DC](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html#) .
 
 
 
