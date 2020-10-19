@@ -8,9 +8,9 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: fa8a27021fbccdd1c6c0721a6e5c032db486e262
+source-git-commit: 19c688ae925774c008683be8b92afcbfb9f2bcdb
 workflow-type: tm+mt
-source-wordcount: '1585'
+source-wordcount: '1599'
 ht-degree: 7%
 
 ---
@@ -24,14 +24,15 @@ ht-degree: 7%
 
 * [**Configurare il servizio di conversione**](configure-service.md)
 
-* **Preparare i[modelli](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)da applicare ai moduli convertiti:** L&#39;utilizzo di un modello consente di applicare un marchio coerente a tutti i moduli adattivi. Inoltre, il servizio di conversione Forms automatizzata non estrae né utilizza l&#39;intestazione e il piè di pagina dei documenti PDF di origine. È possibile utilizzare i modelli di modulo adattivo per specificare intestazione e piè di pagina. L&#39;intestazione e il piè di pagina specificati nel modello vengono applicati al modulo adattivo durante la conversione. Quando create una cartella per i modelli, selezionate l’ **[!UICONTROL Browse configurations]** opzione per tutti.
+* **Preparare i [modelli](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html) da applicare ai moduli convertiti:** L&#39;utilizzo di un modello consente di applicare un marchio coerente a tutti i moduli adattivi. Inoltre, il servizio di conversione Forms automatizzata non estrae né utilizza l&#39;intestazione e il piè di pagina dei documenti PDF di origine. È possibile utilizzare i modelli di modulo adattivo per specificare intestazione e piè di pagina. L&#39;intestazione e il piè di pagina specificati nel modello vengono applicati al modulo adattivo durante la conversione. Quando create una cartella per i modelli, selezionate l’ **[!UICONTROL Browse configurations]** opzione per tutti.
 
-* **Preparare i[temi](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html)da applicare ai moduli convertiti:** L&#39;utilizzo di un tema consente di applicare uno stile coerente a tutti i moduli adattivi dell&#39;organizzazione.
+* **Preparare i [temi](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html) da applicare ai moduli convertiti:** L&#39;utilizzo di un tema consente di applicare uno stile coerente a tutti i moduli adattivi dell&#39;organizzazione.
 
-* **Aggiungere  tag di testo Adobe Sign ai documenti PDF di origine:** Quando nel modulo PDF di origine sono presenti [tag](https://helpx.adobe.com/sign/using/text-tag.html)di testo Adobe Sign, questi tag vengono automaticamente convertiti nei campi modulo adattivi corrispondenti e i dettagli del firmatario vengono automaticamente compilati. La funzione è disponibile solo per i moduli Acrobat e i moduli adattivi supportano un numero limitato di campi  Adobe Sign.
+* **Aggiungere  tag di testo Adobe Sign ai documenti PDF di origine:** Quando in un modulo PDF di origine sono presenti [tag](https://helpx.adobe.com/sign/using/text-tag.html)di testo Adobe Sign, il servizio mantiene tutte le informazioni relative al firmatario durante la conversione. Il modulo adattivo generato compila tutti i dettagli del firmatario durante l&#39;invio del modulo adattivo a  servizio Adobe Sign per la firma. La funzione è disponibile solo per AcroForms e le proprietà del modulo adattivo sono esattamente allineate con le proprietà AcroForm.
 
-   </br>
-    Il modulo adattivo supporta solo, firma, testo, numero, data, elenco a discesa, pulsante di scelta, casella di controllo, iniziale, blocco firma, firma digitale, titolo del firmatario, e-mail del firmatario, società del firmatario, data della firma e nome completo del firmatario  campi Adobe Sign. Pertanto, il servizio converte i tag di testo dei soli campi sopra citati in campi modulo adattivi corrispondenti.
+Per aggiungere  tag di testo Adobe Sign ai documenti PDF di origine, sostituire il nome del campo nel documento PDF di origine con un tag [di](https://helpx.adobe.com/sign/using/text-tag.html) testo o utilizzare l&#39;articolo Converti in  modulo Adobe Sign come descritto in [Creazione di moduli tramite  articolo Acrobat DC](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html#) .
+
+
 
 ## Avvio del processo di conversione {#start-the-conversion-process}
 
