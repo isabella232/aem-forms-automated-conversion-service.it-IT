@@ -8,9 +8,9 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: 773dae94d4e65b72de3518ebf5be4350db34fbb0
+source-git-commit: 1c4eb103b1d3b40ead4137f05e6af01d581365e5
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1616'
 ht-degree: 7%
 
 ---
@@ -28,10 +28,8 @@ ht-degree: 7%
 
 * **Preparare i [temi](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html) da applicare ai moduli convertiti:** L&#39;utilizzo di un tema consente di applicare uno stile coerente a tutti i moduli adattivi dell&#39;organizzazione.
 
-* **Aggiungere  tag di testo Adobe Sign ai documenti PDF di origine:** Quando in un modulo PDF di origine sono presenti [tag](https://helpx.adobe.com/sign/using/text-tag.html)di testo Adobe Sign, il servizio mantiene tutte le informazioni relative  Adobe Sign durante la conversione. Il modulo adattivo generato mantiene intatti i campi modulo adattivo relativi alle informazioni del firmatario durante l’invio del modulo adattivo al servizio Adobe Sign  per la firma. La funzione è disponibile solo per AcroForms e le proprietà del modulo adattivo sono esattamente allineate con le proprietà AcroForm.
-
+* **Aggiungere  tag di testo Adobe Sign ai documenti PDF di origine:** Quando in un modulo PDF di origine sono presenti [tag](https://helpx.adobe.com/sign/using/text-tag.html)di testo Adobe Sign, il servizio mantiene tutte le informazioni relative  Adobe Sign durante la conversione. Il modulo adattivo generato associa le informazioni del firmatario presenti in AcroForm ai campi modulo adattivi e mantiene intatti i dati relativi ai campi modulo adattivi corrispondenti durante l&#39;invio del modulo adattivo al servizio di firma del Adobe . La funzione è disponibile solo per AcroForms e le proprietà del modulo adattivo sono esattamente allineate con le proprietà AcroForm <br>\
    Per aggiungere  tag di testo Adobe Sign ai documenti PDF di origine, sostituire il nome del campo nel documento PDF di origine con un tag [di](https://helpx.adobe.com/sign/using/text-tag.html) testo o utilizzare l&#39;articolo Converti in  modulo Adobe Sign come descritto in [Creazione di moduli tramite  articolo Acrobat DC](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html#) .
-
 
 
 ## Avvio del processo di conversione {#start-the-conversion-process}
