@@ -1,8 +1,11 @@
 ---
 title: Introduzione
 description: 'Accelerazione della conversione dei moduli di stampa in moduli adattivi '
-translation-type: ht
-source-git-commit: ceff5cb56aa9896a28004628c5e26c262b7918bd
+translation-type: tm+mt
+source-git-commit: c4f0d07b38cdb6aa162a0b61abe12fe9d1677a8c
+workflow-type: tm+mt
+source-wordcount: '674'
+ht-degree: 92%
 
 ---
 
@@ -28,6 +31,8 @@ Adobe abilita l’accesso per la tua organizzazione e fornisce i privilegi richi
 ## Moduli PDF e lingue supportati {#supported-languages-and-pdf-forms}
 
 Il servizio supporta moduli PDF non interattivi, moduli creati con Adobe Acrobat noti come AcroForms e moduli basati su XFA creati utilizzando AEM Forms o Adobe LiveCycle.
+
+Il servizio supporta anche  PDF forms abilitati per Adobe Sign. Se il modulo PDF di origine contiene  tag di testo Adobe Sign, il servizio mantiene tutte le informazioni relative  Adobe Sign durante la conversione e associa le informazioni del firmatario presenti nel PDF di origine ai campi modulo adattivi corrispondenti. La funzione è disponibile solo per Acrobat Forms.
 
 Il servizio è in grado di convertire in moduli adattivi solo i moduli in lingua inglese. Puoi tradurre i moduli adattativi generati in un’altra lingua usando [workflow di traduzione AEM](https://helpx.adobe.com/it/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 
