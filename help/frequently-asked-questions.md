@@ -7,7 +7,7 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: c4f0d07b38cdb6aa162a0b61abe12fe9d1677a8c
+source-git-commit: 49f1b6c93529ab30141503ab884801cf1c37b20b
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 4%
@@ -142,4 +142,4 @@ L&#39;errore di cui sopra si verifica quando la delega di avvio non è configura
    <p> Per un elenco completo dei tag supportati, aprire un modulo nell'editor di moduli adattivi e aggiungere un blocco Adobe Sign . Usare  blocco Adobe Sign per trovare tutti  campi Adobe Sign supportati. Fornisce un menu a discesa per selezionare tutti i campi supportati.</p>
 
 1. **Come creare un modulo PDF abilitato per  Adobe Sign?**
-Per creare un modulo PDF abilitato per  Adobe Sign, aggiungere [tag](https://helpx.adobe.com/sign/using/text-tag.html) di testo Adobe Sign ai nomi dei campi o utilizzare l&#39;opzione [Converti in  modulo](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html) Adobe Sign. </br>
+   </p>Per creare un modulo PDF abilitato per  Adobe Sign:</p> Aggiungere [ tag di testo Adobe Sign](https://helpx.adobe.com/sign/using/text-tag.html) ai nomi dei campi oppure utilizzare l'opzione [Converti in modulo Adobe Sign ](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html). </br>
