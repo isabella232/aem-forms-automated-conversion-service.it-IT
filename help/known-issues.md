@@ -7,9 +7,9 @@ uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 translation-type: tm+mt
-source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
+source-git-commit: 589eacfd6200f4336b7a4a7708e10f3dfe08406d
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '808'
 ht-degree: 1%
 
 ---
@@ -77,4 +77,7 @@ Prima di iniziare a utilizzare  AEM Forms Automated Forms Conversion Service, co
 * Le tabelle complesse come tabelle senza bordi, tabelle nidificate e tabelle con valori segnaposto non sono supportate. Dopo la conversione, utilizzare l&#39;editor di moduli adattivi per aggiungere o modificare tabelle complesse. Sono supportate solo tabelle semplici, con campi vuoti, intestazioni corrette e bordi trasparenti.
 * Il servizio converte solo i moduli in lingua inglese in moduli adattivi. You can translate converted adaptive forms to another language using [AEM translation workflow](https://helpx.adobe.com/it/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 * AEM 6.4 Forms non supporta il rilevamento automatico del layout a più colonne dei moduli di input.
+* Le informazioni codificate utilizzando i colori nel modulo PDF di origine non vengono trasferite al modulo adattivo.
+* I colori del modulo PDF di origine vengono trasferiti ai temi dei moduli adattivi.
+* I PDF forms colorati vengono trattati come moduli in scala di grigi e i campi vengono rilevati di conseguenza.
 
