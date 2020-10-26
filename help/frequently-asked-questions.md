@@ -7,9 +7,9 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: 7b8e013af91430e86c0014c7a1695abb05c3c0f2
+source-git-commit: 92cd241915ef5818fb004a8982674b4f6753c171
 workflow-type: tm+mt
-source-wordcount: '1866'
+source-wordcount: '1825'
 ht-degree: 4%
 
 ---
@@ -138,8 +138,6 @@ L&#39;errore di cui sopra si verifica quando la delega di avvio non è configura
 1. **È possibile utilizzare  tag di testo Adobe Sign con il servizio di conversione automatizzata di Forms?**
 
    <p> Quando si utilizza Automated Forms Conversion Service per convertire un modulo PDF in un modulo adattivo e il modulo PDF contiene  tag di testo Adobe Sign, tali tag vengono convertiti nei campi modulo adattivi corrispondenti e i dettagli del firmatario vengono compilati automaticamente.  La funzione è disponibile solo per Acrobat Forms e i moduli adattivi supportano un numero limitato di  campi Adobe Sign.</p>  </br>
-
-   <p> Per un elenco completo dei tag supportati, aprire un modulo nell'editor di moduli adattivi e aggiungere un blocco Adobe Sign . Usare  blocco Adobe Sign per trovare tutti  campi Adobe Sign supportati. Fornisce un menu a discesa per selezionare tutti i campi supportati.</p>
 
 1. **Come creare un modulo PDF abilitato per  Adobe Sign?**
 
