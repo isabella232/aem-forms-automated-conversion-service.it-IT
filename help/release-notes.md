@@ -1,9 +1,9 @@
 ---
 title: Scopri le novità Note sulla versione - Servizio di conversione automatica dei moduli
 description: 'Scopri le ultime funzionalità e i bug corretti per il servizio di conversione automatica dei moduli '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8808e2d9c762617ba67e2f1ab4e103f828e11c58
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '338'
 ht-degree: 100%
 
