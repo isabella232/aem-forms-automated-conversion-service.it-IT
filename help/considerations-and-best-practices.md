@@ -25,9 +25,9 @@ ht-degree: 8%
 
  servizio di conversione automatizzata di AEM Forms converte un modulo PDF in un modulo adattivo. Il servizio utilizza algoritmi di intelligenza artificiale e di machine learning per comprendere il layout e i campi del modulo di origine. Ogni servizio di machine learning impara continuamente dai dati di origine e produce un output migliore con ogni churn. Questi servizi imparano dall&#39;esperienza come gli umani.
 
-Il servizio di conversione Forms automatizzato è formato su un&#39;ampia gamma di moduli. Identifica facilmente i campi in un modulo di origine e produce moduli adattivi. Tuttavia, ci sono alcuni campi e stili in PDF forms che sono facilmente visibili all&#39;occhio umano ma difficili da capire per il servizio. Il servizio può assegnare tipi di campi o pannelli diversi da quelli applicabili ad alcuni campi o stili. Tutti questi pattern di campo e stile sono elencati di seguito.
+Il servizio di automated forms conversion viene addestrato su una vasta gamma di moduli. Identifica facilmente i campi in un modulo di origine e produce moduli adattivi. Tuttavia, ci sono alcuni campi e stili in PDF forms che sono facilmente visibili all&#39;occhio umano ma difficili da capire per il servizio. Il servizio può assegnare tipi di campi o pannelli diversi da quelli applicabili ad alcuni campi o stili. Tutti questi pattern di campo e stile sono elencati di seguito.
 
-Il servizio inizierebbe a identificare e assegnare campi o pannelli corretti a questi pattern, continuando a imparare dai dati di origine. Al momento, per risolvere tali problemi è possibile utilizzare l&#39;editor [Revisione e Correzione](review-correct-ui-edited.md) . Prima di iniziare a risolvere i problemi o a leggere meglio, è necessario acquisire dimestichezza con i componenti [dei moduli](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html)adattivi.
+Il servizio inizierebbe a identificare e assegnare campi o pannelli corretti a questi pattern, continuando a imparare dai dati di origine. Al momento, è possibile utilizzare l&#39;editor [Revisione e correzione](review-correct-ui-edited.md) per risolvere tali problemi. Prima di iniziare a risolvere i problemi o a leggere meglio, è necessario conoscere [i componenti per moduli adattivi](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html).
 
 ## Generale {#general}
 
@@ -59,7 +59,7 @@ Il servizio inizierebbe a identificare e assegnare campi o pannelli corretti a q
  </tbody>
 </table>
 
-## Gruppo di scelta  {#choice-group}
+## Gruppo di scelta {#choice-group}
 
 <table border="1" cellpadding="1" cellspacing="0" width="100%"> 
  <tbody>
@@ -74,7 +74,7 @@ Il servizio inizierebbe a identificare e assegnare campi o pannelli corretti a q
  </tbody>
 </table>
 
-## Form fields {#form-fields}
+## Campi modulo {#form-fields}
 
 <table border="1" cellpadding="1" cellspacing="0" width="100%"> 
  <tbody>
