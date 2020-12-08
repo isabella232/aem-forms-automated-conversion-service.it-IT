@@ -1,16 +1,12 @@
 ---
-source-git-commit: d2af4611e68447253a818e0c83ff3ec519056373
+source-git-commit: c8489a521f35c60ee28227f499e9a0a7541960b9
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '517'
-ht-degree: 21%
+source-wordcount: '435'
+ht-degree: 23%
 
 ---
 # Articolo di Contribute
-
-| EXL-PR | EXL | Anteprima | Attiva | Pubblicato | Aiuto |
-|--- |--- |--- |--- |--- |--- |
-| [![Stato build](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_pr-exl/lastBuild/) | [![Stato build](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_exl/lastBuild/lastBuild) | [URL anteprima](https://experienceleague.corp.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [URL dal vivo](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=en) | [Guida all’authoring](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 Accogliamo con favore i contributi dei nostri dipendenti della comunità e  Adobe al di fuori dei team di documentazione.
 
@@ -20,7 +16,7 @@ Questo progetto ha adottato il [Codice di condotta di Adobe Open Source](code-of
 
 ## Informazioni sui contributi al contenuto  Adobe
 
-Consulta la [Adobe Docs Contributor Guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html).
+Vedere la [ Adobe Docs Contributor Guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html).
 
 Il tuo contributo dipende da chi sei e dal tipo di modifiche che vorresti apportare:
 
@@ -28,7 +24,7 @@ Il tuo contributo dipende da chi sei e dal tipo di modifiche che vorresti apport
 
 Per inviare una richiesta, fate clic sul collegamento **Registra un problema** in un articolo, che apre un problema in GitHub. Specificate un titolo e una descrizione, quindi fate clic su **Invia nuova edizione**.
 
-Per richiedere aggiornamenti secondari, fai clic sul collegamento **Modifica pagina** in un articolo per aprire l’articolo sorgente in GitHub. Utilizzate l’interfaccia utente GitHub per effettuare gli aggiornamenti. Per ulteriori informazioni, consulta la guida [generale](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) Adobe per i collaboratori.
+Per richiedere aggiornamenti secondari, fai clic sul collegamento **Modifica pagina** in un articolo, che apre l&#39;articolo sorgente in GitHub. Utilizzate l’interfaccia utente GitHub per effettuare gli aggiornamenti. Per ulteriori informazioni, vedere la guida generale [ Adobe Docs contributor Guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html).
 
 Le correzioni minori o i chiarimenti inviati per la documentazione e gli esempi di codice in questo repo sono coperti dai termini di utilizzo  Adobe.
 
@@ -42,7 +38,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Modifiche principali apportate dai dipendenti  Adobe
 
-Se sei un autore tecnico, un responsabile di programma o uno sviluppatore del team di prodotto per una [!UICONTROL Adobe Experience Cloud] soluzione e hai il compito di contribuire o creare articoli tecnici, devi utilizzare il repository privato all&#39;indirizzo `https://git.corp.adobe.com/AdobeDocs`. Consulta la Guida alla collaborazione [interna](https://docs.adobe.com/content/help/en/collaborative-doc-instructions/collaboration-guide/home.html).
+Se sei un autore tecnico, un responsabile di programma o uno sviluppatore del team di prodotto per una soluzione [!UICONTROL Adobe Experience Cloud] e il tuo compito è quello di contribuire o creare articoli tecnici, devi utilizzare il repository privato all&#39;indirizzo `https://git.corp.adobe.com/AdobeDocs`. Vedere la [Guida alla collaborazione interna](https://docs.adobe.com/content/help/en/collaborative-doc-instructions/collaboration-guide/home.html).
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
@@ -50,7 +46,7 @@ Se sei un autore tecnico, un responsabile di programma o uno sviluppatore del te
 
 I collaboratori della community possono utilizzare l’interfaccia utente di GitHub per effettuare modifiche di base o fork del repo per apportare importanti contributi.
 
-Per informazioni dettagliate, consulta la [Guida](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) per i collaboratori del documento di Adobe.
+Per ulteriori informazioni, vedere la [ Adobe Docs Contributor Guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html).
 
 ## Come utilizzare la funzione di marketing per formattare l&#39;argomento
 
