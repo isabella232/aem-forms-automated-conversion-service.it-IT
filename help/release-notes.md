@@ -2,10 +2,10 @@
 title: Scopri le novità Note sulla versione - Servizio di conversione automatica dei moduli
 description: 'Scopri le ultime funzionalità e i bug corretti per il servizio di conversione automatica dei moduli '
 translation-type: tm+mt
-source-git-commit: 923fee97428b8063f6a973b90eb91fdb25e5dd12
+source-git-commit: f3e8774a04d37fab70d797c528db8311abe59a5a
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 95%
+source-wordcount: '361'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ Il servizio di conversione automatica dei moduli viene migliorato continuamente.
 
 ## 01 febbraio 2021 (AFC-2021.01)
 
-Sono state migliorate le prestazioni nell’organizzazione dei campi modulo in pannelli e nella generazione dei titoli per i pannelli.
+Miglioramenti nell’organizzazione dei campi modulo in pannelli e nella generazione dei titoli per i pannelli durante la conversione di un modulo sorgente in un modulo adattivo.
 
 ## 16 luglio 2020 (AFC-2020.07.0)
 
