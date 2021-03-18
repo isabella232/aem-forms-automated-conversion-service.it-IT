@@ -1,38 +1,35 @@
 ---
 cloud: experience-cloud
-solution-title: Servizio di conversione moduli automatizzati
-solution-hub-url: https://helpx.adobe.com/it/support/experience-manager/6-5.html
-solution-icon: assets/experience-cloud-logo-24.png
-getting-started-title: Guida introduttiva
-getting-started-url: https://helpx.adobe.com/experience-manager/tutorials.html
-tutorials-title: Esercitazioni
-tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/aem-forms-automated-conversion-service.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/aem-forms-automated-conversion-service.it-IT
 index: y
+feature-set: Experience Manager Forms
 translation-type: tm+mt
-source-git-commit: cf97c1b8dabb36793ca05ddbc328a1a0ddba93eb
+source-git-commit: 9e931f3eeb3138345cfe0076652bdd3c300dbb35
+workflow-type: tm+mt
+source-wordcount: '130'
+ht-degree: 96%
 
 ---
 
 
 # Metadati per uso interno
 
-Il file metadata.md include metadati a livello di repo che passano ai file TOC.md della guida utente nella repo. Se desiderate modificare il contenuto metadata.md per qualsiasi guida utente, effettuate questa operazione in qualsiasi file TOC.md.
+Il file metadata.md include metadati a livello di archivio che vengono trasmessi ai file TOC.md della guida utente nell’archivio. Se desideri modificare il contenuto di metadata.md per una guida utente, puoi farlo intervenendo su un file TOC.md.
 
-| metadata | cosa |
+| Metadati | Funzione |
 |--- |--- |
-| solution-title | Utilizzato nell&#39;intestazione dell&#39;articolo come collegamento |
-| solution-hub-url | Apre la pagina centrale helpx |
-| solution-icon | Visualizza l&#39;icona della soluzione accanto al titolo della soluzione. Non ancora implementato |
-| getting-started | Link alla pagina di guida introduttiva |
-| tutorials-url | Collegamento alle esercitazioni video: esercitazioni helpx o esercitazioni KT |
-| mini-livelli | Determina il numero di livelli di intestazione visualizzati nella barra a destra. il valore predefinito è 2 |
-| git-repo | Specifica la posizione del repo principale per uso interno |
+| solution-title | Utilizzato nell’intestazione dell’articolo come collegamento |
+| solution-hub-url | Apre la pagina centrale della guida helpx |
+| solution-icon | Visualizza l’icona della soluzione accanto al titolo della soluzione. Non ancora implementato |
+| getting-started-url | Collegamento per la pagina introduttiva della guida helpx |
+| tutorials-url | Collegamento per i tutorial video: esercitazioni nella guida helpx o su KT |
+| mini-toc-levels | Determina quanti livelli di intestazione vengono visualizzati nella barra a destra. Il valore predefinito è 2. |
+| git-repo | Specifica la posizione dell’archivio principale per uso interno |
 
-Nel file TOC.md
+In un file TOC.md
 
-| metadata | cosa |
+| Metadati | Funzione |
 |--- |--- |
-| user-guide-title | Utilizzato nell&#39;intestazione dell&#39;articolo come collegamento |
-| user-guide-url | Apre la pagina centrale helpx |
+| user-guide-title | Utilizzato nell’intestazione dell’articolo come collegamento |
+| user-guide-url | Apre la pagina centrale della guida helpx |
