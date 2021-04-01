@@ -1,5 +1,5 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 product: experience manager
 sub-product: Servizio di conversione moduli
 solution: Experience Manager, Experience Manager Forms
@@ -12,10 +12,10 @@ breadcrumb-url: /docs/aem-forms-automated-conversion-service/using/introduction.
 feature: Moduli adattivi
 role: Professionista
 translation-type: tm+mt
-source-git-commit: b3946630c5180a600fe7acc25f1084601dec04ef
+source-git-commit: 8c4cf4ff72e9ca7e8daa76f495abd75a865cd2f7
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
