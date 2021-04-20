@@ -1,7 +1,7 @@
 ---
 title: Configurazione del servizio di conversione automatica dei moduli
 description: Pronta la tua istanza AEM per utilizzare il servizio Automated forms conversion
-role: Business Practices, amministratore
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: a9bab62fbe5ecc4b233e9bc55b9e461a5967b471
 workflow-type: tm+mt

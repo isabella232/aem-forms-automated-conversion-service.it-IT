@@ -3,14 +3,14 @@ cloud: Experience Cloud
 product: experience manager
 sub-product: Servizio di conversione moduli
 solution: Experience Manager, Experience Manager Forms
-type: Documentazione
+type: Documentation
 audience: end-user
 user-guide-title: Servizio di conversione automatica per Adobe Experience Manager Forms
 user-guide-description: Converti i moduli PDF in moduli HTML dinamici e pronti per i dispositivi mobili.
 breadcrumb-title: Guida alla conversione automatizzata dei moduli
 breadcrumb-url: /docs/aem-forms-automated-conversion-service/using/introduction.html
-feature: Moduli adattivi
-role: Professionista
+feature: Adaptive Forms
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8c4cf4ff72e9ca7e8daa76f495abd75a865cd2f7
 workflow-type: tm+mt
