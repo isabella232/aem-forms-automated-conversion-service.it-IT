@@ -1,14 +1,13 @@
 ---
 title: Scopri le novità Note sulla versione - Servizio di conversione automatica dei moduli
-description: 'Scopri le ultime funzionalità e i bug corretti per il servizio di conversione automatica dei moduli '
-translation-type: tm+mt
-source-git-commit: 70dc18347e072ccd7c1625f6831554ecfc13f2fb
+description: Scopri le ultime funzionalità e i bug corretti per il servizio di conversione automatica dei moduli
+exl-id: fccafbc9-28c1-4736-922c-24d675b25213
+source-git-commit: fd568dca4ac552a1d9695d13ece1d03b2c1457b1
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 88%
+source-wordcount: '409'
+ht-degree: 84%
 
 ---
-
 
 # Note sulla versione
 
@@ -22,6 +21,12 @@ Il servizio di conversione automatica dei moduli viene migliorato continuamente.
 * Funzionalità obsolete
 * Istruzioni speciali
 * Modifiche programmate per il futuro
+
+## 24 giugno 2021 (AFC-2021.06.2) {#june-2021}
+
+### Miglioramenti {#june-2021-improvements}
+
+È stata migliorata la precisione per rilevare automaticamente le sezioni logiche nei moduli di origine e convertirle in corrispondenti pannelli di moduli adattivi.
 
 ## 03 marzo 2021 (AFC-2021.02.2) {#mar-2021}
 
@@ -60,7 +65,7 @@ Per impostazione predefinita, il servizio crea un pannello di primo livello sepa
 
 Il servizio ora è più efficiente nel rilevamento degli elenchi puntati e numerati.
 
-### Istruzioni speciali  {#special-instructions}
+### Istruzioni speciali {#special-instructions}
 
 **Installazione del pacchetto del connettore del servizio di conversione automatica dei moduli**
 
