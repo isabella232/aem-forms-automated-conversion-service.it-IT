@@ -2,14 +2,13 @@
 title: Configurazione del servizio di conversione automatica dei moduli
 description: Pronta la tua istanza AEM per utilizzare il servizio Automated forms conversion
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: a9bab62fbe5ecc4b233e9bc55b9e461a5967b471
+exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
+source-git-commit: 17d1c447d8aa68341214270932fb076b512422af
 workflow-type: tm+mt
-source-wordcount: '2673'
+source-wordcount: '2670'
 ht-degree: 8%
 
 ---
-
 
 # Configurazione del servizio di conversione automatica dei moduli {#about-this-help}
 
@@ -50,7 +49,7 @@ Prima di utilizzare il servizio, prepara la tua istanza di autore AEM per connet
 1. (facoltativo) [Scarica e installa l&#39;ultimo pacchetto del connettore](#installConnectorPackage)
 1. [Creare temi e modelli personalizzati](#referencepackage)
 
-### Scarica e installa AEM 6.4 o AEM 6.5 oppure onboard AEM Forms as a Cloud Service {#aemquickstart}
+### Scaricare e installare AEM 6.4 o AEM 6.5 o AEM Forms as a Cloud Service a bordo {#aemquickstart}
 
 
 Il servizio di automated forms conversion viene eseguito su AEM’istanza di authoring. È necessario AEM 6.4, AEM 6.5 o AEM Forms come Cloud Service per impostare un&#39;istanza di authoring AEM.
@@ -67,7 +66,7 @@ Il servizio di automated forms conversion viene eseguito su AEM’istanza di aut
 
 Scarica e installa AEM Service Pack più recente. Per istruzioni dettagliate, consulta le [AEM Note sulla versione 6.4 Service Pack](https://helpx.adobe.com/it/experience-manager/6-4/release-notes/sp-release-notes.html) o [AEM Note sulla versione 6.5 Service Pack](https://helpx.adobe.com/it/experience-manager/6-5/release-notes/sp-release-notes.html).
 
-### (Solo per AEM 6.4 e AEM 6.5) Scarica e installa il pacchetto aggiuntivo AEM Forms {#downloadaemformsaddon}
+### (Solo per AEM 6.4 e AEM 6.5) Scarica e installa il pacchetto aggiuntivo AEM Forms  {#downloadaemformsaddon}
 
 Un’istanza AEM contiene funzionalità di base dei moduli. Il servizio di conversione richiede funzionalità complete di AEM Forms. Scarica e installa il pacchetto aggiuntivo di AEM Forms per sfruttare tutte le funzionalità di AEM Forms. Il pacchetto è necessario per configurare ed eseguire il servizio di conversione. Per istruzioni dettagliate, consulta [Installare e configurare le funzionalità di acquisizione dati.](https://helpx.adobe.com/it/experience-manager/6-5/forms/using/installing-configuring-aem-forms-osgi.html)
 
@@ -121,7 +120,7 @@ Ripeti i passaggi precedenti per tutti gli utenti. Per ulteriori dettagli sull�
 
 Una volta che un amministratore aggiunge sviluppatori al profilo di Adobe I/O, gli sviluppatori vengono informati via e-mail. Dopo aver ricevuto l&#39;e-mail, gli sviluppatori possono procedere alla [connessione di un&#39;istanza AEM Forms locale con il servizio Automated forms conversion su Adobe Cloud](#connectafcadobeio).
 
-### (Solo per sviluppatori) Collega l’istanza AEM Forms locale al servizio Automated forms conversion su Adobe Cloud {#connectafcadobeio}
+### (Solo per sviluppatori) Collega la tua istanza AEM Forms locale al servizio Automated forms conversion su Adobe Cloud {#connectafcadobeio}
 
 Dopo che un amministratore ti fornisce l’accesso per sviluppatori, puoi collegare la tua istanza AEM Forms locale al servizio Automated forms conversion in esecuzione su Adobe Cloud. Esegui i seguenti passaggi nella sequenza elencata per collegare l’istanza AEM Forms al servizio:
 
@@ -146,9 +145,9 @@ Il servizio di automated forms conversion utilizza il servizio di posta Day CQ p
 
 * Per AEM Forms as a Cloud Service, [registra un ticket di supporto per abilitare il servizio e-mail](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
 
-#### Aggiungi utente al gruppo utenti dei moduli {#adduserstousergroup}
+#### Aggiungi utente al gruppo utenti moduli {#adduserstousergroup}
 
-Specifica un indirizzo e-mail nel profilo dell’utente AEM designato per eseguire il servizio. Assicurati che l&#39;utente sia il membro del gruppo [forms user](https://helpx.adobe.com/experience-manager/6-4/forms/using/forms-groups-privileges-tasks.html) . Le e-mail vengono inviate all’indirizzo e-mail dell’utente che esegue la conversione. Per specificare un indirizzo e-mail per l’utente e aggiungere l’utente al gruppo di utenti dei moduli:
+Specifica un indirizzo e-mail nel profilo dell’utente AEM designato per eseguire il servizio. Assicurati che l&#39;utente sia il membro del gruppo [forms user](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html) . Le e-mail vengono inviate all’indirizzo e-mail dell’utente che esegue la conversione. Per specificare un indirizzo e-mail per l’utente e aggiungere l’utente al gruppo di utenti dei moduli:
 
 1. Accedi alla tua istanza di authoring di AEM Forms come amministratore AEM. Utilizza le tue credenziali AEM locali per accedere. Non utilizzare Adobe ID per l&#39;accesso. Tocca **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
 
@@ -224,7 +223,7 @@ Per utilizzare il servizio Automated forms conversion, crea un progetto e aggiun
 
    <br/> <br/>
 
-#### Configura il Cloud Service {#configure-the-cloud-service}
+#### Configurare il Cloud Service {#configure-the-cloud-service}
 
 Crea una configurazione di Cloud Service per collegare la tua istanza AEM al servizio di conversione. Consente inoltre di specificare un modello, un tema e frammenti di modulo per una conversione. Puoi creare più configurazioni di servizi cloud separate per ciascun set di moduli. Ad esempio, è possibile disporre di una configurazione separata per i moduli del reparto vendite e una separata per i moduli di assistenza clienti. Esegui i seguenti passaggi per creare una configurazione del servizio cloud:
 
