@@ -9,18 +9,17 @@ user-guide-title: Servizio di conversione automatica per Adobe Experience Manage
 user-guide-description: Converti i moduli PDF in moduli HTML dinamici e pronti per i dispositivi mobili.
 breadcrumb-title: Guida alla conversione automatizzata dei moduli
 breadcrumb-url: /docs/aem-forms-automated-conversion-service/using/introduction.html
-feature: Adaptive Forms
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 8c4cf4ff72e9ca7e8daa76f495abd75a865cd2f7
+feature: Moduli adattivi
+role: User
+source-git-commit: 6aae2035969e99abca0d310d8b023e2c22a9e938
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '92'
+ht-degree: 100%
 
 ---
 
 
-# Servizio di conversione automatica per Adobe Experience Manager Forms{#using}
+# Servizio di conversione automatica per Adobe Experience Manager Forms {#using}
 
 + [Introduzione](introduction.md)
 + [Note sulla versione](release-notes.md)
