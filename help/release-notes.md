@@ -2,10 +2,10 @@
 title: Scopri le novità Note sulla versione - Servizio di conversione automatica dei moduli
 description: Scopri le ultime funzionalità e i bug corretti per il servizio di conversione automatica dei moduli
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
-source-git-commit: fd568dca4ac552a1d9695d13ece1d03b2c1457b1
+source-git-commit: 3f91fc0541f8fe8dbc997ae0b401c8a0a49347dd
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 84%
+source-wordcount: '426'
+ht-degree: 80%
 
 ---
 
@@ -21,6 +21,10 @@ Il servizio di conversione automatica dei moduli viene migliorato continuamente.
 * Funzionalità obsolete
 * Istruzioni speciali
 * Modifiche programmate per il futuro
+
+## 29 luglio 2021 (AFC-2021.07.2) {#july-2021}
+
+* È stata aggiunta la possibilità di convertire PDF forms in lingua francese, tedesca e spagnola in moduli adattivi.
 
 ## 24 giugno 2021 (AFC-2021.06.2) {#june-2021}
 
