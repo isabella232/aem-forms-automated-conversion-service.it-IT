@@ -3,9 +3,9 @@ title: Configurazione del servizio di conversione automatica dei moduli
 description: Pronta la tua istanza AEM per utilizzare il servizio Automated forms conversion
 role: User, Admin
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
-source-git-commit: 6aae2035969e99abca0d310d8b023e2c22a9e938
+source-git-commit: 264208305996e98ff2dbccf0e63027b4c757754c
 workflow-type: tm+mt
-source-wordcount: '2670'
+source-wordcount: '2682'
 ht-degree: 8%
 
 ---
@@ -241,9 +241,7 @@ Crea una configurazione di Cloud Service per collegare la tua istanza AEM al ser
    | Modello | Modello predefinito da applicare ai moduli convertiti. Puoi sempre specificare un modello diverso prima di avviare la conversione. Un modello contiene la struttura di base e il contenuto iniziale di un modulo adattivo. Puoi scegliere un modello dai modelli forniti come predefiniti. Puoi anche creare un modello personalizzato. |
    | Tema | Tema predefinito da applicare ai moduli convertiti. Puoi sempre specificare un tema diverso prima di avviare la conversione.  Puoi fare clic sull’icona per scegliere un tema fornito come predefinito. Puoi anche creare un tema personalizzato. |
    | Frammenti esistenti | Posizione dei frammenti esistenti, se presenti. |
-   | Meta-modello personalizzato | Percorso del file .schema.json del metamodello personalizzato. |
-
-
+   | Meta-modello personalizzato | Percorso del file .schema.json del metamodello personalizzato. È possibile creare metamodello separati per le lingue inglese, francese, tedesco e spagnolo. |
 
 1. Nella scheda **[!UICONTROL Advanced]** della pagina **[!UICONTROL Create Automated Forms Conversion Configuration]** , specifica il valore per il campo seguente:
 
