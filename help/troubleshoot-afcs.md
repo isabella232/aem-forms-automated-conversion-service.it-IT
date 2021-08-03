@@ -5,14 +5,13 @@ description: 'Problemi comuni di AFCS e relative soluzioni '
 seo-description: Problemi comuni di AFCS e relative soluzioni
 contentOwner: khsingh
 topic-tags: forms
-translation-type: tm+mt
-source-git-commit: c413c5dc2da3a3e7e116b3355c63620f9dab17f8
+exl-id: e8406ed9-37f5-4f26-be97-ad042f9ca57c
+source-git-commit: 5353a071f8633b36fc73c34c5d7629228659e2ba
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 100%
+source-wordcount: '661'
+ht-degree: 89%
 
 ---
-
 
 # Risoluzione dei problemi - Servizio di conversione automatica dei moduli
 
@@ -33,6 +32,7 @@ Questo documento illustra le procedure di base per la risoluzione dei problemi c
 | **Messaggio di errore** <br>I moduli digitalizzati non sono supportati.  <br><br>**Causa** <br> Il modulo PDF contiene solo immagini digitalizzate del modulo e non contiene alcuna struttura di contenuto. <br><br>**Risoluzione** <br> Il servizio non supporta la conversione di moduli digitalizzati o di immagini di moduli in moduli adattivi pronti all’uso. Tuttavia è possibile utilizzare Adobe Acrobat per convertire l’immagine del modulo in un modulo PDF, quindi utilizzare il servizio per convertire il modulo PDF in un modulo adattivo. Utilizza sempre un’immagine di alta qualità del modulo in Acrobat per migliorare la qualità della conversione. | ![Impossibile connettersi al servizio.](assets/scanned-forms-error.png) |
 | **Messaggio di errore** <br> Moduli PDF crittografati non supportati.  <br><br>**Causa** <br> La cartella contiene moduli PDF crittografati. <br><br>**Risoluzione** <br> Il servizio non supporta la conversione di moduli PDF crittografati in moduli adattivi. Rimuovi la crittografia, carica il modulo non crittografato ed esegui la conversione. | ![Impossibile connettersi al servizio.](assets/secured-pdf-form.png) |
 | **Messaggio di errore** <br> Impossibile analizzare lo schema JSON del metamodello.  <br><br>**Causa** <br> Lo schema JSON fornito al servizio non è formattato correttamente, contiene caratteri non validi o utilizza una sintassi non valida per la mappatura dei componenti.  <br><br>**Risoluzione** <br> Verifica la formattazione del file JSON. È possibile utilizzare qualsiasi convalida JSON online per verificare la formattazione e la struttura dello schema. Consulta l’articolo [Estensione del metamodello predefinito](extending-the-default-meta-model.md) per informazioni sulla sintassi del metamodello. | ![Impossibile connettersi al servizio.](assets/invalid-meta-model-schema.png) |
+| **Errore (solo per gli ambienti on-premise)** <br> L’ **[!UICONTROL Source Language]** opzione non elenca la lingua corretta di un modulo adattivo. <br><br>**** <br> CausaLa proprietà jcr:language del modulo adattivo non è impostata correttamente.  <br><br>**** <br> ResolutionApri CRX-DE lite, vai a  `/content/forms/af/`, apri il  `jcr:content` nodo e imposta il valore del nodo sulla lingua corretta. Per l&#39;elenco delle lingue supportate, consulta [Aggiungere supporto per la localizzazione per le impostazioni internazionali non supportate](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html#add-localization-support-for-non-supported-locales). | ![Impossibile connettersi al servizio.](assets/aem-forms-translation-project-language-unavailable.png) |
 
 <!--
 
