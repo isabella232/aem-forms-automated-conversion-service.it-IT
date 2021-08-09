@@ -7,9 +7,9 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: 17d1c447d8aa68341214270932fb076b512422af
+source-git-commit: c070651253877408466231ab80a6b7e0d04a9fab
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1257'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ Puoi caricare tutti i PDF forms contemporaneamente o in modo graduale, a seconda
 * Organizzare i documenti di origine in un batch di 8-15 documenti. Mantieni i moduli di origine con i frammenti di modulo adattivi comuni in un unico batch.
 * Non caricare i moduli protetti. Il servizio non converte i moduli protetti da password e protetti.
 * Non caricare i [Portfoli PDF](https://helpx.adobe.com/it/acrobat/using/overview-pdf-portfolios.html). Il servizio non converte un Portfolio PDF in un modulo adattivo.
-* Non caricare moduli digitalizzati, non in lingua inglese e compilati. Tali moduli non sono supportati.
+* Non caricare moduli digitalizzati e compilati. Tali moduli non sono supportati.
 * Non caricare moduli di origine con spazi nel nome file. Rimuovi lo spazio dal nome del file prima di caricare i moduli.
 
 Quando si utilizza un modulo XDP per la conversione, eseguire i seguenti passaggi prima di caricare i moduli XPD di origine:
