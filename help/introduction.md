@@ -2,10 +2,10 @@
 title: Introduzione
 description: Accelerazione della conversione dei moduli di stampa in moduli adattivi
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: fed54ea64e19c77868e8e58e29e909cf4447f696
+source-git-commit: af05922f9eb76b7b0a30601824c6006fe555ea80
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 71%
+source-wordcount: '699'
+ht-degree: 70%
 
 ---
 
@@ -50,7 +50,7 @@ Il servizio di conversione automatica dei moduli è compatibile con Adobe Cloud.
 Dopo aver configurato l’ambiente di AEM Forms per convertire i moduli PDF in moduli adattivi, [carica i moduli PDF](convert-existing-forms-to-adaptive-forms.md) nella tua istanza AEM e [avvia la conversione](convert-existing-forms-to-adaptive-forms.md#run-the-conversion). Prima di caricare i moduli, considera quanto segue:
 
 * Non caricare moduli protetti. Il servizio non può convertire i moduli crittografati e protetti da password.
-* Non caricare moduli digitalizzati, colorati, non in lingua inglese e compilati. Tali moduli non sono supportati.
+* Non caricare moduli digitalizzati, colorati, compilati e compilati in lingue diverse da inglese, francese, tedesco e spagnolo. Tali moduli non sono supportati.
 * Non caricare moduli PDF con spazi nel nome file.
 * Non caricare [portfolio PDF](https://helpx.adobe.com/it/acrobat/using/overview-pdf-portfolios.html). Il servizio non converte un Portfolio PDF in un modulo adattivo.
 * Apporta ai moduli PDF le modifiche descritte nell’articolo [Procedure consigliate e considerazioni](styles-and-pattern-considerations-and-best-practices.md).
