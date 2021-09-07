@@ -1,15 +1,15 @@
 ---
 title: 'Procedure consigliate e considerazioni '
-seo-title: 'Procedure consigliate e considerazioni '
+seo-title: Best practices and considerations
 description: Best practice e considerazioni per il servizio Automated forms conversion
-seo-description: Elenco di stili e modelli nei PDF forms di origine che il servizio di Automated forms conversion trova difficili da identificare
+seo-description: List of styles and patterns in source PDF forms which Automated Forms Conversion service finds difficult to identify
 uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: 9d107d2dfc64fd84d4f734ded5898612ce9a3295
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1247'
 ht-degree: 3%
 
 ---
@@ -33,7 +33,7 @@ Puoi caricare tutti i PDF forms contemporaneamente o in modo graduale, a seconda
 * Non caricare i moduli protetti. Il servizio non converte i moduli protetti da password e protetti.
 * Non caricare i [Portfoli PDF](https://helpx.adobe.com/it/acrobat/using/overview-pdf-portfolios.html). Il servizio non converte un Portfolio PDF in un modulo adattivo.
 * Non caricare moduli di origine con spazi nel nome file. Rimuovi lo spazio dal nome del file prima di caricare i moduli.
-* Non caricare moduli digitalizzati, compilati e in lingue diverse da inglese, francese, tedesco e spagnolo. Tali moduli non sono supportati.
+* Non caricare moduli digitalizzati, compilati e in lingue diverse da inglese, francese, tedesco, spagnolo, italiano e portoghese. Tali moduli non sono supportati.
 
 Quando si utilizza un modulo XDP per la conversione, eseguire i seguenti passaggi prima di caricare i moduli XPD di origine:
 

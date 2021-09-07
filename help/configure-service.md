@@ -3,9 +3,9 @@ title: Configurazione del servizio di conversione automatica dei moduli
 description: Pronta la tua istanza AEM per utilizzare il servizio Automated forms conversion
 role: User, Admin
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
-source-git-commit: 264208305996e98ff2dbccf0e63027b4c757754c
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
 workflow-type: tm+mt
-source-wordcount: '2682'
+source-wordcount: '2684'
 ht-degree: 8%
 
 ---
@@ -72,7 +72,6 @@ Un’istanza AEM contiene funzionalità di base dei moduli. Il servizio di conve
 
 >[!NOTE]
 > Assicurati di eseguire le configurazioni obbligatorie post-installazione dopo l&#39;installazione del pacchetto aggiuntivo.
-
 
 <!-- ### (Optional) Download and install connector package  {#installConnectorPackage}
 
@@ -204,7 +203,7 @@ Per utilizzare il servizio Automated forms conversion, crea un progetto e aggiun
 
    ![Specifica titolo, chiave API, segreto client e payload  ](assets/ims-configuration-details.png)
 
-1. Nella pagina tecnica Adobe IMS , specifica Chiave API e Segreto client . Utilizza i valori specificati in Account di servizio (JWT) della pagina Adobe Developer Console.
+1. Nella pagina tecnica Adobe IMS , specifica Chiave API e Segreto client. Utilizza i valori specificati in Account di servizio (JWT) della pagina Adobe Developer Console.
 
    >[!NOTE]
    >
@@ -241,7 +240,7 @@ Crea una configurazione di Cloud Service per collegare la tua istanza AEM al ser
    | Modello | Modello predefinito da applicare ai moduli convertiti. Puoi sempre specificare un modello diverso prima di avviare la conversione. Un modello contiene la struttura di base e il contenuto iniziale di un modulo adattivo. Puoi scegliere un modello dai modelli forniti come predefiniti. Puoi anche creare un modello personalizzato. |
    | Tema | Tema predefinito da applicare ai moduli convertiti. Puoi sempre specificare un tema diverso prima di avviare la conversione.  Puoi fare clic sull’icona per scegliere un tema fornito come predefinito. Puoi anche creare un tema personalizzato. |
    | Frammenti esistenti | Posizione dei frammenti esistenti, se presenti. |
-   | Meta-modello personalizzato | Percorso del file .schema.json del metamodello personalizzato. È possibile creare metamodello separati per le lingue inglese, francese, tedesco e spagnolo. |
+   | Meta-modello personalizzato | Percorso del file .schema.json del metamodello personalizzato. È possibile creare metamodello separati per le lingue inglese, francese, tedesco, spagnolo, italiano e portoghese. |
 
 1. Nella scheda **[!UICONTROL Advanced]** della pagina **[!UICONTROL Create Automated Forms Conversion Configuration]** , specifica il valore per il campo seguente:
 
@@ -265,7 +264,7 @@ Crea una configurazione di Cloud Service per collegare la tua istanza AEM al ser
    </table>
 
    * Se l’origine è un modulo basato su XFA con estensione XDP, l’output DOR mantiene il layout XFA, altrimenti il servizio di conversione utilizza un modello preconfigurato per generare DOR per altri moduli basati su XFA.
-   * Quando un modulo XFA viene inviato, i dati di invio del modulo vengono salvati come elemento XML o come attributo. Esempio, `<Amount currency="USD"> 10.00 </Amount>`. La valuta viene salvata come attributo e importo della valuta, 10.00 viene salvato come elemento. I dati di invio di un modulo adattivo non hanno attributi, dispone solo di elementi. Pertanto, quando un modulo basato su XFA viene convertito in modulo adattivo, i dati di invio del modulo adattivo contengono un elemento per ciascun attributo. Esempio,
+   * Quando un modulo XFA viene inviato, i dati di invio del modulo vengono salvati come elemento XML o come attributo. Esempio, `<Amount currency="USD"> 10.00 </Amount>`. La valuta viene salvata come attributo e importo della valuta, 10.00 viene salvato come elemento. I dati di invio di un modulo adattivo non hanno attributi, dispone solo di elementi. Pertanto, quando un modulo basato su XFA viene convertito in modulo adattivo, i dati di invio del modulo adattivo contengono un elemento per ciascun attributo. Ad esempio,
 
    ```css
       {

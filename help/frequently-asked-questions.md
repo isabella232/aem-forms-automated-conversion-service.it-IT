@@ -1,15 +1,15 @@
 ---
 title: Domande frequenti
-seo-title: Domande frequenti
+seo-title: Frequently asked questions
 description: Domande comuni o domande frequenti
-seo-description: domande frequenti per Automated forms conversion Service
+seo-description: frequently asked questions for Automated Forms Conversion Service
 uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
-source-git-commit: af05922f9eb76b7b0a30601824c6006fe555ea80
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '1821'
 ht-degree: 4%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 4%
    <p>Il servizio può convertire PDF forms non interattivi, XFA basato su XDP e PDF forms e AcroForms in moduli adattivi. Il servizio non supporta moduli digitalizzati o compilati. Per altre limitazioni, consulta l'articolo <a href="known-issues.md">problemi noti</a>.<br /> </p> 
     <p>Stiamo aggiungendo regolarmente supporto per altri tipi di origine. Mantieni la sezione <a href="introduction.md">Moduli PDF supportati</a> nella lista di controllo per un aggiornamento regolare sulle nuove funzioni e funzionalità aggiunte.</p>
 
-   Il servizio può convertire solo moduli in lingua inglese, francese, tedesca e spagnola in moduli adattivi. Puoi tradurre i moduli adattativi generati in un’altra lingua usando [workflow di traduzione AEM.](https://helpx.adobe.com/it/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
+   Il servizio può convertire in moduli adattivi solo i moduli in lingua inglese, francese, tedesca, spagnola, italiana e portoghese. Puoi tradurre i moduli adattativi generati in un’altra lingua usando [workflow di traduzione AEM.](https://helpx.adobe.com/it/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
 
 1. **Il servizio può produrre un XDP invece di un modulo adattivo?**
 

@@ -1,15 +1,15 @@
 ---
 title: Problemi noti
-seo-title: Problemi noti
+seo-title: Known Issues
 description: problemi e limitazioni noti per Automated forms conversion Service
-seo-description: Prima di iniziare a utilizzare il servizio AEM Forms Automated forms conversion, scopri i problemi e le limitazioni noti del servizio
+seo-description: Before you begin using AEM Forms Automated Forms Conversion service, learn about the known issues and limitations of the service
 uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
-source-git-commit: af05922f9eb76b7b0a30601824c6006fe555ea80
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '794'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,7 @@ Prima di iniziare a utilizzare il servizio AEM Forms Automated forms conversion,
 * I PDF forms più grandi di 15 pagine non sono supportati.
 * I documenti crittografati, protetti da password e protetti non vengono convertiti. Rimuovi la crittografia o le password prima di eseguire la conversione.
 * Tabelle complesse come tabelle senza bordi, tabelle nidificate e tabelle con valori segnaposto non sono supportate. Utilizza l’editor di moduli adattivi per aggiungere o modificare tabelle complesse dopo la conversione. Sono supportate solo le tabelle semplici, con campi vuoti, intestazioni appropriate e bordi chiari.
-* Il servizio converte solo i moduli in inglese, francese, tedesco e spagnolo in moduli adattivi. È possibile tradurre i moduli adattivi convertiti in un&#39;altra lingua utilizzando [AEM flusso di lavoro di traduzione](https://helpx.adobe.com/it/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
+* Il servizio converte solo i moduli in lingua inglese, francese, tedesca, spagnola, italiana e portoghese in moduli adattivi. È possibile tradurre i moduli adattivi convertiti in un&#39;altra lingua utilizzando [AEM flusso di lavoro di traduzione](https://helpx.adobe.com/it/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 * AEM 6.4 Forms non supporta il rilevamento automatico del layout a più colonne dei moduli di input.
 * Le informazioni codificate tramite colori nel modulo PDF di origine non vengono riportate nel modulo adattivo.
 * I colori del modulo PDF di origine non vengono trasferiti ai temi dei moduli adattivi.

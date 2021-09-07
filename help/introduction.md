@@ -2,9 +2,9 @@
 title: Introduzione
 description: Accelerazione della conversione dei moduli di stampa in moduli adattivi
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: af05922f9eb76b7b0a30601824c6006fe555ea80
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '703'
 ht-degree: 70%
 
 ---
@@ -33,7 +33,7 @@ Il servizio supporta moduli PDF non interattivi, moduli creati con Adobe Acrobat
 
 Il servizio supporta anche PDF forms abilitati per Adobe Sign. Se il modulo PDF di origine ha i tag di testo Adobe Sign, il servizio conserva tutte le informazioni relative ad Adobe Sign durante la conversione e associa le informazioni sul firmatario presente nel PDF di origine con i corrispondenti campi del modulo adattivo. La funzione è disponibile solo per AcroForms.
 
-Il servizio può convertire moduli in lingua inglese, francese, tedesca e spagnola in moduli adattivi. Puoi anche tradurre i moduli adattivi generati in un’altra lingua utilizzando [AEM flusso di lavoro di traduzione](https://helpx.adobe.com/it/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
+Il servizio è in grado di convertire i moduli in lingua inglese, francese, tedesca, spagnola, italiana e portoghese in moduli adattivi. Puoi anche tradurre i moduli adattivi generati in un’altra lingua utilizzando [AEM flusso di lavoro di traduzione](https://helpx.adobe.com/it/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 
 ## Workflow di conversione  {#conversion-workflow}
 
@@ -50,7 +50,7 @@ Il servizio di conversione automatica dei moduli è compatibile con Adobe Cloud.
 Dopo aver configurato l’ambiente di AEM Forms per convertire i moduli PDF in moduli adattivi, [carica i moduli PDF](convert-existing-forms-to-adaptive-forms.md) nella tua istanza AEM e [avvia la conversione](convert-existing-forms-to-adaptive-forms.md#run-the-conversion). Prima di caricare i moduli, considera quanto segue:
 
 * Non caricare moduli protetti. Il servizio non può convertire i moduli crittografati e protetti da password.
-* Non caricare moduli digitalizzati, colorati, compilati e compilati in lingue diverse da inglese, francese, tedesco e spagnolo. Tali moduli non sono supportati.
+* Non caricare moduli digitalizzati, colorati, compilati e compilati in lingue diverse da inglese, francese, tedesco, spagnolo, italiano e portoghese. Tali moduli non sono supportati.
 * Non caricare moduli PDF con spazi nel nome file.
 * Non caricare [portfolio PDF](https://helpx.adobe.com/it/acrobat/using/overview-pdf-portfolios.html). Il servizio non converte un Portfolio PDF in un modulo adattivo.
 * Apporta ai moduli PDF le modifiche descritte nell’articolo [Procedure consigliate e considerazioni](styles-and-pattern-considerations-and-best-practices.md).
