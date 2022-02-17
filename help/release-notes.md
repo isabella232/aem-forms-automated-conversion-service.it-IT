@@ -2,10 +2,10 @@
 title: Scopri le novità Note sulla versione - Servizio di conversione automatica dei moduli
 description: Scopri le ultime funzionalità e i bug corretti per il servizio di conversione automatica dei moduli
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
-source-git-commit: 833cada8efcc3f0a0e5788c1ab99a95d814e0153
+source-git-commit: eab71506513605728d8f925ab6e7e9bead7ca6fc
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 71%
+source-wordcount: '451'
+ht-degree: 66%
 
 ---
 
@@ -22,7 +22,11 @@ Il servizio di conversione automatica dei moduli viene migliorato continuamente.
 * Istruzioni speciali
 * Modifiche programmate per il futuro
 
-## 29 luglio 2021 (AFC-2021.08.0) {#aug-2021}
+## 24 febbraio 2022 (AFC-2022.02.0) {#feb-2022}
+
+* Aggiunta funzionalità a [convertire automaticamente le sezioni in frammenti](convert-existing-forms-to-adaptive-forms.md) per migliorare la velocità di rendering dei moduli convertiti e facilitare il caricamento di moduli di grandi dimensioni nell’editor di moduli adattivi.
+
+## 29 agosto 2021 (AFC-2021.08.0) {#aug-2021}
 
 * È stata aggiunta la possibilità di convertire i PDF forms nelle lingue italiana e portoghese in un modulo adattivo.
 
@@ -57,7 +61,6 @@ Aggiunto supporto della conversione di moduli PDF a colori in moduli adattivi.
 ### Miglioramenti {#jul-2020-improvements}
 
 Miglioramenti della conversione automatica dei campi di testo, moduli e gruppi di scelta nei corrispondenti componenti dei moduli adattativi.
-
 
 ## 20 marzo 2020 (AFC-2020.03.1) {#mar-2020}
 
