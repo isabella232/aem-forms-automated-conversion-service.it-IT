@@ -24,33 +24,33 @@ Il servizio di conversione automatica dei moduli viene migliorato continuamente.
 
 ## 24 febbraio 2022 (AFC-2022.02.0) {#feb-2022}
 
-* Aggiunta funzionalità a [convertire automaticamente le sezioni in frammenti](convert-existing-forms-to-adaptive-forms.md) per migliorare la velocità di rendering dei moduli convertiti e facilitare il caricamento di moduli di grandi dimensioni nell’editor di moduli adattivi.
+* Funzionalità aggiunta a [convertire automaticamente le sezioni in frammenti](convert-existing-forms-to-adaptive-forms.md) per migliorare la velocità di rendering dei moduli convertiti e semplificare il caricamento di moduli di grandi dimensioni nell’editor di moduli adattivi.
 
 ## 29 agosto 2021 (AFC-2021.08.0) {#aug-2021}
 
-* È stata aggiunta la possibilità di convertire i PDF forms nelle lingue italiana e portoghese in un modulo adattivo.
+* È stata aggiunta la possibilità di convertire i PDF forms in lingua italiana e portoghese in un modulo adattivo.
 
 ## 29 luglio 2021 (AFC-2021.07.2) {#july-2021}
 
-* È stata aggiunta la possibilità di convertire un modulo PDF in lingua francese, tedesca e spagnola in un modulo adattivo.
+* È stata aggiunta la possibilità di convertire un modulo PDF in francese, tedesco e spagnolo in un modulo adattivo.
 
 ## 24 giugno 2021 (AFC-2021.06.2) {#june-2021}
 
 ### Miglioramenti {#june-2021-improvements}
 
-È stata migliorata la precisione per rilevare automaticamente le sezioni logiche nei moduli di origine e convertirle in corrispondenti pannelli di moduli adattivi.
+È stata migliorata la precisione per il rilevamento automatico delle sezioni logiche nei moduli di origine e la loro conversione nei pannelli dei moduli adattivi corrispondenti.
 
-## 03 marzo 2021 (AFC-2021.02.2) {#mar-2021}
+## 3 marzo 2021 (AFC-2021.02.2) {#mar-2021}
 
 ### Miglioramenti {#march-2021-improvements}
 
-Miglioramenti nell’organizzazione del contenuto del modulo in gruppi e campi di scelta durante la conversione di un modulo sorgente in un modulo adattivo.
+Sono stati apportati miglioramenti all’organizzazione del contenuto dei moduli in gruppi di scelta e campi durante la conversione di un modulo di origine in un modulo adattivo.
 
-## 02 febbraio 2021 (AFC-2021.01.2) {#feb-2021}
+## 2 febbraio 2021 (AFC-2021.01.2) {#feb-2021}
 
 ### Miglioramenti {#feb-2021-improvements}
 
-Miglioramenti nell’organizzazione del contenuto del modulo in pannelli e nella generazione dei titoli per i pannelli durante la conversione di un modulo sorgente in un modulo adattivo.
+Sono stati introdotti miglioramenti nell’organizzazione del contenuto dei moduli in pannelli e nella generazione di titoli per i pannelli durante la conversione di un modulo sorgente in un modulo adattivo.
 
 ## 16 luglio 2020 (AFC-2020.07.2) {#jul-2020}
 

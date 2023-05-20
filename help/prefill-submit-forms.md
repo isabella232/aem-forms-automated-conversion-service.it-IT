@@ -1,132 +1,131 @@
 ---
 title: Workflow di preriempimento basato su origine di dati e invio consigliati per i moduli adattivi
-seo-title: Opzioni di precompilazione e invio per i moduli adattivi
-description: Flussi di lavoro di precompilazione e invio basati sull'origine dati per i moduli adattivi generati tramite Automated forms conversion Service.
-seo-description: Flussi di lavoro di precompilazione e invio basati sull'origine dati per i moduli adattivi generati tramite Automated forms conversion Service.
+seo-title: Prefill and submit options for adaptive forms
+description: Flussi di lavoro di preriempimento e invio basati su origini dati per moduli adattivi generati tramite il servizio di Automated forms conversion.
+seo-description: Data-source based prefill and submit workflows for adaptive forms generated using Automated Forms Conversion Service.
 uuid: 91409a82-141c-4233-82b1-1539a0b250f8
 contentOwner: khsingh
 topic-tags: forms
 discoiquuid: cad34fff-7f9f-4a27-8b5c-d0a523903eec
 privatebeta: true
-translation-type: tm+mt
-source-git-commit: caccb547a5741eb0e70ddf75630a661f8fe75cb3
+exl-id: 5deef8f5-5098-47c1-b696-b2db59e92931
+source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
 workflow-type: tm+mt
-source-wordcount: '2459'
-ht-degree: 1%
+source-wordcount: '2437'
+ht-degree: 2%
 
 ---
 
-
 # Workflow di preriempimento basato su origine di dati e invio consigliati per i moduli adattivi {#recommended-data-source-btased-prefill-and-submit-workflows-for-adaptive-forms}
 
-Con i moduli adattivi convertiti utilizzando il servizio Automated forms conversion è possibile utilizzare una delle seguenti origini dati:
+Con i moduli adattivi convertiti tramite il servizio di Automated forms conversion è possibile utilizzare una delle seguenti origini dati:
 
 * Modello dati modulo, OData o qualsiasi altro servizio di terze parti
 * Schema JSON
-* schema XSD
+* Schema XSD
 
-In base all&#39;origine dati, è possibile scegliere di generare un modulo adattivo con o senza un modello dati.
+In base all’origine dati, puoi scegliere di generare un modulo adattivo con o senza un modello di dati.
 
-Questo articolo descrive i flussi di lavoro consigliati per precompilare i valori dei campi e le opzioni di invio dopo aver selezionato un&#39;origine dati e generato un modulo adattivo utilizzando il servizio di conversione.
+Questo articolo descrive i flussi di lavoro consigliati per precompilare i valori dei campi e le opzioni di invio dopo aver selezionato un’origine dati e generato un modulo adattivo utilizzando il servizio di conversione.
 
 <table> 
  <tbody> 
   <tr> 
    <th><strong>Sorgente dati</strong></th> 
-   <th><strong>Flusso di lavoro consigliato</strong></th> 
+   <th><strong>Workflow consigliato</strong></th> 
   </tr> 
   <tr> 
    <td><p>Modello dati modulo, OData o qualsiasi altro servizio di terze parti</p></td> 
    <td> 
-    <p><strong>Opzione 1</strong>: È possibile selezionare il modello dati del modulo, OData o qualsiasi altro servizio di terze parti come origine dati. <a href="#generate-adaptive-forms-with-no-data-binding">è possibile generare un modulo adattivo senza binding dei dati</a> utilizzando il servizio di Automated forms conversion. È possibile eseguire manualmente il binding dei campi modulo adattivo alle entità del modello dati del modulo e utilizzare l'opzione Servizio di precompilazione modello dati modulo per precompilare i valori dei campi. Per inviare il modulo adattivo è possibile utilizzare l'opzione Invia utilizzando il modello dati modulo.</p></td> 
+    <p><strong>Opzione 1</strong>: seleziona come origine dati modello dati modulo, OData o qualsiasi altro servizio di terze parti. Tu <a href="#generate-adaptive-forms-with-no-data-binding">genera un modulo adattivo senza associazione dati</a> utilizzo del servizio di Automated forms conversion. I campi del modulo adattivo vengono associati manualmente alle entità del modello dati del modulo e per precompilare i valori dei campi viene utilizzata l’opzione Servizio di precompilazione modello dati modulo. Per inviare il modulo adattivo, utilizza l’opzione Invia utilizzando il modello dati del modulo.</p></td> 
   </tr>
   <tr> 
    <td></td> 
    <td> 
-   <p><strong>Opzione 2</strong>: È possibile selezionare il modello dati del modulo, OData o qualsiasi altro servizio di terze parti come origine dati. <a href="#generate-adaptive-forms-with-no-data-binding">è possibile generare un modulo adattivo senza binding dei dati</a> utilizzando il servizio di Automated forms conversion. I campi modulo adattivo vengono associati utilizzando l'editor di regole per precompilare i valori dei campi. Se necessario, modificare i valori dei campi e inviare i dati al repository crx.</p>
+   <p><strong>Opzione 2</strong>: seleziona come origine dati modello dati modulo, OData o qualsiasi altro servizio di terze parti. Tu <a href="#generate-adaptive-forms-with-no-data-binding">genera un modulo adattivo senza associazione dati</a> utilizzo del servizio di Automated forms conversion. Per precompilare i valori dei campi, associa i campi del modulo adattivo utilizzando l’editor di regole. Se necessario, modifica i valori dei campi e invia i dati all’archivio crx.</p>
     </td> 
   </tr>
   <tr> 
    <td></td> 
    <td> 
-    <p>Per istruzioni dettagliate sull'esecuzione di questi flussi di lavoro, vedere <a href="#sqldatasource">Utilizzare database, OData o qualsiasi servizio di terze parti come origine dati.</a></p> </td> 
+    <p>Per istruzioni dettagliate sull’esecuzione di questi flussi di lavoro, consulta <a href="#sqldatasource">Utilizzare database, OData o qualsiasi servizio di terze parti come origine dati.</a></p> </td> 
   </tr>
   <tr>
   <td><p>Schema JSON</p></td> 
    <td> 
-    <p>È possibile selezionare lo schema JSON come origine dati. In base all'origine dati selezionata:</p></td> 
+    <p>Seleziona lo schema JSON come origine di dati. In base all'origine dati selezionata:</p></td> 
   </tr>
   <tr>
   <td></td> 
    <td> 
-    <p><strong>Opzione 1</strong>: È possibile  <a href="#generate-adaptive-forms-with-no-data-binding">generare un modulo adattivo senza alcun </a> binding dei dati utilizzando il servizio di Automated forms conversion e configurare lo schema JSON come origine dati. Eseguire il binding manuale dei campi modulo adattivo allo schema JSON e <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">utilizzare uno dei protocolli supportati</a> per precompilare i valori dei campi. Se necessario, modificare i valori dei campi e inviare i dati al repository crx.</p></td> 
+    <p><strong>Opzione 1</strong>: tu <a href="#generate-adaptive-forms-with-no-data-binding">genera un modulo adattivo senza associazione dati</a> utilizzando il servizio di Automated forms conversion e configurando lo schema JSON come origine di dati. I campi del modulo adattivo vengono associati manualmente allo schema JSON e <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">utilizza uno dei protocolli supportati</a> per precompilare i valori dei campi. Se necessario, modifica i valori dei campi e invia i dati all’archivio crx.</p></td> 
   </tr>
   <tr>
   <td></td> 
    <td> 
-    <p>Per istruzioni dettagliate sull'esecuzione dei flussi di lavoro, vedere <a href="#jsondatasource">Utilizzare lo schema JSON come origine dati.</p></td> 
+    <p>Per istruzioni dettagliate sull’esecuzione dei flussi di lavoro, consulta <a href="#jsondatasource">Utilizza lo schema JSON come origine di dati.</p></td> 
   </tr>
   <tr>
   <td></td> 
    <td> 
-    <p><strong>Opzione 2</strong>: È  <a href="#generate-adaptive-forms-with-json-binding">possibile generare un modulo adattivo con binding dei dati JSON </a> utilizzando il servizio Automated forms conversion. Il servizio di precompilazione e la funzione di invio del modulo risultano perfettamente visibili. Non sono necessari passaggi di configurazione.</p> </td> 
+    <p><strong>Opzione 2</strong>: tu <a href="#generate-adaptive-forms-with-json-binding">generare un modulo adattivo con associazione dati JSON</a> utilizzo del servizio di Automated forms conversion. Il servizio di precompilazione e l’invio dei moduli funzionano senza problemi. Non è necessario alcun passaggio di configurazione.</p> </td> 
   </tr>
    <tr>
   <td></td> 
    <td> 
-    <p>Per istruzioni dettagliate sull'esecuzione dei flussi di lavoro, vedere <a href="#jsonwithdatabinding">Utilizzare lo schema JSON come origine dati.</a></p> </td> 
+    <p>Per istruzioni dettagliate sull’esecuzione dei flussi di lavoro, consulta <a href="#jsonwithdatabinding">Utilizza lo schema JSON come origine di dati.</a></p> </td> 
   </tr>
   <tr>
-  <td><p>schema XSD</p></td> 
+  <td><p>Schema XSD</p></td> 
    <td> 
-    <p>Selezionare lo schema XSD come origine dati. In base all'origine dati selezionata, è possibile <a href="#generate-adaptive-forms-with-no-data-binding">generare un modulo adattivo senza binding di dati</a> utilizzando il servizio di Automated forms conversion e configurare lo schema XSD come origine dati. Eseguire il binding manuale dei campi modulo adattivo allo schema XSD e <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">utilizzare uno dei protocolli supportati</a> per precompilare i valori dei campi. Se necessario, modificare i valori dei campi e inviare i dati al repository crx.</p>
+    <p>Seleziona lo schema XSD come origine dati. In base all'origine dati selezionata, <a href="#generate-adaptive-forms-with-no-data-binding">genera un modulo adattivo senza associazione dati</a> utilizzando il servizio di Automated forms conversion e configurando lo schema XSD come origine di dati. I campi del modulo adattivo vengono associati manualmente allo schema XSD e <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">utilizza uno dei protocolli supportati</a> per precompilare i valori dei campi. Se necessario, modifica i valori dei campi e invia i dati all’archivio crx.</p>
     </td> 
   </tr>
   <tr>
   <td></td> 
    <td> 
-    <p>Per istruzioni dettagliate sull'esecuzione dei flussi di lavoro, vedere <a href="#xsddatasource">Utilizzare lo schema XSD come origine dati.</a></p>
+    <p>Per istruzioni dettagliate sull’esecuzione dei flussi di lavoro, consulta <a href="#xsddatasource">Utilizza lo schema XSD come origine di dati.</a></p>
     </td> 
   </tr>
  </tbody> 
 </table>
 
 
-Per ulteriori informazioni sul servizio di Automated forms conversion, consultate i seguenti articoli:
+Per ulteriori informazioni sul servizio di Automated forms conversion, vedere gli articoli seguenti:
 
 * [Introduzione al servizio di conversione automatica dei moduli](introduction.md)
 * [Configurazione del servizio di conversione automatica dei moduli](configure-service.md)
 * [Conversione di moduli per la stampa in moduli adattivi](convert-existing-forms-to-adaptive-forms.md)
 * [Revisione dei moduli convertiti](review-correct-ui-edited.md)
 
-Le informazioni fornite in questo articolo si basano sul presupposto che chiunque le legga abbia conoscenze di base sui concetti dei moduli adattivi.
+Le informazioni fornite in questo articolo si basano sul presupposto che chiunque le legga abbia una conoscenza di base dei concetti dei moduli adattivi.
 
 ## Prerequisiti {#pre-requisites}
 
-* Configurare un&#39;istanza di creazione [AEM](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html)
-* Configurare il servizio di Automated forms conversion [nell&#39;istanza di creazione AEM](configure-service.md)
+* Configurare un [Istanza di authoring AEM](https://helpx.adobe.com/it/experience-manager/6-5/sites/deploying/using/deploy.html)
+* Configura [Servizio di automated forms conversion nell’istanza di authoring AEM](configure-service.md)
 
-## Esempio di modulo adattivo {#sample-adaptive-form}
+## Modulo adattivo di esempio {#sample-adaptive-form}
 
-Per eseguire i casi di utilizzo per precompilare i valori dei campi in un modulo adattivo e inviarli all&#39;origine dati, scaricare il seguente file PDF di esempio.
+Per eseguire i casi d’uso per precompilare i valori dei campi in un modulo adattivo e inviarli all’origine dati, scarica il seguente file PDF di esempio.
 
 Modulo di richiesta di prestito di esempio
 
 [Ottieni file](assets/sample_loan_application_form.pdf)
 
-Il file PDF funge da input per il servizio Automated forms conversion. Il servizio converte questo file in un modulo adattivo. Nell&#39;immagine seguente viene illustrata l&#39;applicazione di prestito di esempio in formato PDF.
+Il file PDF funge da input per il servizio di Automated forms conversion. Il servizio converte questo file in un modulo adattivo. L’immagine seguente illustra l’esempio di richiesta di prestito in formato PDF.
 
 ![modulo di richiesta di prestito di esempio](assets/sample_form_new.png)
 
-## Preparare i dati per il modello di modulo {#prepare-data-for-form-model}
+## Prepara dati per modello modulo {#prepare-data-for-form-model}
 
- Integrazione dei dati AEM Forms consente di configurare e connettersi a origini dati diverse. Dopo aver generato un modulo adattivo utilizzando il processo di conversione, è possibile definire il modello di modulo in base a un modello dati del modulo, a uno schema XSD o JSON. È possibile utilizzare un database, Microsoft Dynamics o qualsiasi altro servizio di terze parti per creare un modello dati del modulo.
+L’integrazione dei dati di AEM Forms consente di configurare e connettersi a diverse origini dati. Dopo aver generato un modulo adattivo utilizzando il processo di conversione, puoi definire il modello del modulo in base a un modello di dati del modulo, XSD o uno schema JSON. È possibile utilizzare un database, Microsoft Dynamics o qualsiasi altro servizio di terze parti per creare un modello di dati modulo.
 
-Questa esercitazione utilizza il database MySQL come origine per creare un modello dati del modulo. Creare uno schema **applicazioni di prestito** nel database e aggiungere una tabella **richiedente** allo schema in base ai campi disponibili nel modulo adattivo.
+Questa esercitazione utilizza il database MySQL come origine per la creazione di un modello di dati modulo. Creare un **richiesta di prestito** nel database e aggiungi un **richiedente** nello schema in base ai campi disponibili nel modulo adattivo.
 
 ![Dati di esempio mysql](assets/sample_data_mysql.png)
 
-È possibile utilizzare la seguente istruzione DDL per creare la tabella **richiedente** nel database.
+È possibile utilizzare la seguente istruzione DDL per creare **richiedente** tabella nel database.
 
 ```sql
 CREATE TABLE `applicant` (
@@ -141,7 +140,7 @@ CREATE TABLE `applicant` (
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 ```
 
-Se si utilizza uno schema XSD come modello di modulo per eseguire i casi di utilizzo, creare un file XSD con il testo seguente:
+Se utilizzi uno schema XSD come modello del modulo per eseguire i casi d’uso, crea un file XSD con il testo seguente:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -166,15 +165,15 @@ Se si utilizza uno schema XSD come modello di modulo per eseguire i casi di util
   </xs:schema>
 ```
 
-In alternativa, scaricate lo schema XSD nel file system locale.
+Oppure scarica lo schema XSD nel file system locale.
 
-Schema XSD dell&#39;applicazione di prestito di esempio
+Esempio di schema XSD per la richiesta di prestito
 
 [Ottieni file](assets/loanapplication.xsd)
 
-Per ulteriori informazioni sull&#39;uso dello schema XSD come modello di modulo nei moduli adattivi, vedere [Creazione di moduli adattivi con schema XML](https://helpx.adobe.com/experience-manager/6-5/forms/using/adaptive-form-xml-schema-form-model.html).
+Per ulteriori informazioni sull’utilizzo dello schema XSD come modello di modulo nei moduli adattivi, consulta [Creazione di moduli adattivi tramite schema XML](https://helpx.adobe.com/experience-manager/6-5/forms/using/adaptive-form-xml-schema-form-model.html).
 
-Se si utilizza uno schema JSON come modello di modulo per eseguire i casi di utilizzo, creare un file JSON con il testo seguente:
+Se utilizzi uno schema JSON come modello del modulo per eseguire i casi d’uso, crea un file JSON con il testo seguente:
 
 ```JSON
 {
@@ -216,195 +215,194 @@ Se si utilizza uno schema JSON come modello di modulo per eseguire i casi di uti
 }
 ```
 
-In alternativa, scaricate lo schema JSON nel file system locale.
+In alternativa, scarica lo schema JSON nel file system locale.
 
-Schema JSON dell&#39;applicazione di prestito di esempio
+Esempio di schema JSON per richiesta di prestito
 
 [Ottieni file](assets/demo_schema.json)
 
-Per ulteriori informazioni sull&#39;uso dello schema JSON come modello di modulo nei moduli adattivi, vedere [Creazione di moduli adattivi con lo schema JSON](https://helpx.adobe.com/experience-manager/6-5/forms/using/adaptive-form-json-schema-form-model.html).
+Per ulteriori informazioni sull’utilizzo dello schema JSON come modello di modulo nei moduli adattivi, consulta [Creazione di moduli adattivi tramite schema JSON](https://helpx.adobe.com/experience-manager/6-5/forms/using/adaptive-form-json-schema-form-model.html).
 
-## Generazione di moduli adattivi senza binding dei dati {#generate-adaptive-forms-with-no-data-binding}
+## Generare moduli adattivi senza associazione dati {#generate-adaptive-forms-with-no-data-binding}
 
-Utilizzare il servizio [Automated forms conversion per convertire ](convert-existing-forms-to-adaptive-forms.md) il modulo di richiesta di prestito di esempio [](#sample-adaptive-form) in un modulo adattivo senza binding dei dati. Assicurarsi di selezionare la casella di controllo **[!UICONTROL Generate adaptive form(s) without data bindings]** per generare il modulo adattivo senza binding dei dati.
+Utilizza il [Servizio automated forms conversion da convertire](convert-existing-forms-to-adaptive-forms.md) il [modulo di richiesta di prestito di esempio](#sample-adaptive-form) in un modulo adattivo senza associazione di dati. Accertati di selezionare **[!UICONTROL Generate adaptive form(s) without data bindings]** per generare il modulo adattivo senza associazione dati.
 
-![Modulo adattivo senza binding dei dati](assets/generate_af_without_binding.png)
+![Modulo adattivo senza associazione dati](assets/generate_af_without_binding.png)
 
-Dopo aver generato un modulo adattivo senza binding dei dati, selezionare un&#39;origine dati per il modulo adattivo:
+Dopo aver generato un modulo adattivo senza alcuna associazione di dati, seleziona un’origine dati per il modulo adattivo:
 
 * [Database, OData o qualsiasi servizio di terze parti](#sqldatasource)
 * [Schema JSON](#jsondatasource)
-* [schema XSD](#xsddatasource)
+* [Schema XSD](#xsddatasource)
 
 >[!NOTE]
-> Se il modulo adattivo convertito con il servizio Automated forms conversion contiene più campi con lo stesso nome, assicurarsi che tali campi siano associati alle entità dell&#39;origine dati per evitare una possibile perdita di dati durante l&#39;invio.
-
+> Se il modulo adattivo convertito con il servizio di Automated forms conversion contiene più campi con lo stesso nome, assicurati che siano associati alle entità dell’origine dati per evitare una possibile perdita di dati durante l’invio.
 
 ### Utilizza database, OData o qualsiasi servizio di terze parti come origine dati {#sqldatasource}
 
-Caso di utilizzo: È possibile generare un modulo adattivo senza alcun binding dei dati utilizzando il servizio di Automated forms conversion e configurare il database MYSQL come origine dati. È possibile eseguire manualmente il binding dei campi modulo adattivo alle entità del modello dati del modulo e utilizzare l&#39;opzione **[!UICONTROL Form Data Model Prefill Service]** per precompilare i valori dei campi. È possibile utilizzare l&#39;opzione **[!UICONTROL Submit using Form Data Model]** per inviare il modulo adattivo.
+Caso d’uso: viene generato un modulo adattivo senza associazione di dati utilizzando il servizio di Automated forms conversion e viene configurato il database MYSQL come origine dati. I campi del modulo adattivo vengono associati manualmente alle entità del modello dati del modulo e vengono utilizzati **[!UICONTROL Form Data Model Prefill Service]** per precompilare i valori dei campi. Utilizzi il **[!UICONTROL Submit using Form Data Model]** per inviare il modulo adattivo.
 
-Prima di eseguire il caso di utilizzo:
+Prima di eseguire il caso d’uso:
 
 * [Configurare il database MySQL come origine dati](https://helpx.adobe.com/experience-manager/6-5/forms/using/configure-data-sources.html#configurerelationaldatabase)
 * [Creare il modello dati del modulo](https://helpx.adobe.com/experience-manager/6-5/forms/using/work-with-form-data-model.html)
 
-In base al caso di utilizzo, creare il modello di dati del modulo **applicazioni di prestito** e collegare l&#39;argomento del servizio di lettura a un valore **[!UICONTROL Literal]**. Il valore letterale del numero di telefono deve essere di uno dei record configurati nello schema **richiedente** del database MySQL. I servizi utilizzano il valore come argomento per recuperare i dettagli dall&#39;origine dati. È inoltre possibile selezionare [Attributo profilo utente o Attributo richiesta](https://helpx.adobe.com/experience-manager/6-5/forms/using/work-with-form-data-model.html#bindargument) dall&#39;elenco a discesa **[!UICONTROL Binding To]**
+In base al caso d’uso, crea il **richiesta di prestito** modello dati modulo e associazione argomento servizio lettura a un **[!UICONTROL Literal]** valore. Il valore letterale del numero di telefono deve essere di uno dei record configurati in **richiedente** schema del database MySQL. I servizi utilizzano il valore come argomento per recuperare i dettagli dall’origine dati. Puoi anche selezionare [Attributo profilo utente o Attributo richiesta](https://helpx.adobe.com/experience-manager/6-5/forms/using/work-with-form-data-model.html#bindargument) dal **[!UICONTROL Binding To]** elenco a discesa
 
-![Configurare il modello dati del modulo](assets/configure_model_object.png)
+![Configura modello dati modulo](assets/configure_model_object.png)
 
 >[!NOTE]
 >
->Assicurarsi di aggiungere i servizi **get** e **insert** al modello dati del modulo, configurare e verificare i servizi prima di eseguire il caso d&#39;uso.
+>Assicurati di aggiungere **ottenere** e **inserire** servizi al modello di dati del modulo, configurare e testare i servizi prima di eseguire il caso d’uso.
 
-Effettuate i seguenti passaggi:
+Esegui i seguenti passaggi:
 
-1. Selezionare il modulo di richiesta di prestito **di esempio** convertito disponibile nella cartella **[!UICONTROL output]** e toccare **[!UICONTROL Properties]**.
-1. Toccate la scheda **[!UICONTROL Form Model]**, selezionate **[!UICONTROL Form Data Model]** dall&#39;elenco a discesa **[!UICONTROL Select From]**, quindi toccate **[!UICONTROL Select Form Data Model]** per selezionare il modello di dati del modulo **loanapplication**. Toccate **[!UICONTROL Save & Close]** per salvare il modulo.
-1. Selezionare il **modulo di richiesta di prestito di esempio** e toccare **[!UICONTROL Edit]**.
-1. Nella scheda **[!UICONTROL Content]**, toccate l&#39;icona di configurazione:
-
-   ![configura contenitore modulo](assets/configure_form_container.png)
-
-   1. Nella sezione **[!UICONTROL Basic]**, selezionare **[!UICONTROL Form Data Model Prefill service]** dall&#39;elenco a discesa **[!UICONTROL Prefill Service]**.
-
-   1. Nella sezione **[!UICONTROL Submission]**, selezionare **[!UICONTROL Submit using Form Data Model]** dall&#39;elenco a discesa **[!UICONTROL Submit Action]**.
-
-   1. Selezionare il modello dati utilizzando il campo **[!UICONTROL Data Model to submit]**.
-   1. Toccate l&#39;icona ![done](assets/save_icon.svg) per salvare le proprietà.
-
-1. Toccate la casella di testo Nome richiedente e selezionate ![Configura icona](assets/configure_icon.svg) (Configura).
-
-   1. Nel campo Riferimento binding, selezionare **Ricorrente** > **Nome**, quindi toccare l&#39;icona ![Fine](assets/save_icon.svg) per salvare le proprietà. Analogamente, creare un binding dei dati per **Address**, **Phone Number**, **E-mail**, **Occupation**, **Stipendio annuale (in dollari)** e **No. dei campi dei membri della famiglia dipendenti** con le entità del modello dati del modulo.
-
-   ![Riferimenti a binding](assets/bind_references.png)
-
-1. Toccate **[!UICONTROL Preview]** per visualizzare i valori dei campi modulo adattivo precompilati.
-1. Se necessario, modificare i valori dei campi e inviare il modulo adattivo. I valori dei campi vengono inviati al database MySQL. È possibile aggiornare la tabella **richiedente** nel database per visualizzare i valori aggiornati nella tabella.
-
-**Caso di utilizzo:** è possibile generare un modulo adattivo senza binding dei dati utilizzando il servizio di Automated forms conversion e configurare il database MYSQL come origine dati. I campi modulo adattivo vengono associati utilizzando l&#39;editor di regole per precompilare i valori dei campi. Se necessario, modificare i valori dei campi e inviare i dati al repository crx.
-
-Per eseguire la procedura seguente, utilizzare l&#39;editor di regole [per richiamare il servizio del modello dati del modulo per eseguire il binding dei campi e precompilare i valori in un modulo adattivo:](https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html)
-
-1. Selezionare il **modulo di richiesta di prestito di esempio** nella cartella **[!UICONTROL output]** e toccare **[!UICONTROL Edit]**.
-1. Nella scheda **[!UICONTROL Content]**, toccate l&#39;icona di configurazione:
+1. Seleziona il file convertito **modulo di richiesta di prestito di esempio** disponibile in **[!UICONTROL output]** cartella e tocca **[!UICONTROL Properties]**.
+1. Tocca il **[!UICONTROL Form Model]** , seleziona **[!UICONTROL Form Data Model]** dal **[!UICONTROL Select From]** e tocca **[!UICONTROL Select Form Data Model]** per selezionare **richiesta di prestito** modello dati modulo. Tocca **[!UICONTROL Save & Close]** per salvare il modulo.
+1. Seleziona la **modulo di richiesta di prestito di esempio** e tocca **[!UICONTROL Edit]**.
+1. In **[!UICONTROL Content]** , tocca l’icona configura:
 
    ![configura contenitore modulo](assets/configure_form_container.png)
 
-   Nella sezione **[!UICONTROL Basic]**, selezionare **[!UICONTROL Form Data Model Prefill service]** dall&#39;elenco a discesa **[!UICONTROL Prefill Service]**.
+   1. In **[!UICONTROL Basic]** sezione, seleziona **[!UICONTROL Form Data Model Prefill service]** dal **[!UICONTROL Prefill Service]** elenco a discesa.
 
-1. Toccate la casella di testo **[!UICONTROL Applicant Name]** e toccate **[!UICONTROL Edit Rules]**.
+   1. In **[!UICONTROL Submission]** sezione, seleziona **[!UICONTROL Submit using Form Data Model]** dal **[!UICONTROL Submit Action]** elenco a discesa.
 
-   ![Modifica delle regole per creare il binding dei dati](assets/edit_rules_bind_reference.png)
+   1. Seleziona il modello dati utilizzando **[!UICONTROL Data Model to submit]** campo.
+   1. Tocca ![icona fine](assets/save_icon.svg) per salvare le proprietà.
 
-1. Toccate **[!UICONTROL Create]** nella pagina Editor regole.
-1. Sulla pagina **[!UICONTROL Rule Editor]**:
+1. Toccare la casella di testo Nome candidato e selezionare ![icona configura](assets/configure_icon.svg) (Configura).
 
-   1. Selezionate uno stato per la casella di testo Nome richiedente. Ad esempio, **[!UICONTROL is initialized]**, che determina l&#39;esecuzione della condizione **[!UICONTROL Then]** quando si esegue il rendering del modulo in modalità **[!UICONTROL Preview]**.
+   1. Nel campo Associa riferimento, seleziona **Richiedente** > **Nome**, e tocca ![icona fine](assets/save_icon.svg) per salvare le proprietà. Analogamente, creare un&#39;associazione dati per **Indirizzo**, **Numero di telefono**, **E-mail**, **Occupazione**, **Stipendio annuale (in dollari)**, e **No. di familiari a carico** campi con le entità del modello dati del modulo.
 
-   1. Nella sezione **[!UICONTROL Then]**, selezionare **[!UICONTROL Invoke Service]** dall&#39;elenco a discesa **[!UICONTROL Select Action]**. Tutti i servizi dell&#39;istanza Forms vengono visualizzati nell&#39;elenco a discesa.
+   ![Associa riferimenti](assets/bind_references.png)
 
-   1. Selezionare un servizio **[!UICONTROL Get]** nella sezione in cui sono elencati i modelli di dati del modulo. Il campo Input visualizza **numero di telefono**, che è la chiave primaria definita per il modello di dati **richiedente**. Il sistema recupera e precompila i valori nel modulo adattivo per i campi nella sezione Output in base a questo campo.
+1. Tocca **[!UICONTROL Preview]** per visualizzare i valori dei campi del modulo adattivo precompilati.
+1. Se necessario, modifica i valori dei campi e invia il modulo adattivo. I valori dei campi vengono inviati al database MySQL. È possibile aggiornare **richiedente** per visualizzare i valori aggiornati nella tabella.
 
-   1. Creare un binding per i campi modulo adattivo con le entità modello dati modulo utilizzando la sezione Output. Ad esempio, eseguire un binding del campo modulo adattivo **[!UICONTROL Applicant Name]** con l&#39;entità **name**.
+**Caso d’uso:** Viene generato un modulo adattivo senza associazione dati utilizzando il servizio di Automated forms conversion e viene configurato il database MYSQL come origine dati. Per precompilare i valori dei campi, associa i campi del modulo adattivo utilizzando l’editor di regole. Se necessario, modifica i valori dei campi e invia i dati all’archivio crx.
 
-   1. Toccare **[!UICONTROL Done]**. Toccate di nuovo **[!UICONTROL Done]** nella pagina Editor regole.
+Esegui i seguenti passaggi per utilizzare [editor di regole](https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html) per richiamare il servizio modello dati modulo per associare campi e valori di precompilazione in un modulo adattivo:
 
-   ![Editor di regole per eseguire il binding dei riferimenti](assets/rule_editor_bind_references.png)
+1. Seleziona la **modulo di richiesta di prestito di esempio** nel **[!UICONTROL output]** cartella e tocca **[!UICONTROL Edit]**.
+1. In **[!UICONTROL Content]** , tocca l’icona configura:
 
-1. Toccate **[!UICONTROL Preview]** per visualizzare i valori dei campi modulo adattivo precompilati.
+   ![configura contenitore modulo](assets/configure_form_container.png)
+
+   In **[!UICONTROL Basic]** sezione, seleziona **[!UICONTROL Form Data Model Prefill service]** dal **[!UICONTROL Prefill Service]** elenco a discesa.
+
+1. Tocca il **[!UICONTROL Applicant Name]** casella di testo e tocca **[!UICONTROL Edit Rules]**.
+
+   ![Modificare le regole per creare l&#39;associazione dati](assets/edit_rules_bind_reference.png)
+
+1. Tocca **[!UICONTROL Create]** nella pagina Editor di regole.
+1. Il giorno **[!UICONTROL Rule Editor]** pagina:
+
+   1. Selezionare uno stato per la casella di testo Nome candidato. Ad esempio: **[!UICONTROL is initialized]**, che si traduce nell&#39;esecuzione del **[!UICONTROL Then]** condizione durante il rendering del modulo in **[!UICONTROL Preview]** modalità.
+
+   1. In **[!UICONTROL Then]** sezione, seleziona **[!UICONTROL Invoke Service]** dal **[!UICONTROL Select Action]** elenco a discesa. Tutti i servizi nell’istanza Forms vengono visualizzati nell’elenco a discesa.
+
+   1. Seleziona un **[!UICONTROL Get]** dalla sezione in cui sono elencati i modelli di dati del modulo. Viene visualizzato il campo Input **numero di telefono**, che è la chiave primaria definita per **richiedente** modello dati. Il sistema recupera e compila i valori nel modulo adattivo per i campi della sezione Output in base a questo campo.
+
+   1. Crea un’associazione per i campi del modulo adattivo con le entità del modello dati del modulo utilizzando la sezione Output. Ad esempio, binding **[!UICONTROL Applicant Name]** campo modulo adattivo con **nome** entità.
+
+   1. Tocca **[!UICONTROL Done]**. Tocca **[!UICONTROL Done]** nuovamente nella pagina Editor regole.
+
+   ![Editor regole per associare i riferimenti](assets/rule_editor_bind_references.png)
+
+1. Tocca **[!UICONTROL Preview]** per visualizzare i valori dei campi del modulo adattivo precompilati.
 
    >[!NOTE]
    >
-   >Assicurarsi che la proprietà **[!UICONTROL Return Array]** sia impostata su OFF per la proprietà del servizio **get** nel modello dati del modulo associato al modulo adattivo.
+   >Assicurati che **[!UICONTROL Return Array]** La proprietà è impostata su OFF per **ottenere** proprietà del servizio nel modello dati del modulo associato al modulo adattivo.
 
-1. Se necessario, modificare i valori dei campi e inviare il modulo adattivo. I dati inviati sono disponibili nel seguente percorso nell’archivio crx:
+1. Se necessario, modifica i valori dei campi e invia il modulo adattivo. I dati inviati sono disponibili nella seguente posizione nell’archivio crx:
 
    `http://host name:port/crx/de/index.jsp#/content/forms/fp/admin/submit/data/latest file available in the folder`
 
-### Utilizzare lo schema JSON come origine dati {#jsondatasource}
+### Utilizza lo schema JSON come origine di dati {#jsondatasource}
 
-**Caso di utilizzo:** è possibile generare un modulo adattivo senza binding dei dati utilizzando il servizio di Automated forms conversion e configurare lo schema JSON come origine dati. È possibile eseguire il binding manuale dei campi modulo adattivi allo schema JSON e utilizzare l&#39;opzione **Anteprima con dati** per precompilare i valori dei campi. Se necessario, modificare i valori dei campi e inviare i dati al repository crx.
+**Caso d’uso:** Puoi generare un modulo adattivo senza associazione dati utilizzando il servizio di Automated forms conversion e configurare lo schema JSON come origine dati. I campi del modulo adattivo vengono associati manualmente allo schema JSON e viene utilizzato il **Anteprima con i dati** per precompilare i valori dei campi. Se necessario, modifica i valori dei campi e invia i dati all’archivio crx.
 
-Prima di eseguire il caso d’uso, accertatevi di disporre di:
+Prima di eseguire il caso d’uso, assicurati di disporre di:
 
 * [uno schema JSON valido conforme alla struttura dello schema JSON](#prepare-data-for-form-model)
-* [un modulo adattivo senza binding dei dati](#generate-adaptive-forms-with-no-data-binding)
+* [un modulo adattivo senza associazione di dati](#generate-adaptive-forms-with-no-data-binding)
 
-Effettuate i seguenti passaggi:
+Esegui i seguenti passaggi:
 
-1. Selezionare il modulo di richiesta di prestito **di esempio** convertito disponibile nella cartella **output** e toccare **[!UICONTROL Properties]**.
-1. Toccate la scheda **[!UICONTROL Form Model]**, selezionate **[!UICONTROL Schema]** dall&#39;elenco a discesa **[!UICONTROL Select From]**, quindi toccate **[!UICONTROL Select Schema]** per caricare lo schema **demo.schema JSON** salvato nel file system locale. Toccate **[!UICONTROL Save & Close]** per salvare il modulo.
-1. Selezionare il **modulo di richiesta di prestito di esempio** e toccare **[!UICONTROL Edit]**.
-1. Toccate la casella di testo Nome richiedente e selezionate ![Configura icona](assets/configure_icon.svg) (Configura).
+1. Seleziona il file convertito **modulo di richiesta di prestito di esempio** disponibile in **output** cartella e tocca **[!UICONTROL Properties]**.
+1. Tocca il **[!UICONTROL Form Model]** , seleziona **[!UICONTROL Schema]** dal **[!UICONTROL Select From]** e tocca **[!UICONTROL Select Schema]** per caricare **JSON demo.schema** schema salvato nel file system locale. Tocca **[!UICONTROL Save & Close]** per salvare il modulo.
+1. Seleziona la **modulo di richiesta di prestito di esempio** e tocca **[!UICONTROL Edit]**.
+1. Toccare la casella di testo Nome candidato e selezionare ![icona configura](assets/configure_icon.svg) (Configura).
 
-   Nel campo Riferimento binding, selezionare **Ricorrente** > **Nome**, quindi toccare l&#39;icona ![Fine](assets/save_icon.svg) per salvare le proprietà. Analogamente, creare un binding dei dati per **Address**, **Phone Number**, **E-mail**, **Occupation**, **Stipendio annuale (in dollari)** e **No. dei campi dei membri della famiglia dipendenti** con le entità dello schema JSON.
+   Nel campo Associa riferimento, seleziona **Richiedente** > **Nome**, e tocca ![icona fine](assets/save_icon.svg) per salvare le proprietà. Analogamente, creare un&#39;associazione dati per **Indirizzo**, **Numero di telefono**, **E-mail**, **Occupazione**, **Stipendio annuale (in dollari)**, e **No. di familiari a carico** con le entità dello schema JSON.
 
-1. Selezionare nuovamente il modulo di richiesta di prestito **di esempio** convertito disponibile nella cartella **[!UICONTROL output]** e selezionare **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
+1. Seleziona il file convertito **modulo di richiesta di prestito di esempio** disponibile in **[!UICONTROL output]** cartella di nuovo e seleziona **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
 
    Scarica file di dati di esempio</br>
 
    [Ottieni file](assets/json_data_file.txt)</br>
 
-1. Se necessario, modificare i valori dei campi e inviare il modulo adattivo. I dati inviati sono disponibili nel seguente percorso nell’archivio crx:
+1. Se necessario, modifica i valori dei campi e invia il modulo adattivo. I dati inviati sono disponibili nella seguente posizione nell’archivio crx:
 
    `http://host name:port/crx/de/index.jsp#/content/forms/fp/admin/submit/data/latest file available in the folder`
 
-### Utilizzare lo schema XSD come origine dati {#xsddatasource}
+### Utilizza lo schema XSD come origine di dati {#xsddatasource}
 
-**Caso di utilizzo:** è possibile generare un modulo adattivo senza binding dei dati utilizzando il servizio di Automated forms conversion e configurare lo schema XSD come origine dati. È possibile eseguire il binding manuale dei campi modulo adattivi allo schema XSD e utilizzare l&#39;opzione **Anteprima con i dati** per precompilare i valori dei campi. Se necessario, modificare i valori dei campi e inviare i dati al repository crx.
+**Caso d’uso:** Puoi generare un modulo adattivo senza associazione dati utilizzando il servizio di Automated forms conversion e configurare lo schema XSD come origine dati. Associare manualmente i campi del modulo adattivo allo schema XSD e utilizzare **Anteprima con i dati** per precompilare i valori dei campi. Se necessario, modifica i valori dei campi e invia i dati all’archivio crx.
 
-Prima di eseguire il caso d’uso, accertatevi di disporre di:
+Prima di eseguire il caso d’uso, assicurati di disporre di:
 
 * [uno schema XSD valido conforme alla struttura dello schema XML](#prepare-data-for-form-model)
-* [un modulo adattivo senza binding dei dati](#generate-adaptive-forms-with-no-data-binding)
+* [un modulo adattivo senza associazione di dati](#generate-adaptive-forms-with-no-data-binding)
 
-Effettuate i seguenti passaggi:
+Esegui i seguenti passaggi:
 
-1. Selezionare il modulo di richiesta di prestito **di esempio** convertito disponibile nella cartella **[!UICONTROL output]** e toccare **[!UICONTROL Properties]**.
-1. Toccate la scheda **[!UICONTROL Form Model]**, selezionate **[!UICONTROL Schema]** dall&#39;elenco a discesa **[!UICONTROL Select From]**, quindi toccate **[!UICONTROL Select Schema]** per caricare lo schema **loanapplication** XSD salvato nel file system locale. Selezionare l&#39;elemento principale per lo schema XSD e toccare **[!UICONTROL Save & Close]** per salvare il modulo.
-1. Selezionare il **modulo di richiesta di prestito di esempio** e toccare **[!UICONTROL Edit]**.
-1. Toccate la casella di testo Nome richiedente e selezionate ![Configura icona](assets/configure_icon.svg) (Configura).
-Nel campo Riferimento binding, selezionare **Ricorrente** > **Nome**, quindi toccare ![Icona Fine](assets/save_icon.svg) per salvare le proprietà. Analogamente, creare un binding dei dati per **Address**, **Phone Number**, **E-mail**, **Occupation**, **Stipendio annuale (in dollari)** e **No. dei campi dei membri della famiglia dipendenti** con le entità dello schema XSD.
+1. Seleziona il file convertito **modulo di richiesta di prestito di esempio** disponibile in **[!UICONTROL output]** cartella e tocca **[!UICONTROL Properties]**.
+1. Tocca il **[!UICONTROL Form Model]** , seleziona **[!UICONTROL Schema]** dal **[!UICONTROL Select From]** e tocca **[!UICONTROL Select Schema]** per caricare **richiesta di prestito** Schema XSD salvato nel file system locale. Seleziona l’elemento principale per lo schema XSD e tocca **[!UICONTROL Save & Close]** per salvare il modulo.
+1. Seleziona la **modulo di richiesta di prestito di esempio** e tocca **[!UICONTROL Edit]**.
+1. Toccare la casella di testo Nome candidato e selezionare ![icona configura](assets/configure_icon.svg) (Configura).
+Nel campo Associa riferimento, seleziona **Richiedente** > **Nome**, e tocca ![Icona Fine](assets/save_icon.svg) per salvare le proprietà. Analogamente, creare un&#39;associazione dati per **Indirizzo**, **Numero di telefono**, **E-mail**, **Occupazione**, **Stipendio annuale (in dollari)**, e **No. di familiari a carico** con le entità dello schema XSD.
 
-1. Selezionare nuovamente il modulo di richiesta di prestito **di esempio** convertito disponibile nella cartella **output** e selezionare **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
+1. Seleziona il file convertito **modulo di richiesta di prestito di esempio** disponibile in **output** cartella di nuovo e seleziona **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
 
    Scarica file di dati di esempio</br>
 
    [Ottieni file](assets/loan-application-data-xml-data.zip)</br>
 
 
-1. Se necessario, modificare i valori dei campi e inviare il modulo adattivo. I dati inviati sono disponibili nel seguente percorso nell’archivio crx:
+1. Se necessario, modifica i valori dei campi e invia il modulo adattivo. I dati inviati sono disponibili nella seguente posizione nell’archivio crx:
 
    `http://host name:port/crx/de/index.jsp#/content/forms/fp/admin/submit/data/latest file available in the folder`
 
-## Generazione di moduli adattivi con binding JSON {#generate-adaptive-forms-with-json-binding}
+## Generare moduli adattivi con binding JSON {#generate-adaptive-forms-with-json-binding}
 
-Utilizzare il servizio [Automated forms conversion per convertire ](convert-existing-forms-to-adaptive-forms.md) il modulo di richiesta di prestito di esempio [](#sample-adaptive-form) in un modulo adattivo con binding dei dati. Assicurarsi di non selezionare la casella di controllo **[!UICONTROL Generate adaptive form(s) without data bindings]** durante la generazione del modulo adattivo.
+Utilizza il [Servizio automated forms conversion da convertire](convert-existing-forms-to-adaptive-forms.md) il [modulo di richiesta di prestito di esempio](#sample-adaptive-form) in un modulo adattivo con associazione dati. Assicurati di non selezionare **[!UICONTROL Generate adaptive form(s) without data bindings]** durante la generazione del modulo adattivo.
 
 ![Modulo adattivo con binding JSON](assets/generate_af_with_data_bindings.png)
 
-### Utilizzare lo schema JSON come origine dati {#jsonwithdatabinding}
+### Utilizza lo schema JSON come origine di dati {#jsonwithdatabinding}
 
-**Caso di utilizzo:** genera un modulo adattivo con il binding dei dati JSON utilizzando il servizio di Automated forms conversion. Il servizio di precompilazione e la funzione di invio del modulo risultano perfettamente visibili. Non sono necessari passaggi di configurazione.
+**Caso d’uso:** Puoi generare un modulo adattivo con associazione dati JSON utilizzando il servizio di Automated forms conversion. Il servizio di precompilazione e l’invio dei moduli funzionano senza problemi. Non è necessario alcun passaggio di configurazione.
 
-Prima di eseguire il caso di utilizzo, assicurarsi di disporre di un modulo adattivo con binding dei dati[.](#generate-adaptive-forms-with-json-binding)
+Prima di eseguire il caso d’uso, assicurati di avere [un modulo adattivo con associazione dati](#generate-adaptive-forms-with-json-binding).
 
-Effettuate i seguenti passaggi:
+Esegui i seguenti passaggi:
 
-1. Selezionare nuovamente il modulo di richiesta di prestito **di esempio** convertito disponibile nella cartella **[!UICONTROL output]** e selezionare **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
+1. Seleziona il file convertito **modulo di richiesta di prestito di esempio** disponibile in **[!UICONTROL output]** cartella di nuovo e seleziona **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
 
    Scarica file di dati di esempio</br>
 
    [Ottieni file](assets/loan_application_data_source_json_data_binding.txt)</br>
 
-1. Se necessario, modificare i valori dei campi e inviare il modulo adattivo. I dati inviati sono disponibili nel seguente percorso nell’archivio crx:
+1. Se necessario, modifica i valori dei campi e invia il modulo adattivo. I dati inviati sono disponibili nella seguente posizione nell’archivio crx:
 
    `http://host name:port/crx/de/index.jsp#/content/forms/fp/admin/submit/data/latest file available in the folder`
 
 ## Conversione dei dati JSON del modulo adattivo inviati in formato XML {#convert-submitted-adaptive-form-data-to-xml}
 
-Quando immettete valori nei campi modulo adattivi e li inviate, i dati sono disponibili in formato JSON nell’archivio crx. Potete convertire il formato dei dati JSON in XML utilizzando l&#39;API [org.apache.sling.commons.json.xml](https://sling.apache.org/apidocs/sling5/org/apache/sling/commons/json/xml/XML.html#toString) oppure il seguente codice di esempio:
+Quando immetti i valori nei campi del modulo adattivo e li invii, i dati sono disponibili in formato JSON nell’archivio crx. È possibile convertire il formato dei dati JSON in XML utilizzando [org.apache.sling.commons.json.xml](https://sling.apache.org/apidocs/sling5/org/apache/sling/commons/json/xml/XML.html#toString) API o il seguente codice di esempio:
 
 ```
 import org.apache.sling.commons.json.JSONException;
