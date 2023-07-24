@@ -1,11 +1,14 @@
 ---
 title: Inviare al database i moduli adattivi convertiti con uno schema JSON
 description: Invia i moduli adattivi convertiti con uno schema JSON al database creando un modello di dati per moduli e facendo riferimento a esso in un flusso di lavoro AEM.
-uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
+solution: Experience Manager Forms
+feature: Adaptive Forms
+topic: Administration
 topic-tags: forms
-discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
+role: Admin, Developer
+level: Beginner, Intermediate
 exl-id: 5447b66f-9fac-476f-ab8a-9290bb1f9c0d
-source-git-commit: 298d6c0641d7b416edb5b2bcd5fec0232f01f4c7
+source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
 workflow-type: tm+mt
 source-wordcount: '1504'
 ht-degree: 2%
