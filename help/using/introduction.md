@@ -1,17 +1,17 @@
 ---
-title: Introduzione al servizio di automated forms conversion
+title: Introduzione al servizio automated forms conversion
 description: Accelerazione della conversione dei moduli di stampa in moduli adattivi
 solution: Experience Manager Forms
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 topic: Administration
 topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: 919886cda2ec50ddb9b403cbb0e92fec2821c10e
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 69%
+source-wordcount: '703'
+ht-degree: 64%
 
 ---
 
@@ -29,7 +29,7 @@ Il servizio di conversione automatica dei moduli aiuta ad accelerare la digitali
 
 ## Onboarding {#onboarding}
 
-Il servizio è disponibile gratuitamente per i clienti Forms AEM 6.4 e AEM 6.5 Forms On-Premise e per i clienti aziendali Adobe Managed Service. È possibile contattare il team di vendita Adobe o il proprio rappresentante Adobe per richiedere l’accesso al servizio. Il servizio è disponibile anche gratuitamente e preabilitato per i clienti as a Cloud Service di AEM Forms.
+Il servizio è disponibile gratuitamente per i clienti Forms AEM 6.4 e AEM 6.5 Forms On-Premise e per i clienti aziendali Adobe Managed Service. Puoi contattare il team di vendita Adobe o il tuo rappresentante Adobe per richiedere l’accesso al servizio. Il servizio è disponibile anche gratuitamente e preabilitato per i clienti as a Cloud Service di AEM Forms.
 
 Adobe abilita l’accesso per la tua organizzazione e fornisce i privilegi richiesti alla persona designata come amministratore dell’organizzazione. L’amministratore può concedere agli sviluppatori AEM Forms (utenti) dell’organizzazione l’accesso al servizio. Consulta [Configurazione del servizio di conversione automatica dei moduli](configure-service.md) per maggiori dettagli.
 
@@ -41,17 +41,17 @@ Il servizio supporta anche PDF forms abilitati per Adobe Sign. Se il modulo PDF 
 
 Il servizio può convertire i moduli in lingua inglese, francese, tedesca, spagnola, italiana e portoghese in moduli adattivi. Puoi anche tradurre i moduli adattivi generati in un’altra lingua utilizzando [Flusso di lavoro di traduzione AEM](https://helpx.adobe.com/it/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 
-## Workflow di conversione  {#conversion-workflow}
+## Flusso di lavoro di conversione  {#conversion-workflow}
 
 Il servizio di conversione automatica dei moduli è compatibile con Adobe Cloud. Connetti la tua istanza AEM al servizio, carica i moduli nella tua istanza AEM e avvia la conversione. Il processo di conversione completo è descritto di seguito:
 
 ![Flusso di lavoro](assets/conversion-workflow.png)
 
-### 1. Configurazione dell’ambiente {#set-up-the-environment}
+### 1. Configurare l’ambiente {#set-up-the-environment}
 
 Il servizio di conversione automatica dei moduli è compatibile con Adobe Cloud. [Configura l’account Adobe I/O della tua organizzazione e connetti la tua istanza AEM locale](configure-service.md) al servizio di conversione in esecuzione su Adobe Cloud.
 
-### 2. Conversione di moduli PDF in moduli adattivi {#use-the-conversion-service}
+### 2. Conversione di PDF forms in moduli adattivi {#use-the-conversion-service}
 
 Dopo aver configurato l’ambiente di AEM Forms per convertire i moduli PDF in moduli adattivi, [carica i moduli PDF](convert-existing-forms-to-adaptive-forms.md) nella tua istanza AEM e [avvia la conversione](convert-existing-forms-to-adaptive-forms.md#run-the-conversion). Prima di caricare i moduli, considera quanto segue:
 

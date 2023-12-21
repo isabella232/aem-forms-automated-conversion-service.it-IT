@@ -1,26 +1,26 @@
 ---
-title: Revisione dei moduli convertiti
+title: Rivedere e correggere i moduli convertiti
 description: Rivedi e correggi i moduli adattivi convertiti dal servizio di Automated forms conversion.
 solution: Experience Manager Forms
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 topic: Administration
 topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 64330fa2-aa9d-4ba4-96df-b75deed3e693
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: 919886cda2ec50ddb9b403cbb0e92fec2821c10e
 workflow-type: tm+mt
-source-wordcount: '2518'
+source-wordcount: '2510'
 ht-degree: 0%
 
 ---
 
-# Revisione dei moduli convertiti{#review-and-correct-converted-forms}
+# Rivedere e correggere i moduli convertiti{#review-and-correct-converted-forms}
 
 Il servizio di Automated forms conversion AEM Forms identifica campi, contenuto e layout del documento di input PDF e converte il documento di input PDF in un modulo adattivo. Il modulo adattivo di output può contenere alcuni campi mancanti o convertiti in modo errato. Puoi utilizzare l’editor di revisione e correzione per apportare miglioramenti ai campi identificati e rigenerare il modulo adattivo per avvicinare l’output all’esperienza desiderata. Dopo la prima conversione, puoi aprire il documento PDF di input nell’editor per:
 
 * Visualizza tutti i campi e i contenuti identificati durante la conversione
-* Identifica i campi e il contenuto mancanti durante la conversione
+* Identifica i campi e il contenuto persi durante la conversione
 * Verifica il tipo di un campo e modificane il tipo, se necessario
 * Verificare le tabelle identificate, ridimensionare le colonne e modificare il contenuto delle celle
 * Rimuovi i campi identificati erroneamente
@@ -122,7 +122,7 @@ Con l’editor di revisione e correzione puoi:
 
 ### Aggiungere un componente al modulo {#add-a-component-to-the-form}
 
-Il servizio di conversione potrebbe non identificare alcuni componenti del modulo di stampa. Ad esempio, in un **Data di nascita** componente di un modulo non identificato durante la conversione. È possibile utilizzare **+** per identificare tali componenti. Lo strumento consente di aggiungere testo, campo, gruppo di scelta, tabella e componenti pannello.
+Il servizio di conversione potrebbe non identificare alcuni componenti del modulo di stampa. Ad esempio, in un **Data di nascita** componente di un modulo non identificato durante la conversione. È possibile utilizzare **+** per identificare tali componenti. Lo strumento consente di aggiungere testo, campi, gruppi di scelta, tabelle e componenti pannello.
 
 ![](assets/add-component.gif)
 

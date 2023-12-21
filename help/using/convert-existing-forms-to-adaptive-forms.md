@@ -1,21 +1,19 @@
 ---
-title: Conversione di moduli PDF in moduli adattivi
+title: Conversione di PDF forms in moduli adattivi
 seo-title: Convert PDF forms to adaptive forms
 description: Esegui il servizio di Automated forms conversion per convertire i PDF forms in moduli adattivi
 seo-description: Run the Automated Forms Conversion service to convert PDF forms to adaptive forms
-uuid: 49fcd5c0-0e72-496d-9831-00f79d582f57
 contentOwner: khsingh
 topic-tags: forms
-discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
-exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
-source-git-commit: 298d6c0641d7b416edb5b2bcd5fec0232f01f4c7
+feature: Adaptive Forms, Foundation Components
+source-git-commit: 444cc37ec6fa2af2d8d2952efd18368a5725e881
 workflow-type: tm+mt
-source-wordcount: '1631'
-ht-degree: 8%
+source-wordcount: '1612'
+ht-degree: 7%
 
 ---
 
-# Conversione di moduli PDF in moduli adattivi {#convert-print-forms-to-adaptive-forms}
+# Conversione di PDF forms in moduli adattivi {#convert-print-forms-to-adaptive-forms}
 
 Il servizio di Automated forms conversion AEM Forms, basato su Adobe Sensei, converte automaticamente i PDF forms in moduli adattivi facili da usare e reattivi. Che si utilizzino PDF forms non interattivi, Acro Forms o PDF forms basati su XFA, il servizio di Automated forms conversion può facilmente convertire questi moduli in moduli adattivi. Per informazioni sulle funzionalità, sul flusso di lavoro di conversione e sull’onboarding consulta [Automated forms conversion](introduction.md) servizio.
 
